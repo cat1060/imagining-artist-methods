@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vermeer&#x27;s Girl, Layer by Layer</title>
+<meta name="description" content="A step-by-step reconstruction of how Vermeer made Girl with a Pearl Earring, from his training and first decisions to the last stroke on the pearl, with AI-generated reconstructions of every stage.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="Vermeer&#x27;s Girl, Layer by Layer">
+<meta property="og:description" content="A step-by-step reconstruction of how Vermeer made Girl with a Pearl Earring, from his training and first decisions to the last stroke on the pearl, with AI-generated reconstructions of every stage.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/vermeer/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/vermeer/img/stages/09-pearl.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+/* Layout: a studio manual crossed with a conservator's dossier. The hero is a stage viewer; each chapter opens with a scene plate above a reading column and a column of plates; chapter VI pairs a sticky, stage-by-stage painting map with the six painting steps. */
+:root {
+  --bg: #E6E2D9;          /* the primed canvas: chalk and lead white, greyed */
+  --surface: #F1EEE7;     /* lead white */
+  --ink: #1F1C18;         /* bone black */
+  --muted: #5D564B;       /* umber grey */
+  --rule: #CDC5B6;
+  --rule-strong: #A69C8B;
+  --accent: #2A46A0;      /* natural ultramarine */
+  --accent-2: #85601F;       /* yellow ochre, deepened for small text */
+  --frame: #17140F;       /* ebonised frame */
+  --frame-edge: #3A342B;
+
+  --font-display: "IM Fell English", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Literata", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* These sit on the painting or depict paint, so they stay the same in both themes */
+  --on-image: #F4F0E7;
+  --on-image-ink: #1F1C18;
+  --on-image-active: #2A46A0;
+  --on-image-shadow: rgba(0, 0, 0, 0.45);
+  --pg-leadwhite: #EEE9DE;
+  --pg-ultramarine: #2B48A3;
+  --pg-vermilion: #CF3F2C;
+  --pg-cochineal: #A11A3B;
+  --pg-yellowochre: #C99A45;
+  --pg-brownochre: #8B5A2B;
+  --pg-redochre: #A34A30;
+  --pg-umber: #6A4E35;
+  --pg-charcoal: #2B2926;
+  --pg-boneblack: #1B1917;
+  --pg-indigo: #27395C;
+  --pg-weld: #D3BF48;
+  --pg-chalk: #E4DFD2;
+  --pg-ground: #C4BAA6;
+  --pg-glue: #D6C291;
+  --pg-canvas: #B9A47F;
+  --pg-canvas-dark: #9C875F;
+  --pg-cream: #E2D0B0;
+  --pg-flesh: #E6BCA9;
+  --pg-darkunder: #3A2B1F;
+  --pg-lightblue: #7E97CF;
+  --pg-highlight-blue: #C3D0EC;
+  --pg-jacket: #B78C47;
+  --pg-green-glaze: #2E4A35;
+  --pg-green-deep: #1A281E;
+  --pg-today: #2A261C;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121915;        /* the curtain as Vermeer painted it, deep green-black */
+    --surface: #19211C;
+    --ink: #ECE6D8;
+    --muted: #A9A291;
+    --rule: #2C3830;
+    --rule-strong: #4C5A50;
+    --accent: #94ACE4;
+    --accent-2: #D7AE60;
+    --frame: #070907;
+    --frame-edge: #36423A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121915;
+  --surface: #19211C;
+  --ink: #ECE6D8;
+  --muted: #A9A291;
+  --rule: #2C3830;
+  --rule-strong: #4C5A50;
+  --accent: #94ACE4;
+  --accent-2: #D7AE60;
+  --frame: #070907;
+  --frame-edge: #36423A;
+  color-scheme: dark;
+}
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <nav class="series-nav" aria-label="Works in the series">
+      <a href="../raphael/"><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens · 1509–11</span></a>
+      <a href="../el-greco/"><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross · c. 1580</span></a>
+      <a href="../vermeer/" aria-current="page"><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring · c. 1665</span></a>
+      <a href="../monet/"><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise · 1872</span></a>
+      <a href="../van-gogh/"><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night · 1889</span></a>
+    </nav>
+  </div>
+</header>
+<div class="page">
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Delft, about 1665</p>
+      <h1>Vermeer's Girl, <em>layer by layer</em></h1>
+      <p class="lede">Imagine you are Johannes Vermeer, about to paint a girl in a blue and yellow turban. This guide follows what your process would have been, from your training and first decisions to the last stroke on the pearl.</p>
+      <p class="basis">The materials and the order of work come from technical studies of this exact painting, above all the Mauritshuis's 2018 examination, Girl in the Spotlight. Where that evidence runs out, the guide relies on Delft records and ordinary 1660s practice. Each chapter opens with a note on what its evidence is. The slider under the painting steps through eleven stages, from bare canvas to today; all but the last are AI reconstructions.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="Today. A girl in a blue and yellow turban looks back over her shoulder, lips parted, a large pearl at her ear, against a dark background.">
+            <img src="img/stages/00-ground.jpg" width="800" height="947" alt="" data-name="Bare ground" data-note="A warm light grey ground of chalk and lead white, bought ready-primed.">
+            <img src="img/stages/01-outlines.jpg" width="800" height="947" alt="" data-name="Outlines" data-note="Thin black brush lines fix the contours. The ear, the top of the turban and the back of the neck will still move.">
+            <img src="img/stages/02-dead-colouring.jpg" width="800" height="947" alt="" data-name="Dead-colouring" data-note="Light and shade blocked in with browns and blacks.">
+            <img src="img/stages/03-underlayers.jpg" width="800" height="947" alt="" data-name="Underlayers" data-note="Cream under the lights of the face, red lake beside the nose, dark paint under the shadows to come.">
+            <img src="img/stages/04-background.jpg" width="800" height="947" alt="" data-name="Background" data-note="Charcoal black, then a deep green glaze: the curtain.">
+            <img src="img/stages/05-face.jpg" width="800" height="947" alt="" data-name="Face" data-note="Skin, eyes and lips go on over their underlayers. The neck shadow waits for the pearl.">
+            <img src="img/stages/06-jacket.jpg" width="800" height="947" alt="" data-name="Jacket" data-note="Thin ochres over the dark underlayer, which still shows in the shadows.">
+            <img src="img/stages/07-collar.jpg" width="800" height="947" alt="" data-name="Collar" data-note="A few thick strokes of lead white.">
+            <img src="img/stages/08-turban.jpg" width="800" height="947" alt="" data-name="Turban" data-note="Ultramarine for the band, ochre and lead white for the hanging cloth.">
+            <img src="img/stages/09-pearl.jpg" width="800" height="947" alt="" data-name="Pearl" data-note="Three strokes over the neck shadow. Roughly how the painting left your studio.">
+            <img src="img/stages/10-today.jpg" width="800" height="947" class="is-on" fetchpriority="high" alt="" data-name="Today" data-note="The painting now. The weld and indigo have faded, so the green curtain reads as near-black.">
+          </div>
+        </div>
+        <span class="dim dim-h" aria-hidden="true"><span>44.5 cm</span></span>
+        <span class="dim dim-w" aria-hidden="true"><span>39 cm</span></span>
+      </div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name" id="stage-name">Today</p>
+          <span class="scrub-count" id="stage-count">Stage 11 of 11</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" id="stage-range" min="0" max="10" step="1" value="10" aria-label="Stage of the painting" aria-valuetext="Stage 11, Today">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note" id="stage-note">The painting now. The weld and indigo have faded, so the green curtain reads as near-black.</p>
+      </div>
+      <figcaption>Johannes Vermeer, <i>Girl with a Pearl Earring</i>, about 1665. Oil on canvas, 44.5 × 39 cm. Mauritshuis, The Hague. <span class="tag">AI-generated</span> Stages 1 to 10 are reconstructions made with Prodia from this painting.</figcaption>
+    </figure>
+  </header>
+
+  <nav class="toc" aria-label="Chapters">
+    <ol>
+      <li><a href="#training"><span class="toc-num">I</span><span class="toc-name">Training</span></a></li>
+      <li><a href="#ideation"><span class="toc-num">II</span><span class="toc-name">Ideation</span></a></li>
+      <li><a href="#studio"><span class="toc-num">III</span><span class="toc-name">Studio</span></a></li>
+      <li><a href="#materials"><span class="toc-num">IV</span><span class="toc-name">Materials</span></a></li>
+      <li><a href="#lay-in"><span class="toc-num">V</span><span class="toc-name">Lay-in</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VI</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#finishing"><span class="toc-num">VII</span><span class="toc-name">Finishing</span></a></li>
+      <li><a href="#time"><span class="toc-num">VIII</span><span class="toc-name">Time</span></a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- I -->
+    <section class="chapter" id="training" aria-labelledby="h-training">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-training">Your training</h2>
+        <p class="evidence"><b>Evidence</b>Guild register and church records. Your teacher is unknown.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/training.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: An apprentice, seen from behind, grinds blue pigment with a stone muller at an oak table in a workshop lit by leaded windows.">
+        <figcaption><span class="tag">AI-generated</span>An apprentice grinds ultramarine on a stone slab. Years of your training looked like this.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are Johannes Vermeer, born in Delft in 1632. Your father ran an inn and also dealt in paintings. Nobody knows who taught you. Leonaert Bramer, a family friend, is the usual guess, and Carel Fabritius is another. You may even have trained in Utrecht or Amsterdam.</p>
+          <p>Whoever it was, you spent four to six years as an apprentice. Most of that was grunt work: grinding pigments, priming canvases and copying your master's pictures while you learned to paint in oil, one layer at a time.</p>
+          <p>Membership in the Guild of Saint Luke is what lets you sign and sell your own work. You were admitted as a master at 21, though you couldn't pay the six-guilder fee in full. By the mid-1660s you have absorbed the polished finish of the Leiden “fine painters” and the strong light of the Utrecht followers of Caravaggio. Your mother-in-law owns Dirck van Baburen's <i>The Procuress</i>, which hangs on the wall in two of your paintings.</p>
+        </div>
+        <aside class="aside" aria-label="Timeline">
+          <ol class="timeline">
+            <li><span class="t-year">1632</span><span>Baptised in Delft on 31 October.</span></li>
+            <li><span class="t-year">Late 1640s</span><span>Apprenticeship of four to six years. Master unknown.</span></li>
+            <li><span class="t-year">1653</span><span>Marries Catharina Bolnes in April. Admitted as a master to the Guild of Saint Luke on 29 December.</span></li>
+            <li><span class="t-year">1662</span><span>First elected a headman of the guild.</span></li>
+            <li class="is-key"><span class="t-year">About 1665</span><span>Paints <i>Girl with a Pearl Earring</i>.</span></li>
+            <li><span class="t-year">1675</span><span>Dies in Delft in December, aged 43.</span></li>
+            <li><span class="t-year">1676</span><span>Estate inventory drawn up on 29 February.</span></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <!-- II -->
+    <section class="chapter" id="ideation" aria-labelledby="h-ideation">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-ideation">Decide what you're making</h2>
+        <p class="evidence"><b>Evidence</b>The painting itself, your 1676 estate inventory and a 1696 auction listing. The model is unknown.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/sitting.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: A young woman in a blue and yellow turban, a plain yellow-brown jacket and a white collar sits by a window and looks back over her shoulder.">
+        <figcaption><span class="tag">AI-generated</span>The sitting. Costume, pose and light are settled before any paint goes on.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are painting a <i>tronie</i>, a study of a face or a character type. The model is anonymous and wears exotic or “antique” costume, and the picture is made for the open market rather than for a client. Tronies showed off a painter's skill and sold at modest prices. Buyers didn't care who the model was.</p>
+          <p>We still don't know who she was, and the 2018 study didn't identify her. Your eldest daughter Maria, about 12 at the time, has been proposed. The maid in Tracy Chevalier's novel is invented.</p>
+          <h3 class="sub">Decide these before you touch the canvas</h3>
+          <dl class="decisions">
+            <div class="decision">
+              <dt>Costume</dt>
+              <dd>A blue and yellow turban. No Dutch girl wore one, so it reads as exotic. Your household liked “Turkish” things: your estate lists your own Turkish mantle and a pair of Turkish trousers. No turban is listed, though. You may have wrapped a length of cloth for the sitting, or borrowed the idea from other paintings such as Michael Sweerts's <i>Boy Wearing a Turban</i> (about 1655).</dd>
+            </div>
+            <div class="decision">
+              <dt>The pearl</dt>
+              <dd>Oversized and teardrop-shaped, too big to be believable as a real pearl. It was probably a varnished glass imitation, and the same kind appears in several of your paintings.</dd>
+            </div>
+            <div class="decision">
+              <dt>The moment</dt>
+              <dd>She turns her head over her shoulder, lips parted, eyes on the viewer, as if she has just noticed you. Aim for a passing instant rather than a formal pose.</dd>
+            </div>
+            <div class="decision">
+              <dt>The light</dt>
+              <dd>One source, high on the left. The whole picture becomes a study of what that one light does to different surfaces: dull cloth, skin, moist lips, wet eyes and a polished pearl.</dd>
+            </div>
+            <div class="decision">
+              <dt>Format and colour</dt>
+              <dd>A small canvas, about 44.5 × 39 cm. Behind her goes a dark green curtain, a cool, plain backdrop for her warm face. In front goes your favourite pairing, ultramarine blue against yellow.</dd>
+            </div>
+          </dl>
+          <p class="callout">Skip the paper sketches. Not a single drawing by Vermeer survives, and the evidence in this painting shows the design being worked out directly on the canvas.</p>
+        </div>
+        <aside class="aside">
+          <figure class="plate">
+            <img src="img/detail-cloth.jpg" width="380" height="380" loading="lazy" alt="Close-up of the top of the turban: folds of yellow cloth above the blue band.">
+            <figcaption>The top of the turban. Ultramarine against yellow, cool against warm.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- III -->
+    <section class="chapter" id="studio" aria-labelledby="h-studio">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-studio">Set up the studio</h2>
+        <p class="evidence"><b>Evidence</b>Your 1676 estate inventory. The arrangement in the plan is inferred from the light in the painting.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/studio.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: An empty studio with tall leaded windows whose lower shutters are closed, an easel with a blank canvas, a maulstick, a Spanish chair and a green curtain.">
+        <figcaption><span class="tag">AI-generated</span>Your studio, reconstructed from the 1676 inventory and the light in your paintings.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Your studio is an upstairs front room in your mother-in-law Maria Thins's house on the Oude Langendijk in Delft. After your death, the inventory of that room listed its equipment, including a cane with an ivory knob. That was probably your maulstick, the stick a painter uses to steady the hand for small strokes.</p>
+          <p>Seat the model near a tall leaded window on your left, so light falls from the upper left as it does in nearly all your paintings. Closing the lower shutters lets light in only from above and deepens the shadows. Angle the easel so the same light comes over your left shoulder; that way your painting hand doesn't shade the canvas.</p>
+          <div class="note">
+            <h3 class="note-title">What about a camera obscura?</h3>
+            <p>You may well know the device. Optics was a lively subject in Delft. Antonie van Leeuwenhoek, the microscope maker, was born there the same month as you and later administered your bankrupt estate. But your inventory lists no lenses, and nothing in this painting needs one. The outlines were drawn freehand with a brush and then revised (chapter V), which fits working by eye.</p>
+          </div>
+        </div>
+        <aside class="aside">
+          <figure class="doc">
+            <figcaption class="doc-title">Estate inventory, 29 February 1676 · The front room</figcaption>
+            <ul>
+              <li>Two painter's easels</li>
+              <li>Three palettes</li>
+              <li>Six panels</li>
+              <li>Ten painter's canvases</li>
+              <li>Three bundles with all sorts of prints</li>
+              <li>A desk</li>
+              <li>A cane with an ivory knob</li>
+              <li>Two Spanish chairs</li>
+            </ul>
+          </figure>
+          <figure class="plan-figure">
+            <svg class="plan" viewBox="0 0 400 300" role="img" aria-labelledby="plan-t plan-d">
+              <title id="plan-t">A plausible studio arrangement, seen from above</title>
+              <desc id="plan-d">Tall windows run along the left wall. Their light falls across the model, who sits near them, and across the easel. The painter stands at the easel facing the model, with the windows on the painter's left.</desc>
+              <defs>
+                <marker id="plan-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0 0 L10 5 L0 10 z" class="arrowhead"/>
+                </marker>
+              </defs>
+              <rect x="40" y="20" width="340" height="262" class="room"/>
+              <polygon points="41,48 41,208 379,266 379,104" class="light"/>
+              <rect x="34" y="48" width="13" height="66" class="window"/>
+              <rect x="34" y="142" width="13" height="66" class="window"/>
+              <text x="22" y="128" text-anchor="middle" transform="rotate(-90 22 128)">Windows</text>
+              <line x1="58" y1="80" x2="106" y2="98" class="ray" marker-end="url(#plan-arrow)"/>
+              <line x1="58" y1="178" x2="260" y2="193" class="ray" marker-end="url(#plan-arrow)"/>
+              <rect x="112" y="92" width="38" height="36" rx="4" class="chair"/>
+              <ellipse cx="131" cy="111" rx="17" ry="10" class="person"/>
+              <circle cx="131" cy="109" r="8" class="head"/>
+              <text x="131" y="80" text-anchor="middle">Model</text>
+              <line x1="284" y1="226" x2="146" y2="122" class="sight"/>
+              <line x1="268" y1="198" x2="316" y2="206" class="easel"/>
+              <line x1="292" y1="203" x2="292" y2="216" class="easel-leg"/>
+              <text x="326" y="200">Easel</text>
+              <ellipse cx="294" cy="240" rx="17" ry="10" class="person"/>
+              <circle cx="294" cy="238" r="8" class="head"/>
+              <text x="294" y="270" text-anchor="middle">Painter</text>
+            </svg>
+            <figcaption class="caption"><span class="tag">Inferred</span> A plausible arrangement, seen from above. No plan of the studio survives.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- IV -->
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-materials">Gather your materials</h2>
+        <p class="evidence"><b>Evidence</b>Pigment analysis of this painting. How each material was made and prepared is general period practice.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/materials.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: A still life of lapis lazuli, ultramarine powder, small piles of pigment, a stone slab and muller, a bottle of linseed oil, a palette and brushes.">
+        <figcaption><span class="tag">AI-generated</span>Lapis lazuli and ultramarine, earth colours, lead white and vermilion, with the slab and muller you grind them on.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <div class="chapter-body">
+          <div class="prose">
+            <h3 class="sub">The canvas</h3>
+            <p>Buy it already primed. A professional primer probably prepared this canvas, not you. The primer stretches plain-weave linen on a frame and seals it with animal-skin glue so the oil won't rot the fibres. Then they spread on a ground of chalk and lead white with a knife, tinted with a little earth pigment, probably umber. The result is a warm, light grey.</p>
+            <p>The tinted ground gives you a middle tone from the start, so you work up toward the lights and down toward the darks.</p>
+          </div>
+          <aside class="aside">
+            <figure class="xsec">
+              <figcaption class="xsec-cap">The primed canvas · surface at top</figcaption>
+              <div class="xsec-rows">
+                <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 46px"></span><span class="layer-label"><b>Ground</b><span>chalk and lead white, tinted with a little umber</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-glue); --h: 18px"></span><span class="layer-label"><b>Glue size</b><span>animal-skin glue</span></span></div>
+                <div class="layer"><span class="band is-canvas" style="--h: 40px"></span><span class="layer-label"><b>Canvas</b><span>plain-weave linen</span></span></div>
+              </div>
+            </figure>
+          </aside>
+        </div>
+
+        <div class="prose">
+          <h3 class="sub">The pigments</h3>
+          <p class="prose-intro">Analysis suggests you bought your materials in Delft, but Dutch trade brought them from all over the world. The swatches approximate each pigment's colour in oil.</p>
+        </div>
+        <div class="pigments">
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-leadwhite)"></div>
+            <div class="pig-body">
+              <h4>Lead white</h4>
+              <p>Strips of lead corroded by vinegar fumes in pots buried in fermenting dung, a method known as the Dutch stack process.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Lead mined in England's Peak District</dd></div>
+                <div><dt>Here</dt><dd>Ground, flesh, collar, highlights, pearl</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-ultramarine)"></div>
+            <div class="pig-body">
+              <h4>Natural ultramarine</h4>
+              <p>Lapis lazuli, crushed and kneaded into a dough of wax and resin, then washed with lye to release the blue. In your day it was worth more than gold.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Afghanistan</dd></div>
+                <div><dt>Here</dt><dd>The turban</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-vermilion)"></div>
+            <div class="pig-body">
+              <h4>Vermilion</h4>
+              <p>Mercury sulfide, made synthetically. The Dutch were leading makers.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Dutch manufacture</dd></div>
+                <div><dt>Here</dt><dd>Flesh, lips</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-cochineal)"></div>
+            <div class="pig-body">
+              <h4>Cochineal lake</h4>
+              <p>Red dye from insects that live on cacti, fixed onto alum to make a see-through red.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Mexico and South America</dd></div>
+                <div><dt>Here</dt><dd>Lips, flesh, the shadow of the nose</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: linear-gradient(90deg, var(--pg-yellowochre) 0 25%, var(--pg-brownochre) 25% 50%, var(--pg-redochre) 50% 75%, var(--pg-umber) 75%)"></div>
+            <div class="pig-body">
+              <h4>Ochres and umber</h4>
+              <p>Natural earths: yellow, brown and red ochre, and umber.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Europe</dd></div>
+                <div><dt>Here</dt><dd>Jacket, yellow cloth, flesh shadows</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: linear-gradient(90deg, var(--pg-charcoal) 0 50%, var(--pg-boneblack) 50%)"></div>
+            <div class="pig-body">
+              <h4>Charcoal and bone black</h4>
+              <p>Charred wood and charred bone.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Local</dd></div>
+                <div><dt>Here</dt><dd>Outlines, underlayers, background</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-indigo)"></div>
+            <div class="pig-body">
+              <h4>Indigo</h4>
+              <p>A blue dye from plants.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Asia or the Americas</dd></div>
+                <div><dt>Here</dt><dd>Background glaze</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-weld)"></div>
+            <div class="pig-body">
+              <h4>Weld</h4>
+              <p>A yellow dye from the weld plant, fixed onto alum. Mixed with indigo, it makes green.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Europe</dd></div>
+                <div><dt>Here</dt><dd>Background glaze</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-chalk)"></div>
+            <div class="pig-body">
+              <h4>Chalk</h4>
+              <p>Soft white mineral that adds body to the ground and to glazes.</p>
+              <dl class="pig-meta">
+                <div><dt>From</dt><dd>Local</dd></div>
+                <div><dt>Here</dt><dd>Ground, filler in glazes</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+
+        <div class="chapter-body">
+          <div class="prose">
+            <h3 class="sub">Oil and grinding</h3>
+            <p>Your paint is pigment ground into linseed oil, pressed from flax. Paint tubes won't exist until 1841, so each working day you grind only what you need. Put a small heap of pigment and a few drops of oil on a stone slab and work them with a muller, a flat-bottomed grinding stone, until smooth.</p>
+            <p>No pupils of yours are recorded, so this is probably your own job. Grind ultramarine lightly, because over-grinding turns it pale. Lead white is poisonous, so handle it with care.</p>
+          </div>
+          <aside class="aside">
+            <div class="prose">
+              <h3 class="sub">Tools</h3>
+              <ul class="tools">
+                <li>Round brushes, made by binding hair into a feather quill and fitting it on a stick. Flat brushes with metal collars came only in the 19th century.</li>
+                <li>Hog bristle for laying in and soft squirrel hair for detail. Microscopic scans found tiny brush hairs stuck in the paint of the girl's face.</li>
+                <li>A wooden palette with a thumbhole, a palette knife, the maulstick and the easel.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- V -->
+    <section class="chapter" id="lay-in" aria-labelledby="h-lay-in">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-lay-in">Lay in the design in paint</h2>
+        <p class="evidence"><b>Evidence</b>Infrared and X-ray fluorescence scans of this painting, 2018. They show three preparatory stages: the ground, fine black outlines and underlayers.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/layin.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: The brown dead-colouring of the painting on an easel, with the painter&#x27;s hand holding a brush and a palette of browns.">
+        <figcaption><span class="tag">AI-generated</span>The dead-colouring on the easel. The canvas is stage 3 from the slider at the top of the page.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <figure class="stages">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/00-ground.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction: The bare canvas, an even warm light grey ground.">
+              <figcaption><b>Ground</b>Warm light grey, bought ready-primed. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/01-outlines.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction: Thin black contour lines of the head, turban and shoulder on the grey ground.">
+              <figcaption><b>Outlines</b>Thin black lines for the contours. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/02-dead-colouring.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction: The composition blocked in with browns and blacks, the background brushed in roughly.">
+              <figcaption><b>Dead-colouring</b>Light and shade in browns and blacks. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-underlayers.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction: The monochrome lay-in with cream lights on the face, red lake beside the nose and an off-white collar.">
+              <figcaption><b>Underlayers</b>Cream under the lights, red lake by the nose, dark under the shadows. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Generated with Prodia from the finished painting, so the composition stays in register. They show plausible stages, not scans of the real underlayers.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li>
+            <h3>Outline</h3>
+            <p>With a fine brush and thin black paint, draw the head, turban and shoulder straight onto the grey ground. Keep the lines light.</p>
+          </li>
+          <li>
+            <h3>Monochrome lay-in</h3>
+            <p>Block in light and shade in browns and blacks. Dutch painters called this first stage dead-colouring (<i>doodverf</i>). You are setting down masses, not detail.</p>
+          </li>
+          <li>
+            <h3>Plan the underlayers</h3>
+            <p>This is the subtle part of your method. You choose each underlayer for what will go on top of it, so they vary in colour and thickness. Dark underlayers go under the jacket and the shadowed side of the turban, where they will later supply the shadows. Thick cream-coloured paint goes under the brightest parts of the face. Red lake goes in the shadow of the nose, so it glows warm through the skin paint.</p>
+          </li>
+          <li>
+            <h3>Revise</h3>
+            <p>You will move things. In this painting the ear, the top of the turban and the back of the neck were all shifted. Correct the lay-in now, while it is still cheap earth colours.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- VI -->
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-painting">Paint it up, back to front</h2>
+        <p class="evidence"><b>Evidence</b>Paint samples, scans and microscopy of this painting, from the 1994 restoration and the 2018 study. The cross-sections show only layers named in published analyses, and they are not to scale.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/painting.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: Seen from behind, the painter steadies his hand on a maulstick and lays the first ultramarine on the turban.">
+        <figcaption><span class="tag">AI-generated</span>First ultramarine on the turban, with the painting hand steadied on the maulstick.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <p class="prose-intro">The Mauritshuis found that you worked in a fixed order from back to front: background, face, jacket, collar, turban, and the pearl last. Let each stage dry before you glaze over it. A glaze is a thin, see-through layer of paint, and it needs a dry layer underneath; paint with plenty of lead white is dry to the touch in a few days.</p>
+        <div class="paint-grid">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with six numbered markers showing the order of work.">
+                <img src="img/stages/04-background.jpg" width="800" height="947" loading="lazy" alt="" data-caption="After step 1: the green curtain">
+                <img src="img/stages/05-face.jpg" width="800" height="947" loading="lazy" alt="" data-caption="After step 2: the face">
+                <img src="img/stages/06-jacket.jpg" width="800" height="947" loading="lazy" alt="" data-caption="After step 3: the jacket">
+                <img src="img/stages/07-collar.jpg" width="800" height="947" loading="lazy" alt="" data-caption="After step 4: the collar">
+                <img src="img/stages/08-turban.jpg" width="800" height="947" loading="lazy" alt="" data-caption="After step 5: the turban">
+                <img src="img/stages/09-pearl.jpg" width="800" height="947" loading="lazy" alt="" class="is-on" data-caption="After step 6: the pearl, as painted about 1665">
+              </div>
+              <a class="marker" href="#background" data-target="background" style="--x: 14%; --y: 30%" aria-label="Step 1, background">1</a>
+              <a class="marker" href="#face" data-target="face" style="--x: 33%; --y: 45%" aria-label="Step 2, face">2</a>
+              <a class="marker" href="#jacket" data-target="jacket" style="--x: 53%; --y: 82%" aria-label="Step 3, jacket">3</a>
+              <a class="marker" href="#collar" data-target="collar" style="--x: 57%; --y: 61%" aria-label="Step 4, collar">4</a>
+              <a class="marker" href="#turban" data-target="turban" style="--x: 46%; --y: 22%" aria-label="Step 5, turban">5</a>
+              <a class="marker" href="#pearl" data-target="pearl" style="--x: 68.5%; --y: 53%" aria-label="Step 6, pearl">6</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span id="map-caption" aria-live="polite">After step 6: the pearl, as painted about 1665</span></p>
+            <ol class="map-legend">
+              <li><a href="#background"><span class="dot">1</span>Background</a></li>
+              <li><a href="#face"><span class="dot">2</span>Face</a></li>
+              <li><a href="#jacket"><span class="dot">3</span>Jacket</a></li>
+              <li><a href="#collar"><span class="dot">4</span>Collar</a></li>
+              <li><a href="#turban"><span class="dot">5</span>Turban</a></li>
+              <li><a href="#pearl"><span class="dot">6</span>Pearl</a></li>
+            </ol>
+          </div>
+
+          <div class="steps">
+            <article class="step" id="background" aria-labelledby="h-s1">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-s1">Background: the green curtain</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/04-background.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction after step 1: a deep green curtain behind a figure still in brown underpainting.">
+                <figcaption>After step 1 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-background.jpg" width="455" height="455" loading="lazy" alt="Close-up of the background today: nearly black and covered in fine cracks.">
+                  <figcaption>The background today. Its green has faded to near black.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Cover the background with a thin layer of charcoal black and let it dry. Over it, brush a deep, see-through green glaze of indigo and weld, with some chalk and a touch of red ochre, working around the figure.</p>
+                  <p>Model the folds of a curtain; traces of them survive at the upper right. The cool, dark green pushes the warm skin forward.</p>
+                </div>
+              </div>
+              <figure class="xsec">
+                <figcaption class="xsec-cap">Background · surface at top</figcaption>
+                <div class="xsec-rows">
+                  <div class="layer"><span class="band is-glaze" style="--h: 40px"></span><span class="layer-label"><b>Green glaze</b><span>indigo and weld, with chalk and a little red ochre</span></span></div>
+                  <div class="layer"><span class="band" style="--c: var(--pg-charcoal); --h: 32px"></span><span class="layer-label"><b>Black layer</b><span>charcoal black, with some bone black</span></span></div>
+                  <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 40px"></span><span class="layer-label"><b>Ground</b></span></div>
+                  <div class="layer"><span class="band is-canvas" style="--h: 32px"></span><span class="layer-label"><b>Canvas</b></span></div>
+                </div>
+              </figure>
+            </article>
+
+            <article class="step" id="face" aria-labelledby="h-s2">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-s2">The face</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/05-face.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction after step 2: the face finished; turban, jacket and collar still in underpainting, and no pearl yet.">
+                <figcaption>After step 2 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="plates" style="--n: 3">
+                <figure class="plate">
+                  <img src="img/detail-nose.jpg" width="296" height="296" loading="lazy" alt="Close-up of the nose. On the lit side there is no outline, and the nose melts into the cheek.">
+                  <figcaption>No outline on the lit side of the nose.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-eyes.jpg" width="400" height="400" loading="lazy" alt="Close-up of both eyes, each with a small bright catchlight.">
+                  <figcaption>Catchlights of pure lead white.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-lips.jpg" width="262" height="262" loading="lazy" alt="Close-up of the parted red lips with small bright highlights.">
+                  <figcaption>Moist highlights on the lips.</figcaption>
+                </figure>
+              </div>
+              <div class="step-text">
+                <p>Paint the skin thinly over the underlayers. Mix the lights from lead white tinted with vermilion and a little red lake. Add umber for the cool grey in-between tones and blend them softly. Use umber, perhaps with some black, for the deepest shadows.</p>
+                <p>Keep the edges soft. Where the light is strongest, let outlines dissolve: the lit side of the nose has no outline at all and melts into the cheek. Save sharp edges for a few accents.</p>
+                <dl class="mini">
+                  <div><dt>Eyes</dt><dd>Lead white for the whites, then a tiny dot of pure lead white in each for the reflected light. Add eyelashes with a few strokes of brown. They are so fine that no one noticed them until 2018.</dd></div>
+                  <div><dt>Lips</dt><dd>Vermilion and cochineal red, then a few tiny, bright touches to make them look moist.</dd></div>
+                </dl>
+              </div>
+              <figure class="xsec">
+                <figcaption class="xsec-cap">Lit cheek · surface at top</figcaption>
+                <div class="xsec-rows">
+                  <div class="layer"><span class="band" style="--c: var(--pg-flesh); --h: 34px"></span><span class="layer-label"><b>Flesh paint</b><span>lead white with vermilion and a little red lake</span></span></div>
+                  <div class="layer"><span class="band" style="--c: var(--pg-cream); --h: 44px"></span><span class="layer-label"><b>Cream underpaint</b><span>thick, under the brightest areas; red lake in the nose shadow instead</span></span></div>
+                  <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 40px"></span><span class="layer-label"><b>Ground</b></span></div>
+                  <div class="layer"><span class="band is-canvas" style="--h: 32px"></span><span class="layer-label"><b>Canvas</b></span></div>
+                </div>
+              </figure>
+            </article>
+
+            <article class="step" id="jacket" aria-labelledby="h-s3">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-s3">The jacket</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/06-jacket.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction after step 3: the yellow-brown jacket painted.">
+                <figcaption>After step 3 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-jacket.jpg" width="480" height="480" loading="lazy" alt="Close-up of the yellow-brown jacket at the shoulder, with greenish-dark shadows.">
+                  <figcaption>The dark underlayer shows through in the shadows.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Paint the yellow-brown jacket thinly over its dark underlayer of ochres and charcoal black. Use lead white, yellow ochre, a little brown ochre, and even a pinch of ultramarine to cool it.</p>
+                  <p>Where the jacket turns away from the light, let the dark underlayer show through. Keep it broad and leave out the seams.</p>
+                </div>
+              </div>
+              <figure class="xsec">
+                <figcaption class="xsec-cap">Jacket · surface at top</figcaption>
+                <div class="xsec-rows">
+                  <div class="layer"><span class="band" style="--c: var(--pg-jacket); --h: 28px"></span><span class="layer-label"><b>Thin overpaint</b><span>lead white, yellow ochre, a little brown ochre and ultramarine</span></span></div>
+                  <div class="layer"><span class="band" style="--c: var(--pg-darkunder); --h: 44px"></span><span class="layer-label"><b>Dark underlayer</b><span>yellow, brown and red ochre with charcoal black</span></span></div>
+                  <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 40px"></span><span class="layer-label"><b>Ground</b></span></div>
+                  <div class="layer"><span class="band is-canvas" style="--h: 32px"></span><span class="layer-label"><b>Canvas</b></span></div>
+                </div>
+              </figure>
+            </article>
+
+            <article class="step" id="collar" aria-labelledby="h-s4">
+              <header class="step-head"><span class="step-num" aria-hidden="true">4</span><h3 id="h-s4">The collar</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/07-collar.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction after step 4: the white collar painted.">
+                <figcaption>After step 4 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-collar.jpg" width="341" height="341" loading="lazy" alt="Close-up of the white collar, painted in a few thick strokes.">
+                  <figcaption>A few thick strokes of lead white.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>A few thick, confident strokes of lead white. It matters later, because the pearl reflects it.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="step" id="turban" aria-labelledby="h-s5">
+              <header class="step-head"><span class="step-num" aria-hidden="true">5</span><h3 id="h-s5">The turban</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/08-turban.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction after step 5: the blue and yellow turban painted, still without the pearl.">
+                <figcaption>After step 5 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="plates" style="--n: 2">
+                <figure class="plate">
+                  <img src="img/detail-turban.jpg" width="477" height="477" loading="lazy" alt="Close-up of the blue band of the turban: light blue on the lit side, deep blue strokes in the shadow.">
+                  <figcaption>Lit side and glazed shadow side.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-cloth.jpg" width="380" height="380" loading="lazy" alt="Close-up of the yellow cloth's folds, caught with broad strokes and small dots of light.">
+                  <figcaption>Ochre folds with dots of light.</figcaption>
+                </figure>
+              </div>
+              <div class="step-text">
+                <p>This is the expensive part, and you use plenty of top-quality ultramarine. On the lit left side, paint a light blue of ultramarine and lead white, thicker in the highlights. On the shadow side, glaze ultramarine over the dark underlayer to get a deep, intense blue that no amount of mixing could produce. The darkest accents along the edge are bone black and chalk with a little ultramarine and red lake.</p>
+                <p>Then paint the yellow cloth in ochre and lead white over darker layers. Catch the folds with a few broad strokes and small dots of light, the <i>pointillés</i> you use for light glinting on fabric.</p>
+              </div>
+              <div class="xsec-pair">
+                <figure class="xsec">
+                  <figcaption class="xsec-cap">Lit side · surface at top</figcaption>
+                  <div class="xsec-rows">
+                    <div class="layer"><span class="band is-dabs" style="--h: 26px"></span><span class="layer-label"><b>Highlights</b><span>thicker lead white and ultramarine</span></span></div>
+                    <div class="layer"><span class="band" style="--c: var(--pg-lightblue); --h: 40px"></span><span class="layer-label"><b>Light blue</b><span>ultramarine and lead white</span></span></div>
+                    <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 40px"></span><span class="layer-label"><b>Ground</b></span></div>
+                    <div class="layer"><span class="band is-canvas" style="--h: 32px"></span><span class="layer-label"><b>Canvas</b></span></div>
+                  </div>
+                </figure>
+                <figure class="xsec">
+                  <figcaption class="xsec-cap">Shadow side · surface at top</figcaption>
+                  <div class="xsec-rows">
+                    <div class="layer"><span class="band" style="--c: var(--pg-ultramarine); --h: 34px"></span><span class="layer-label"><b>Ultramarine glaze</b></span></div>
+                    <div class="layer"><span class="band" style="--c: var(--pg-darkunder); --h: 40px"></span><span class="layer-label"><b>Dark underlayer</b></span></div>
+                    <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 40px"></span><span class="layer-label"><b>Ground</b></span></div>
+                    <div class="layer"><span class="band is-canvas" style="--h: 32px"></span><span class="layer-label"><b>Canvas</b></span></div>
+                  </div>
+                </figure>
+              </div>
+            </article>
+
+            <article class="step" id="pearl" aria-labelledby="h-s6">
+              <header class="step-head"><span class="step-num" aria-hidden="true">6</span><h3 id="h-s6">The pearl, last</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/09-pearl.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction after step 6: the pearl added, with the green curtain behind her.">
+                <figcaption>After step 6 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-pearl.jpg" width="262" height="262" loading="lazy" alt="Close-up of the pearl: a bright white highlight at its upper left, a soft reflection along its bottom, and the white collar below.">
+                  <figcaption>No outline, no hook.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>It takes three strokes, laid over the dried brown shadow of the neck. Don't paint an outline, a hook or an ear wire. The pearl is nothing but reflected light, and the viewer's eye supplies the rest.</p>
+                </div>
+              </div>
+              <figure class="strokes">
+                <svg viewBox="0 0 372 146" role="img" aria-labelledby="pearl-t pearl-d">
+                  <title id="pearl-t">The pearl in three strokes</title>
+                  <desc id="pearl-d">Three panels over a brown shadow. First, a faint see-through off-white drop. Second, the same drop with a thick white highlight at its upper left. Third, the same again with a soft, thin curve of light along its bottom edge.</desc>
+                  <defs>
+                    <radialGradient id="neck-shadow" cx="40%" cy="35%" r="80%">
+                      <stop offset="0" stop-color="#6A4F38"/>
+                      <stop offset="1" stop-color="#33261B"/>
+                    </radialGradient>
+                  </defs>
+                  <g>
+                    <rect x="0.5" y="0.5" width="112" height="112" fill="url(#neck-shadow)" class="panel"/>
+                    <ellipse cx="56" cy="58" rx="23" ry="28" fill="#E9E3D6" fill-opacity="0.3"/>
+                  </g>
+                  <g transform="translate(130 0)">
+                    <rect x="0.5" y="0.5" width="112" height="112" fill="url(#neck-shadow)" class="panel"/>
+                    <ellipse cx="56" cy="58" rx="23" ry="28" fill="#E9E3D6" fill-opacity="0.3"/>
+                    <ellipse cx="47" cy="45" rx="8.5" ry="6.5" fill="#FBF8F1" transform="rotate(-24 47 45)"/>
+                  </g>
+                  <g transform="translate(259 0)">
+                    <rect x="0.5" y="0.5" width="112" height="112" fill="url(#neck-shadow)" class="panel"/>
+                    <ellipse cx="56" cy="58" rx="23" ry="28" fill="#E9E3D6" fill-opacity="0.3"/>
+                    <ellipse cx="47" cy="45" rx="8.5" ry="6.5" fill="#FBF8F1" transform="rotate(-24 47 45)"/>
+                    <path d="M38 70 Q56 93 74 70" fill="none" stroke="#EEE8DB" stroke-opacity="0.78" stroke-width="4" stroke-linecap="round"/>
+                  </g>
+                  <text x="56" y="134" text-anchor="middle" class="svg-label">Scumble</text>
+                  <text x="186" y="134" text-anchor="middle" class="svg-label">+ Window</text>
+                  <text x="315" y="134" text-anchor="middle" class="svg-label">+ Collar</text>
+                </svg>
+                <ol>
+                  <li>A thin, see-through layer of off-white for the body of the pearl. Most of what you see is the shadowed neck showing through it.</li>
+                  <li>A thick dab of lead white at the upper left, reflecting the window.</li>
+                  <li>A soft, thin stroke along the bottom, reflecting the white collar.</li>
+                </ol>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VII -->
+    <section class="chapter" id="finishing" aria-labelledby="h-finishing">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-finishing">Finish, varnish, sell</h2>
+        <p class="evidence"><b>Evidence</b>The signature on the painting and a 1696 auction listing. Drying and varnishing are period practice; the pace is estimated from your known output.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/finished.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: The finished painting in a plain black frame on a whitewashed wall beside a leaded window, with a Spanish chair below.">
+        <figcaption><span class="tag">AI-generated</span>Finished, varnished and framed in black, the way paintings hang in your own interiors.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <dl class="decisions">
+            <div class="decision">
+              <dt>Sign it</dt>
+              <dd><span class="sig">IVMeer</span>, with the first letters joined in a monogram.</dd>
+            </div>
+            <div class="decision">
+              <dt>Wait</dt>
+              <dd>With drying time between layers, a small picture like this takes weeks to months, and you finish only two or three paintings a year. Let the paint harden for months before varnishing, because varnish over fresh oil paint can crack.</dd>
+            </div>
+            <div class="decision">
+              <dt>Varnish</dt>
+              <dd>Brush on a varnish of natural resin, such as mastic dissolved in turpentine, to deepen the darks and protect the surface.</dd>
+            </div>
+            <div class="decision">
+              <dt>Sell</dt>
+              <dd>Tronies went to the open market, but your patron Pieter van Ruijven may have bought this one. In 1696 the collection of his son-in-law, Jacob Dissius, was auctioned in Amsterdam.</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="aside">
+          <figure class="doc">
+            <figcaption class="doc-title">Sale of Jacob Dissius's collection · Amsterdam, 16 May 1696</figcaption>
+            <blockquote><p>“A tronie in antique dress, uncommonly artful.”</p></blockquote>
+            <p class="doc-note">One of three tronies by you in the sale. It may be this painting.</p>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VIII -->
+    <section class="chapter" id="time" aria-labelledby="h-time">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-time">What time has changed</h2>
+        <p class="evidence"><b>Evidence</b>The 2018 study and the 1994 restoration.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>If you work from the painting as it looks today, don't copy the decay.</p>
+          <ul class="changes">
+            <li>The background was a deep green curtain. The weld has faded and the indigo has broken down, so it now looks like flat, nearly black emptiness. Paint the green.</li>
+            <li>The eyelashes and the folds of the curtain are now almost invisible.</li>
+            <li>A spot of light just below the pearl turned out to be a stray flake of paint. It was removed in the 1994 restoration.</li>
+          </ul>
+        </div>
+        <aside class="aside">
+          <figure class="then-now">
+            <div class="chips">
+              <div><img src="img/stages/09-pearl.jpg" width="800" height="947" loading="lazy" alt="AI reconstruction of the painting as it left the studio, with a deep green curtain behind the girl."><span class="chip-label">As painted, about 1665 · AI reconstruction</span></div>
+              <div><img src="img/stages/10-today.jpg" width="800" height="947" loading="lazy" alt="The painting today, with a near-black background."><span class="chip-label">Today</span></div>
+            </div>
+            <figcaption>The background. Test layers of indigo and weld over black suggest a deep green.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Vermeer thought</h2>
+      <ul class="principles">
+        <li><em>Plan from the bottom up.</em> Choose each underlayer for the effect you want from the layer on top.</li>
+        <li><em>Let one light control everything.</em> Paint what it does to each surface rather than what the object is.</li>
+        <li><em>Soften the brightest edges.</em> Save sharp touches for the highlights.</li>
+        <li><em>Suggest rather than describe.</em> The pearl is three strokes.</li>
+        <li><em>Spend where it shows.</em> Ultramarine for the turban, cheap earth colours for everything else.</li>
+      </ul>
+    </section>
+
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://mauritshuis.nl/en/explore/restoration-and-research/girl-in-the-spotlight/" target="_blank" rel="noopener">Mauritshuis: Girl in the Spotlight project</a></li>
+        <li><a href="https://heritagesciencejournal.springeropen.com/articles/10.1186/s40494-019-0308-4" target="_blank" rel="noopener">Vandivere et al. 2019, Heritage Science: painting technique and underlayers</a></li>
+        <li><a href="https://heritagesciencejournal.springeropen.com/articles/10.1186/s40494-019-0311-9" target="_blank" rel="noopener">Vandivere et al. 2019, Heritage Science: the background</a></li>
+        <li><a href="https://mauritshuis.nl/en/our-collection/restoration-and-research/closer-to-vermeer-and-the-girl/girl-with-a-blog/glazes-girl-with-a-pearl-earring-vermeer" target="_blank" rel="noopener">Mauritshuis blog: Glazed over</a></li>
+        <li><a href="https://colourlex.com/project/vermeer-girl-with-a-pearl-earring/" target="_blank" rel="noopener">ColourLex: pigment analysis of the painting</a></li>
+        <li><a href="https://www.essentialvermeer.com/catalogue/girl_with_a_pearl_earring.html" target="_blank" rel="noopener">Essential Vermeer: catalogue entry</a></li>
+        <li><a href="https://www.essentialvermeer.com/inventory.html" target="_blank" rel="noopener">Essential Vermeer: the 1676 inventory</a></li>
+        <li><a href="https://www.essentialvermeer.com/delft/delft_today/guild.html" target="_blank" rel="noopener">Essential Vermeer: the Delft Guild of Saint Luke</a></li>
+        <li><a href="https://www.smithsonianmag.com/smart-news/hague-shares-new-insights-vermeers-girl-pearl-earring-180974775/" target="_blank" rel="noopener">Smithsonian: new insights into the painting</a></li>
+        <li><a href="https://www.pbs.org/newshour/amp/arts/hi-tech-scans-uncover-new-details-of-girl-with-a-pearl-earring-but-not-her-identity" target="_blank" rel="noopener">PBS NewsHour / AP: hi-tech scans of the painting</a></li>
+        <li><a href="https://www.nga.gov/artists/1951-johannes-vermeer.html" target="_blank" rel="noopener">National Gallery of Art: Johannes Vermeer</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <p>Painting image: Johannes Vermeer, <i>Girl with a Pearl Earring</i>, about 1665, Mauritshuis, The Hague. Public domain, from <a href="https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>. The close-ups are crops of that image. The stage reconstructions and chapter scenes were generated with Prodia (Gemini 3 Pro Image, with SAM 3 to separate the parts of the painting), using the painting as a reference. Stages 5 to 10 combine generated underlayers and a generated green curtain with regions of the real painting. They show plausible appearances, not documented ones. Swatch and cross-section colours are approximate. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>

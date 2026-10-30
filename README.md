@@ -24,7 +24,7 @@ Nine step-by-step reconstructions of how famous paintings were made: what each a
 
 ## About the images
 
-- The paintings, drawings, cartoon and other intermediate sources are public-domain images, mostly from Wikimedia Commons and museum open-access collections. Each is credited where it appears.
+- The paintings, drawings, cartoon and other intermediate sources are public-domain images, mostly from Wikimedia Commons and museum open-access collections. A few scientific images, such as the Rijksmuseum's calcium map of The Night Watch (CC BY 4.0), are shown under Creative Commons licences. Each image is credited where it appears.
 - The stage reconstructions and chapter scenes are AI-generated with [Prodia](https://prodia.com) (Gemini 3 Pro Image, FLUX Fill and SAM 3 segmentation), using the real painting as a reference so the composition stays in register. They are labelled on the pages and show plausible appearances, not documented ones.
 
 Each chapter opens with a note on its evidence, and every guide ends with its sources. The Vermeer guide was first published on its own at [cat1060/vermeer-layer-by-layer](https://github.com/cat1060/vermeer-layer-by-layer).

@@ -23,6 +23,22 @@
     });
   }
 
+  // Size comparison: a familiar object drawn to scale over the painting. It shows while a mouse is over
+  // the button; a click (or tap) keeps it shown until the next click.
+  for (const btn of document.querySelectorAll(".scale-btn")) {
+    const box = btn.closest(".dims");
+    let hover = false;
+    const pinned = () => btn.getAttribute("aria-pressed") === "true";
+    const update = () => box.classList.toggle("is-scaled", hover || pinned());
+    btn.addEventListener("pointerenter", (ev) => { if (ev.pointerType === "mouse") { hover = true; update(); } });
+    btn.addEventListener("pointerleave", (ev) => { if (ev.pointerType === "mouse") { hover = false; update(); } });
+    btn.addEventListener("click", () => {
+      btn.setAttribute("aria-pressed", pinned() ? "false" : "true");
+      if (!pinned()) hover = false;
+      update();
+    });
+  }
+
   // Stage viewers: a slider steps through stacked images of the work at successive stages.
   for (const fig of document.querySelectorAll("[data-stages]")) {
     const viewer = fig.querySelector(".viewer");

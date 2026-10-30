@@ -27,11 +27,13 @@ Sixteen step-by-step reconstructions of how famous paintings were made: what eac
 
 - `index.html`: the landing page.
 - `assets/series.css` and `assets/series.js`: the layout, type, the works dropdown and the stage slider shared by every guide. Each guide sets its own colours in a `<style>` block at the top of its page.
+- Size comparisons: a small icon at the lower right of each painting stands for a familiar object, from a pizza to an elephant. Hovering over it shows that object drawn to scale over the painting; clicking or tapping keeps it there until the next click.
 - `<guide>/index.html` and `<guide>/img/`: one folder per guide, with its stage images, chapter scenes, close-ups and intermediate sources.
 
 ## About the images
 
 - The paintings, drawings, cartoon and other intermediate sources are public-domain images, mostly from Wikimedia Commons and museum open-access collections. A few scientific images, such as the Rijksmuseum's calcium map of The Night Watch (CC BY 4.0), are shown under Creative Commons licences. Each image is credited where it appears. The small artist portraits in the works dropdown are public-domain images from Wikimedia Commons; Vermeer's is the young man in his Procuress, possibly a self-portrait, since no certain portrait of him exists.
+- The size-comparison objects are drawn for the site, except the elephant, the king penguin and the retriever, which are silhouettes from [PhyloPic](https://www.phylopic.org): the elephant and the penguin by Steven Traver (CC0), the retriever in the public domain.
 - The stage reconstructions and chapter scenes are AI-generated with [Prodia](https://prodia.com) (Gemini 3 Pro Image, FLUX Fill and SAM 3 segmentation), using the real painting as a reference so the composition stays in register. They are labelled on the pages and show plausible appearances, not documented ones.
 
 Each chapter opens with a note on its evidence, and every guide ends with its sources. The Vermeer guide was first published on its own at [cat1060/vermeer-layer-by-layer](https://github.com/cat1060/vermeer-layer-by-layer).

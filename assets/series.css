@@ -448,9 +448,9 @@ h2 {
 .series-name:hover { color: var(--accent); }
 .series-nav { min-width: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; padding-block: 2px; }
 @media (min-width: 1180px) {
-  .series-nav { display: grid; grid-template-columns: repeat(var(--works, 7), minmax(0, 1fr)); overflow: visible; }
-  .series-nav a { min-width: 0; align-items: start; }
-  .series-nav .sn-title { white-space: normal; }
+  .series-nav { display: grid; grid-template-columns: repeat(var(--works, 9), minmax(0, 1fr)); overflow: visible; }
+  .series-nav a { min-width: 0; align-items: start; align-content: start; }
+  .series-nav .sn-artist, .series-nav .sn-title { white-space: normal; }
 }
 .series-nav a {
   flex: none;

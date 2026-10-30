@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Night Watch, Back to Front</title>
+<meta name="description" content="A step-by-step reconstruction of how Rembrandt painted The Night Watch in 1640–42, from the brown ground and the chalk sketch found beneath it to the strips cut off in 1715, with AI-generated reconstructions of each stage.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="The Night Watch, Back to Front">
+<meta property="og:description" content="A step-by-step reconstruction of how Rembrandt painted The Night Watch in 1640–42, from the brown ground and the chalk sketch found beneath it to the strips cut off in 1715, with AI-generated reconstructions of each stage.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/rembrandt/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/rembrandt/img/card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+:root {
+  --bg: #EAE6DE; --surface: #F5F2EC; --ink: #1E1A15; --muted: #5A5248; --rule: #D5CEC3; --rule-strong: #A69D90;
+  --accent: #8C4F0E; --accent-2: #8E2A1E; --frame: #1F1A14; --frame-edge: #3F372D;
+  --pg-leadwhite: #EEE9DE; --pg-leadtin: #E8CF5C; --pg-pararealgar: #E39A35; --pg-ochre: #B8862F; --pg-redearth: #9A4A2C;
+  --pg-vermilion: #C9402B; --pg-lake: #8E2340; --pg-smalt: #50609E; --pg-azurite: #3F6DA6; --pg-black: #24201B;
+  --pg-canvas: #B9A47F; --pg-canvas-dark: #9C875F; --pg-lead: #B4683A; --pg-ground: #7A6650; --pg-chalk: #D9CBAE;
+  --pg-paint: #5B4632; --pg-varnish: #B58A3E;
+}
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: end; }
+.trio > div { display: grid; gap: 4px; align-content: start; min-width: 0; }
+.trio img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); background: var(--frame); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16130F; --surface: #1E1A15; --ink: #EEE9E1; --muted: #B3AA9E; --rule: #322C25; --rule-strong: #51493F;
+    --accent: #E2A955; --accent-2: #E98A76; --frame: #0C0A08; --frame-edge: #3F372D; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #16130F; --surface: #1E1A15; --ink: #EEE9E1; --muted: #B3AA9E; --rule: #322C25; --rule-strong: #51493F;
+  --accent: #E2A955; --accent-2: #E98A76; --frame: #0C0A08; --frame-edge: #3F372D; color-scheme: dark;
+}
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <nav class="series-nav" aria-label="Works in the series" style="--works: 9">
+      <a href="../raphael/"><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens</span></a>
+      <a href="../el-greco/"><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross</span></a>
+      <a href="../rembrandt/" aria-current="page"><img src="../rembrandt/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Rembrandt</span><span class="sn-title">The Night Watch</span></a>
+      <a href="../vermeer/"><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring</span></a>
+      <a href="../monet/"><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise</span></a>
+      <a href="../caillebotte/"><img src="../caillebotte/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Caillebotte</span><span class="sn-title">Paris Street; Rainy Day</span></a>
+      <a href="../manet/"><img src="../manet/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Manet</span><span class="sn-title">A Bar at the Folies-Bergère</span></a>
+      <a href="../van-gogh/"><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night</span></a>
+      <a href="../toulouse-lautrec/"><img src="../toulouse-lautrec/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Toulouse-Lautrec</span><span class="sn-title">At the Moulin Rouge</span></a>
+    </nav>
+  </div>
+</header>
+<div class="page">
+  <header class="hero is-landscape">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Amsterdam, 1640–42</p>
+      <h1>The Night Watch, <em>back to front</em></h1>
+      <p class="lede">Imagine you are Rembrandt van Rijn, in your mid-thirties and newly settled in a grand house in Amsterdam, with a commission to paint Captain Frans Banninck Cocq&#x27;s militia company for the great hall of their guild house. This guide follows what your process would have been, from a brown ground and a sketch in chalky paint to a company stepping out of the shadows, worked from the back of the scene to the front. Then it follows the canvas: cut down to fit a wall, darkened, attacked, and studied since 2019 in a glass room.</p>
+      <p class="basis">Operation Night Watch, the Rijksmuseum&#x27;s research project begun in 2019, has published the ground, the sketch under the paint and much of the palette; a study of 1976 described how the paint was built up. The order of the later stages is inferred. Each chapter opens with a note on what its evidence is. The slider steps through nine stages on the canvas as it was before 1715; stages 1 to 6 and 8 are AI reconstructions.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims no-dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="Today. A militia company spilling out of a dark archway: a captain in black with a red sash and a lieutenant in pale gold at the centre, a girl in gold at left, musketeers, lances, a flag and a drummer. Around the painting, faded, the strips cut off in 1715.">
+            <img src="img/stages/01-ground.jpg" width="1000" height="789" alt="" data-name="Canvas and ground" data-note="Three widths of linen sewn together, brushed with an oil containing lead, then covered with a grey-brown ground of quartz and clay. The seams&#x27; positions are approximate.">
+            <img src="img/stages/02-sketch.jpg" width="1000" height="789" alt="" data-name="Sketch in chalky paint" data-note="A rough sketch in beige paint rich in chalk, with some forms in dark brown. Its existence is documented; the lines drawn here are invented.">
+            <img src="img/stages/03-deadcolour.jpg" width="1000" height="789" alt="" data-name="Dead colour" data-note="The lights brushed in thickly with whitish paint, the darks in thin browns and blacks, as the 1976 study describes. It may have been one stage with the sketch.">
+            <img src="img/stages/04-company.jpg" width="1000" height="789" alt="" data-name="Background and company" data-note="Worked from the back of the scene to the front, with the figures in front left in reserve. The order of stages 4 to 6 is inferred from that.">
+            <img src="img/stages/05-captain.jpg" width="1000" height="789" alt="" data-name="Captain and lieutenant" data-note="Banninck Cocq in black with a red sash, Van Ruytenburch in pale yellow and gold, and the shadow of the captain&#x27;s hand on his lieutenant&#x27;s coat.">
+            <img src="img/stages/06-finished.jpg" width="1000" height="789" alt="" data-name="Finished, 1642" data-note="The whole canvas as you left it. The four strips cut off in 1715 are reconstructed from Gerrit Lundens&#x27;s copy.">
+            <img src="img/stages/07-cut.jpg" width="1000" height="789" alt="" data-name="Cut down, 1715" data-note="Moved to the Town Hall and cut down on all four sides, most of all on the left; the earliest account says to fit between two doors. The strips are lost.">
+            <img src="img/stages/08-darkened.jpg" width="1000" height="789" alt="" data-name="Darkened" data-note="Under old varnish turned brown, as it might have looked by 1797, when the name Night Watch first appears in a document.">
+            <img src="img/stages/09-today.jpg" width="1000" height="789" class="is-on" fetchpriority="high" alt="" data-name="Today" data-note="The painting today, 379.5 by 453.5 cm. The dashed line marks the 1715 cut; outside it the lost strips are shown faded, from stage 6.">
+          </div>
+        </div>
+      </div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name">Today</p>
+          <span class="scrub-count">Stage 9 of 9</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" min="0" max="8" step="1" value="8" aria-label="Stage of the work" aria-valuetext="Stage 9, Today">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note">The painting today, 379.5 by 453.5 cm. The dashed line marks the 1715 cut; outside it the lost strips are shown faded, from stage 6.</p>
+      </div>
+      <figcaption>Rembrandt van Rijn, <i>Militia Company of District II under the Command of Captain Frans Banninck Cocq</i>, known as <i>The Night Watch</i>, 1642. Oil on canvas, 379.5 × 453.5 cm. Rijksmuseum, Amsterdam, on loan from the City of Amsterdam. <span class="tag">AI-generated</span> Stages 1 to 6 and 8 are reconstructions made with Prodia from this painting and, for the strips cut off in 1715, from Gerrit Lundens's copy. Stage 9 shows those strips faded.</figcaption>
+    </figure>
+  </header>
+  <nav class="toc" aria-label="Chapters" style="--toc-n: 9">
+    <ol>
+      <li><a href="#training"><span class="toc-num">I</span><span class="toc-name">Training</span></a></li>
+      <li><a href="#commission"><span class="toc-num">II</span><span class="toc-name">Commission</span></a></li>
+      <li><a href="#idea"><span class="toc-num">III</span><span class="toc-name">Idea</span></a></li>
+      <li><a href="#materials"><span class="toc-num">IV</span><span class="toc-name">Materials</span></a></li>
+      <li><a href="#sketch"><span class="toc-num">V</span><span class="toc-name">Sketch</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VI</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#cut"><span class="toc-num">VII</span><span class="toc-name">The cut</span></a></li>
+      <li><a href="#night"><span class="toc-num">VIII</span><span class="toc-name">Night Watch</span></a></li>
+      <li><a href="#research"><span class="toc-num">IX</span><span class="toc-name">Research</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="chapter" id="training" aria-labelledby="h-training">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-training">Your training</h2>
+        <p class="evidence"><b>Evidence</b>Standard biographies, beginning with Jan Orlers&#x27;s description of Leiden (1641), and the museums&#x27; records of the paintings shown.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/studio.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: an empty painter&#x27;s studio with tall leaded windows, an easel, a stone slab with heaps of pigment, mussel shells of paint, and a helmet, halberd and plumed hat on a cupboard.">
+        <figcaption><span class="tag">AI-generated</span>A painter&#x27;s studio in Amsterdam around 1640, as it might have looked. Where you painted this canvas is not recorded.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are Rembrandt van Rijn, born in Leiden in 1606, a miller's son. After the Latin school and a brief enrolment at the university, you train for about three years with Jacob van Swanenburgh in Leiden, then for six months in Amsterdam with Pieter Lastman, a painter of crowded history scenes.</p>
+          <p>Back in Leiden you work alongside Jan Lievens. Around 1631 you move to Amsterdam and paint portraits in the business of the art dealer Hendrick Uylenburgh. In 1632 you paint <i>The Anatomy Lesson of Dr Nicolaes Tulp</i> for the surgeons' guild: a group portrait of surgeons gathered round a corpse.</p>
+          <p>In 1634 you marry Saskia van Uylenburgh, the dealer's cousin. In January 1639 you buy a large house on the Sint-Antoniesbreestraat, on credit. The commission for this painting comes soon after.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-selfportrait.jpg" width="600" height="716" loading="lazy" alt="A half-length self-portrait: a man of about thirty-five in a fur-trimmed coat and a beret, leaning on a stone sill.">
+            <figcaption>
+              <span class="source-title">Self Portrait at the Age of 34</span>
+              <span class="source-meta">1640 · Oil on canvas · National Gallery, London</span>
+              <span class="source-note">You, in the year you were probably working on this painting.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Zelfportret_%281640%29_-_National_Gallery%2C_London.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-tulp.jpg" width="1000" height="753" loading="lazy" alt="A group of men in black with white collars crowd round a corpse whose forearm a doctor is dissecting.">
+            <figcaption>
+              <span class="source-title">The Anatomy Lesson of Dr Nicolaes Tulp</span>
+              <span class="source-meta">1632 · Oil on canvas · Mauritshuis, The Hague</span>
+              <span class="source-note">Your first big group portrait in Amsterdam.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp_-_146_-_Mauritshuis.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="commission" aria-labelledby="h-commission">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-commission">The commission</h2>
+        <p class="evidence"><b>Evidence</b>The Rijksmuseum&#x27;s records of the seven paintings made for the hall; Gerard Schaep&#x27;s description of the hall in 1653; testimony about the payment given years later, known only from a paraphrase of 1916. No contract survives.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/doelen.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a long beamed hall with leaded windows, a table with pewter jugs, and huge dark group portraits of militiamen on the wall, two men in sashes seen from behind.">
+        <figcaption><span class="tag">AI-generated</span>The great hall of a militia guild house in the 1640s, as it might have looked.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Amsterdam's civic guard is a militia of citizens, organised by district. The Kloveniers, the arquebusiers, meet in the Kloveniersdoelen on the Amstel, beside the old tower called Swijgh Utrecht. Its new great hall is ready in or shortly before 1638, and over the next years the guard fills it with group portraits: six companies and the guild's governors, seven paintings in all.</p>
+          <p>Your company is that of District II, under Captain Frans Banninck Cocq and Lieutenant Willem van Ruytenburch. The commission comes from the sitters, or from someone acting for them, and reaches you before December 1640, when one of the men you will paint dies. The other painters for the hall are Bartholomeus van der Helst, Govert Flinck, Jacob Backer, Joachim von Sandrart and, probably, Nicolaes Eliasz Pickenoy.</p>
+          <p>The men pay for their own places in the picture. Years later, in 1658 or 1659, two of them testified that sixteen of those painted paid about 100 guilders each, some more and some less according to where they stood. A third man, Claes van Cruysbergen, put the total at 1,600 guilders, though he had it only from hearsay.</p>
+          <p>Gerard Schaep's list of 1653 walks round the hall: your painting hangs next to Flinck's, probably on the long wall opposite the windows. The shield on the arch with eighteen names, the captain's first, was painted over the varnish, after the picture was finished; dates proposed for it range from the 1640s to about 1653.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-doelen.jpg" width="1000" height="844" loading="lazy" alt="An etching of a turreted brick guild house on the water, with a round tower at its corner.">
+            <figcaption>
+              <span class="source-title">Zacharias Webber, the Kloveniersdoelen</span>
+              <span class="source-meta">1665 · Print · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">The arquebusiers&#x27; guild house on the Amstel, with the tower Swijgh Utrecht.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Gezicht_op_de_Kloveniersdoelen_te_Amsterdam%2C_RP-P-OB-61.287.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-shield.jpg" width="480" height="480" loading="lazy" alt="Close-up of an oval shield framed with gilded leaves, with rows of faint painted names.">
+                  <figcaption>The shield of names on the arch, brightened here to make them legible.</figcaption>
+                </figure>
+          </div>
+          <figure class="source is-wide">
+            <img src="img/src-vanderhelst.jpg" width="1000" height="302" loading="lazy" alt="A very wide painting of a militia company standing and sitting in a row before a city view, a banner at the centre.">
+            <figcaption>
+              <span class="source-title">Bartholomeus van der Helst, the company of Captain Roelof Bicker</span>
+              <span class="source-meta">About 1640–43 · Oil on canvas, 235 × 750 cm · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">Another of the paintings for the hall: the men in a long row, almost all in even light.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Officieren_en_andere_schutters_van_wijk_VIII_in_Amsterdam_onder_leiding_van_kapitein_Roelof_Bicker_en_luitenant_Jan_Michielsz_Blaeuw_Rijksmuseum_SK-C-375.jpeg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="idea" aria-labelledby="h-idea">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-idea">Set the company moving</h2>
+        <p class="evidence"><b>Evidence</b>The painting and the Rijksmuseum&#x27;s descriptions; the caption in Banninck Cocq&#x27;s family album; Samuel van Hoogstraten, who trained with you in the 1640s, writing in 1678. No document names the prints you may have used.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The other painters for the hall line their men up or seat them at table, and give every face its share of light. You choose a moment instead: the captain steps forward and gives an order, and the company behind him starts to move out from under an arch, with its flag, its lances and its drum.</p>
+          <dl class="decisions">
+            <div class="decision"><dt>An order</dt><dd>Banninck Cocq, in black, turns to his lieutenant and speaks. The caption in his family album says he is telling the lieutenant to march the company.</dd></div>
+            <div class="decision"><dt>A drill in three men</dt><dd>Three men in red handle muskets: one loads, one fires just behind the lieutenant's hat, one blows the pan clean. Jacob de Gheyn's drill book of 1607 shows the same actions, but no document says you used it; the Rijksmuseum says only that you drew on existing prints for some poses.</dd></div>
+            <div class="decision"><dt>A mascot</dt><dd>A girl in gold, lit like a flame, carries a dead chicken at her waist with its claws showing. The Rijksmuseum calls her the company mascot; the claws are usually read as the Kloveniers' emblem, a claw.</dd></div>
+            <div class="decision"><dt>Light that chooses</dt><dd>Most of the men stand half in shadow. The light picks out the captain, the lieutenant and the girl.</dd></div>
+          </dl>
+          <p>Your former pupil Samuel van Hoogstraten, writing in 1678, says you held the picture together very well but, in the opinion of many, too well, making more of the image you chose than of the portraits you were commissioned to paint. Still, he expected it to outlast all its rivals: so painterly in conception, so dashing and so powerful that, some said, the other paintings in the hall looked like playing cards beside it. He only wished you had kindled more light in it.</p>
+          <div class="note">
+            <h3 class="note-title">Did the company hate it?</h3>
+            <p>No document says so. The men paid, the painting hung in their hall for seventy years, and Banninck Cocq owned a painted copy and a watercolour of it. The story of a rejected picture that ruined you is a later legend; Seymour Slive took it apart in 1953.</p>
+          </div>
+        </div>
+        <aside class="aside">
+          <figure class="doc">
+            <figcaption class="doc-title">Banninck Cocq's family album · about 1653–55</figcaption>
+            <blockquote><p>“Schets van de Schilderije op de groote Sael van de Cleveniers Doelen”</p></blockquote>
+            <p class="doc-note">“Sketch of the painting in the great hall of the Kloveniersdoelen.” The caption goes on to say that the young lord of Purmerland, as captain, orders his lieutenant, the lord of Vlaardingen, to have his company march.</p>
+          </figure>
+          <figure class="quote">
+            <p>“All the other pieces there stand beside it like playing cards.”</p>
+            <cite>Samuel van Hoogstraten, 1678, reporting what some said of the other paintings in the hall</cite>
+          </figure>
+          <figure class="source">
+            <div class="trio">
+              <div><img src="img/src-gheyn-load.jpg" width="480" height="673" loading="lazy" alt="A soldier seen from behind, reaching for a powder charge, his musket held low."><span class="caption">Loading</span></div>
+              <div><img src="img/src-gheyn-fire.jpg" width="480" height="628" loading="lazy" alt="A soldier firing a musket propped on a rest, smoke at the muzzle."><span class="caption">Firing</span></div>
+              <div><img src="img/src-gheyn-blow.jpg" width="480" height="687" loading="lazy" alt="A soldier holding his musket across his body and blowing on its pan."><span class="caption">Blowing the pan</span></div>
+            </div>
+            <figcaption>
+              <span class="source-title">Jacob de Gheyn, Wapenhandelinghe</span>
+              <span class="source-meta">Published 1607 · Engravings · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">Three plates from the drill book made under Prince Maurice's orders.</span>
+              <span class="source-credit">Public domain (CC0) · Wikimedia Commons, plates <a href="https://commons.wikimedia.org/wiki/File:Soldaat_die_kruit_in_de_loop_van_zijn_musket_giet_Wapenhandelinghe_van_Roers_Musquetten_ende_Spiessen_%28serietitel%29%2C_RP-P-OB-52.725.jpg" target="_blank" rel="noopener">1</a>, <a href="https://commons.wikimedia.org/wiki/File:Soldaat_die_zijn_musket%2C_steunend_op_zijn_furket%2C_afvuurt_Wapenhandelinghe_van_Roers_Musquetten_ende_Spiessen_%28serietitel%29%2C_RP-P-OB-52.713.jpg" target="_blank" rel="noopener">2</a>, <a href="https://commons.wikimedia.org/wiki/File:Soldaat_die_kruit_van_zijn_musket_blaast_Wapenhandelinghe_van_Roers_Musquetten_ende_Spiessen_%28serietitel%29%2C_RP-P-OB-52.721.jpg" target="_blank" rel="noopener">3</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-materials">A canvas for the great hall</h2>
+        <p class="evidence"><b>Evidence</b>Operation Night Watch: Broers and colleagues (2023) on the ground and the lead layer; De Keyser and colleagues (2024, 2025), Gabrieli and colleagues (2026) and Broers and colleagues (2026) on the pigments; the 1976 study by Van de Wetering, Groen and Mosk.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/ground.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a huge linen canvas of three sewn widths laced into a wooden strainer against a whitewashed wall, a man seen from behind brushing orange-brown oil over it in big curves.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: an oil containing lead brushed over the bare linen, in big semicircular strokes.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <div class="chapter-body">
+          <div class="prose">
+            <p>The canvas is far bigger than anything you have painted: three horizontal widths of medium-weight linen, sewn together, about four metres high and five across before it was cut down. It will hang on the long outer wall of the great hall.</p>
+            <p>Before any ground goes on, the bare linen is brushed with an oil containing lead, in big semicircular strokes; the X-ray fluorescence maps show them, with the imprint of the original stretcher. The 2023 study found no glue size beneath it, though a test in 1976 had suggested one. The Rijksmuseum's team proposed that the layer was meant to keep out the damp of that wall; it has not been seen in your other work or your contemporaries'.</p>
+            <p>Then the ground: not the red earth and grey you have used on canvas before, but a single, thick layer of quartz and clay, a drab grey-brown. This is its first known use; it may have been cheaper, lighter and easier to roll than the old double ground, though no document says why you changed. The same kind of ground has not been found in other Amsterdam workshops of the time.</p>
+          </div>
+          <aside class="aside">
+            <figure class="xsec">
+              <figcaption class="xsec-cap">The layers, as found · surface at top</figcaption>
+              <div class="xsec-rows">
+                <div class="layer"><span class="band" style="--c: var(--pg-paint); --h: 30px"></span><span class="layer-label"><b>Paint</b><span>one or two layers in the shadows; thick underpaint and colour in the lights</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-leadwhite); --h: 18px"></span><span class="layer-label"><b>Dead colour</b><span>whitish paint marking where the lights will be</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-chalk); --h: 12px"></span><span class="layer-label"><b>Sketch</b><span>beige paint, rich in chalk</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 34px"></span><span class="layer-label"><b>Ground</b><span>quartz and clay, grey-brown, up to 0.3 mm thick</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-lead); --h: 12px"></span><span class="layer-label"><b>Impregnation</b><span>oil containing lead, with red lead, in semicircles</span></span></div>
+                <div class="layer"><span class="band is-canvas" style="--h: 30px"></span><span class="layer-label"><b>Canvas</b><span>three widths of linen, sewn together</span></span></div>
+              </div>
+            </figure>
+          </aside>
+        </div>
+        <div class="prose">
+          <p class="prose-intro">Operation Night Watch mapped the elements over the whole canvas and sampled it in places. The swatches approximate each pigment's colour in oil; the cards say where it was found and how.</p>
+        </div>
+        <div class="pigments">
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-leadwhite)"></div>
+            <div class="pig-body">
+              <h4>Lead white</h4>
+              <p>Built up thick in the lights; in places mixed with chalk.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Underpaint of the lit figures; the relief of the lieutenant&#x27;s embroidery</dd></div>
+                <div><dt>Found</dt><dd>Samples, 1976 and since</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-leadtin)"></div>
+            <div class="pig-body">
+              <h4>Lead-tin yellow</h4>
+              <p>The lemon-coloured yellow of the lieutenant&#x27;s costume, type I.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Van Ruytenburch&#x27;s costume</dd></div>
+                <div><dt>Found</dt><dd>Imaging and samples, 2025</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-pararealgar)"></div>
+            <div class="pig-body">
+              <h4>Pararealgar</h4>
+              <p>An orange arsenic sulfide, partly glassy, perhaps made by heating. New to Rembrandt&#x27;s palette.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Embroidered borders and a sleeve of the lieutenant&#x27;s costume</dd></div>
+                <div><dt>Found</dt><dd>Samples, 2024</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: linear-gradient(90deg, var(--pg-ochre) 0 50%, var(--pg-redearth) 50%)"></div>
+            <div class="pig-body">
+              <h4>Yellow and red earths</h4>
+              <p>Yellow earth for most of the shadows; red earth only where the white sash throws its shadow.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Van Ruytenburch&#x27;s costume</dd></div>
+                <div><dt>Found</dt><dd>Imaging and samples, 2025</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-vermilion)"></div>
+            <div class="pig-body">
+              <h4>Vermilion</h4>
+              <p>The bright red of the captain&#x27;s sash and of the musket&#x27;s flame.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The sash, the red musketeer, the flame</dd></div>
+                <div><dt>Found</dt><dd>Imaging and samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-lake)"></div>
+            <div class="pig-body">
+              <h4>Red lake</h4>
+              <p>Made from insects, cochineal or kermes; glazed over vermilion or mixed with it.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The sash, the red musketeer, a boot</dd></div>
+                <div><dt>Found</dt><dd>Imaging and samples, 2026</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-smalt)"></div>
+            <div class="pig-body">
+              <h4>Smalt</h4>
+              <p>Ground cobalt glass, the most important blue in the painting, in the background and in the clothes. It browns with age.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Background, purple and blue clothes, a feather</dd></div>
+                <div><dt>Found</dt><dd>Samples, 1976; mapped since 2019</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-azurite)"></div>
+            <div class="pig-body">
+              <h4>Azurite</h4>
+              <p>A copper blue for the lighter blue details.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Tassels, cuffs and fringes; half-shadows of the sash</dd></div>
+                <div><dt>Found</dt><dd>Imaging, 2025</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-black)"></div>
+            <div class="pig-body">
+              <h4>Bone black</h4>
+              <p>Charred bone, rich in calcium and phosphorus, in the blacks and the deepest shadows.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Shadows; the lieutenant&#x27;s gorget</dd></div>
+                <div><dt>Found</dt><dd>Imaging and samples, 2025</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="sketch" aria-labelledby="h-sketch">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-sketch">Sketch on the ground, then dead colour</h2>
+        <p class="evidence"><b>Evidence</b>The Rijksmuseum&#x27;s announcement of December 2021 and Petria Noble (2025), from the calcium map made by MA-XRF; the 1976 study of samples taken after the knife attack; Lenders (2025) on the dog. The sketch&#x27;s lines are known only in part.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/painting.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a painter seen from behind on a low platform reaching up with a brush to a huge unfinished canvas of the militia company, the background painted and the front figures still pale.">
+        <figcaption><span class="tag">AI-generated</span>The canvas at stage 4 from the slider. You may have worked on a platform; nothing records it.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <figure class="stages" style="--stage-n: 4">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/01-ground.jpg" width="1000" height="789" loading="lazy" alt="AI reconstruction: A bare canvas with two faint horizontal seams under an even grey-brown ground.">
+              <figcaption><b>Ground</b>Grey-brown quartz and clay. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/02-sketch.jpg" width="1000" height="789" loading="lazy" alt="AI reconstruction: A loose sketch in beige and dark brown lines of the whole composition on the brown ground.">
+              <figcaption><b>Sketch</b>Beige chalky paint, some dark brown. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-deadcolour.jpg" width="1000" height="789" loading="lazy" alt="AI reconstruction: The composition laid in with whitish lights and brown and black darks, with no colour yet.">
+              <figcaption><b>Dead colour</b>Whitish lights, brown and black darks. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/04-company.jpg" width="1000" height="789" loading="lazy" alt="AI reconstruction: The background and the men behind painted; the figures in front still whitish underpaint.">
+              <figcaption><b>From the back</b>Background done, front in reserve. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Generated with Prodia from the finished painting, so the composition stays in register. They show plausible stages, not scans of the real layers.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li><h3>Sketch in chalky paint</h3><p>Brush the whole composition onto the brown ground in a beige paint rich in chalk, with some forms in dark brown. The calcium in it shows up in the X-ray fluorescence map, most clearly at the top, where only one layer of background paint covers it.</p></li>
+          <li><h3>Change as you go</h3><p>The sketch is close to the final picture, but not the same: there were feathers on Claes van Cruijsbergen's helmet, Rombout Kemp's leg stood differently, there are signs of another sword between the captain and the lieutenant, and more lances stuck up above the company.</p></li>
+          <li><h3>Mark the lights</h3><p>Brush in the light areas quickly in thick, whitish paint, sometimes well away from where the forms end up; the lieutenant is almost entirely white at this stage. This is the dead colouring the 1976 study found under collars, armour and boots. The chalky sketch already marks some lights, such as the dog's back, so sketch and dead colour may have been a single campaign.</p></li>
+          <li><h3>Let the ground work</h3><p>Leave the grey-brown ground bare wherever it can serve as shadow. It shows, for example, in the shadows of Rombout Kemp's pointing hand.</p></li>
+        </ol>
+        <div class="chapter-body">
+          <div class="prose">
+            <p>One place where the sketch can be seen with the naked eye is the dog at the lower right. Its thin top paint has worn away, and the chalky sketch beneath, with crusts of salts that formed in the paint itself, now gives it a pale, blanched look you did not intend. The sketch already drew the cleft of its skull and the light along its back.</p>
+            <p>In 2025 the Rijksmuseum identified the dog's model: a drawing of 1619 by Adriaen van de Venne for the title page of Jacob Cats's <i>Self-stryt</i>, with a small dog barking in the same pose. Your sketch first bent its right foreleg lower, closer to the drawing.</p>
+          </div>
+          <aside class="aside">
+            <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-dog.jpg" width="480" height="480" loading="lazy" alt="Close-up of a small pale dog barking, its outlines light and blurred against the dark floor.">
+                  <figcaption>The dog: the chalky sketch shows through worn paint.</figcaption>
+                </figure>
+            </div>
+          <figure class="source">
+            <img src="img/src-concord.jpg" width="1000" height="741" loading="lazy" alt="An unfinished oil sketch in browns and creams: a crowd of horsemen and soldiers before a city gate, a lion chained in the centre.">
+            <figcaption>
+              <span class="source-title">The Concord of the State</span>
+              <span class="source-meta">1637–45 · Oil on panel, 74.6 × 101 cm · Museum Boijmans Van Beuningen, Rotterdam</span>
+              <span class="source-note">Unfinished, in browns with the lights marked in cream. The 1976 study compares your first lay-in to it.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_The_Concord_of_the_State_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-venne.jpg" width="600" height="732" loading="lazy" alt="A pen drawing of Joseph standing in a palace hall, looking up; at lower left a small dog crouches and barks.">
+            <figcaption>
+              <span class="source-title">Adriaen van de Venne, design for the title page of Self-stryt</span>
+              <span class="source-meta">1619 · Pen and brown ink, grey wash · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">The source of your dog, at lower left, identified in 2025.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Ontwerp_voor_het_frontispice_van_Jacob_Cats%2C_Self-Strijt%2C_RP-T-1919-62.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-painting">Paint from the back to the front</h2>
+        <p class="evidence"><b>Evidence</b>Van de Wetering, Groen and Mosk (1976) and De Keyser and colleagues (2025) on the reserves; Gabrieli and colleagues (2021, 2026) on the reds. That the background came first is documented; the order of the three steps here is inferred.</p>
+      </header>
+      <div class="chapter-stack">
+        <p class="prose-intro">The X-rays show the ragged outlines of reserves left in the background for Banninck Cocq, for the leg of the firing musketeer and for the lances, and the lead map shows the lieutenant's silhouette kept free while the background went in. So the scene was worked up from the back to the front.</p>
+        <div class="paint-grid is-landscape">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with three numbered markers showing the order of work.">
+                <img src="img/stages/04-company.jpg" width="1000" height="789" loading="lazy" alt="" data-caption="After step 1: the company behind">
+                <img src="img/stages/05-captain.jpg" width="1000" height="789" loading="lazy" alt="" data-caption="After step 2: captain and lieutenant">
+                <img src="img/stages/06-finished.jpg" width="1000" height="789" loading="lazy" alt="" class="is-on" data-caption="After step 3: gold and gunfire">
+              </div>
+              <a class="marker" href="#company" data-target="company" style="--x: 46%; --y: 33%" aria-label="Step 1, The company behind">1</a>
+              <a class="marker" href="#captain" data-target="captain" style="--x: 58%; --y: 58%" aria-label="Step 2, Captain and lieutenant">2</a>
+              <a class="marker" href="#light" data-target="light" style="--x: 33%; --y: 64%" aria-label="Step 3, Gold and gunfire">3</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span aria-live="polite">After step 3: gold and gunfire</span></p>
+            <ol class="map-legend">
+              <li><a href="#company"><span class="dot">1</span>The company behind</a></li>
+              <li><a href="#captain"><span class="dot">2</span>Captain and lieutenant</a></li>
+              <li><a href="#light"><span class="dot">3</span>Gold and gunfire</a></li>
+            </ol>
+          </div>
+          <div class="steps">
+            <article class="step" id="company" aria-labelledby="h-company">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-company">The company behind</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/04-company.jpg" width="1000" height="789" loading="lazy" alt="AI reconstruction after step 1: Worked from the back of the scene to the front, with the figures in front left in reserve. The order of stages 4 to 6 is inferred from that.">
+                <figcaption>After step 1 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-back.jpg" width="480" height="480" loading="lazy" alt="Close-up of militiamen at the back: a young man in a steel helmet, a man in a tall hat, and below them the top of a black hat.">
+                  <figcaption>Faces at the back, in a few strokes.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Start with the architecture and the men at the back. Inside the arch one brownish-grey layer over the ground is enough; the lances get two reddish-brown layers and then a stroke of yellow where the light catches them, or black where it does not.</p>
+                  <p>Apart from the lit figures in front, Petria Noble writes, the paint here went on with great economy, in one or two layers, and the brown ground was left to do the work in the shadows.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-kemp.jpg" width="480" height="480" loading="lazy" alt="Close-up of an outstretched hand pointing to the left, its shadows the brown of the ground.">
+                  <figcaption>Rombout Kemp&#x27;s pointing hand: the ground left showing in the shadows.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="captain" aria-labelledby="h-captain">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-captain">Captain and lieutenant</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/05-captain.jpg" width="1000" height="789" loading="lazy" alt="AI reconstruction after step 2: Banninck Cocq in black with a red sash, Van Ruytenburch in pale yellow and gold, and the shadow of the captain&#x27;s hand on his lieutenant&#x27;s coat.">
+                <figcaption>After step 2 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-captain.jpg" width="480" height="480" loading="lazy" alt="Close-up of Frans Banninck Cocq: a pale face with a red beard and moustache under a black hat, a wide lace collar and a red sash.">
+                  <figcaption>Banninck Cocq, in black, lace and red.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Now the two men who lead the company. For the captain&#x27;s sash, lay down a layer of vermilion first, then model its folds with dark strokes of red lake.</p>
+                  <p>For the lieutenant, build up the embroidery in several layers of thick lead white, let them dry fully, and only then paint the gold over them in lead-tin yellow, ochres and an orange arsenic pigment, pararealgar.</p>
+                  <p>Plan the shadow that the captain&#x27;s hand throws across his lieutenant&#x27;s coat from the start; it is built of yellow earth, red-lake glazes and scumbles of bone black.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-hand.jpg" width="480" height="480" loading="lazy" alt="Close-up of the captain&#x27;s open hand reaching towards the lieutenant&#x27;s pale gold coat with its white sash and embroidered borders.">
+                  <figcaption>The captain&#x27;s hand, and his lieutenant&#x27;s coat.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="light" aria-labelledby="h-light">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-light">Gold and gunfire</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/06-finished.jpg" width="1000" height="789" loading="lazy" alt="AI reconstruction after step 3: The whole canvas as you left it. The four strips cut off in 1715 are reconstructed from Gerrit Lundens&#x27;s copy.">
+                <figcaption>After step 3 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-girl.jpg" width="480" height="480" loading="lazy" alt="Close-up of a small girl in a golden dress with a circlet in her fair hair, lit brightly against the dark.">
+                  <figcaption>The girl in gold.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Last, the figures the light picks out: the girl in gold, the musketeer in red loading his gun, a shot going off just behind the lieutenant&#x27;s hat, the drummer and the dog.</p>
+                  <p>The musketeer&#x27;s red is a mixture of vermilion and red lake; the flame of the shot is mostly vermilion with some red ochre.</p>
+                  <p>Sign on the step at lower left: “Rembrandt f 1642”.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 3">
+                <figure class="plate">
+                  <img src="img/detail-musketeer.jpg" width="480" height="480" loading="lazy" alt="Close-up of a musketeer in a red hat and red clothes holding the muzzle of his long gun.">
+                  <figcaption>Loading: the musketeer in red.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-flash.jpg" width="480" height="480" loading="lazy" alt="Close-up of the lieutenant&#x27;s broad-brimmed pale hat with a white plume and, behind it, a man firing a musket.">
+                  <figcaption>Firing, behind the lieutenant&#x27;s hat.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-signature.jpg" width="480" height="480" loading="lazy" alt="Close-up of the stone step with the faint signature Rembrandt f 1642.">
+                  <figcaption>The signature on the step.</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="cut" aria-labelledby="h-cut">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-cut">After you: cut to fit, 1715</h2>
+        <p class="evidence"><b>Evidence</b>The Rijksmuseum&#x27;s provenance record and its 2021 reconstruction, which measured the strips against Gerrit Lundens&#x27;s copy; the National Gallery, London, for the copy. The strips themselves are lost.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/cut.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: two workmen in brown eighteenth-century coats, seen from behind, kneeling on a panelled floor and cutting a strip off a huge unframed painting laid face up.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: the canvas cut down in the Town Hall. How and by whom is not recorded.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The painting hangs in the Kloveniersdoelen for some seventy years. In May 1715 the city orders it cleaned and moved to the Town Hall on the Dam, now the Royal Palace, to hang in the Small War Council chamber. The order says nothing about cutting, but it is cut down on all four sides; the earliest account, by the painter Jan van Dyk in 1758, says it was cut to fit between two doors.</p>
+          <p>By the Rijksmuseum's 2021 measurements, about 64 centimetres came off the left, 23 off the top, 11 off the bottom and 7 off the right. On the left you lose two militiamen and a child on a bridge, and the new edge runs through the man in armour. The strips have never been found.</p>
+          <p>The cut also moved the centre. With the strips in place, the captain and lieutenant stand to the right of the middle, with open floor before them to the left; today they are nearly central.</p>
+          <p>What was lost is known mainly from a small copy on panel, probably by Gerrit Lundens, painted in the 1640s while the canvas was still whole and probably made for Banninck Cocq himself. It is not exact: Lundens left out the shield of names and set one pikeman higher. A watercolour in Banninck Cocq's family album shows the same composition, but it was copied from Lundens's panel, not from the painting.</p>
+          <p>In 2021 the Rijksmuseum hung its own reconstruction of the strips, made with AI trained on the painting and the copy, around the painting for several months. Its images carry no open licence, so stage 6 here is an independent and rougher version.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source is-wide">
+            <img src="img/src-lundens.jpg" width="1000" height="784" loading="lazy" alt="A small, brighter copy of the whole militia painting, with more space at the left, where two men look over a parapet, and more above and below.">
+            <figcaption>
+              <span class="source-title">After Rembrandt, probably Gerrit Lundens</span>
+              <span class="source-meta">About 1642–49 · Oil on panel, 66.5 × 85.5 cm · National Gallery, London, on loan to the Rijksmuseum</span>
+              <span class="source-note">The best record of the composition before 1715. It hangs beside the painting.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Lundens_-_Nachtwache-Kopie.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-album.jpg" width="600" height="478" loading="lazy" alt="A small monochrome reproduction of a drawn copy of the whole militia painting, including the figures at the left.">
+            <figcaption>
+              <span class="source-title">Attributed to Jacob Colijn, copy in Banninck Cocq&#x27;s family album</span>
+              <span class="source-meta">About 1653–55 · Charcoal and watercolour, 14 × 18 cm · Rijksmuseum, on loan from the De Graeff family</span>
+              <span class="source-note">Copied from Lundens&#x27;s panel. Shown from an old black-and-white reproduction.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Family_album_of_Frans_Banninck_Cocq%2C_drawing_of_%27The_Night_Watch%27.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-edge.jpg" width="480" height="480" loading="lazy" alt="Close-up of the left edge: a man in a gilded helmet and dark armour, cut off by the edge of the canvas.">
+                  <figcaption>The 1715 cut runs through the man in armour.</figcaption>
+                </figure>
+          </div>
+          <figure class="source">
+            <img src="img/src-townhall.jpg" width="1000" height="834" loading="lazy" alt="A painting of a broad square with a classical town hall crowned by a domed tower, people and carts in front.">
+            <figcaption>
+              <span class="source-title">Gerrit Berckheyde, The Town Hall on the Dam</span>
+              <span class="source-meta">1693 · Oil on canvas · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">The Town Hall, where the painting went in 1715.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Het_stadhuis_op_de_Dam_te_Amsterdam._SK-C-101.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="night" aria-labelledby="h-night">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-night">How it became the Night Watch</h2>
+        <p class="evidence"><b>Evidence</b>The restorers&#x27; reports of 1976 and the account of the treatments by Woltman and colleagues (2024), who count at least 31; the Rijksmuseum&#x27;s history of the painting; press and museum accounts of the attacks; Raven and colleagues (2026) on the acid attack.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Varnish goes on, comes off and goes on again: the museum's conservators count at least 31 treatments. Layer by layer it browns. The Rijksmuseum calls the scene a march by daylight, but in 1797 a document calls it <i>The Night Watch</i>, and the name sticks; the darkened varnish is the usual explanation.</p>
+          <p>In 1851 it gets its first lining with wax and resin, but the thick old varnish is left on and, later, repeatedly “regenerated” with alcohol vapour. When war comes in 1939, the painting is rolled up and evacuated, first to bunkers near the coast and from 1942 to a vault in the Sint-Pietersberg caves near Maastricht. After the war it is lined again and part of the old varnish is removed.</p>
+          <p>Three attacks follow. In 1911 a man slashes it with a shoemaker's knife, but only the varnish is scratched. On 14 September 1975 a man attacks it with a knife, making twelve cuts, mainly in and around the captain and the lieutenant, and cutting a triangle of canvas out of the captain's breeches. It is restored in a little more than eight months, lined again and varnished with dammar and a little poppy-seed oil, and is back on show on 3 June 1976.</p>
+          <p>On 6 April 1990 a man sprays concentrated sulphuric acid over an area of about 79 by 52 centimetres, across the face of the red musketeer and part of the shield. Guards spray it with water at once. Only the varnish seemed affected, and it was renewed; a study published in 2026 expects some damage to the paint to show once the varnish is off.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-cave1945.jpg" width="600" height="607" loading="lazy" alt="A black-and-white photograph of a huge rolled canvas held on a wooden frame inside a crate, in a store room cut into rock.">
+            <figcaption>
+              <span class="source-title">Rolled up in the Sint-Pietersberg</span>
+              <span class="source-meta">27 July 1945 · Photograph · Anefo, Nationaal Archief</span>
+              <span class="source-note">The painting in its crate in the cave near Maastricht, just before it went home.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Dit_is_de_Nachtwacht%2C_Rembrandts_fameuze_schilderij%2C_opgerold_in_een_soort_kis%2C_Bestanddeelnr_900-2433.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <ol class="timeline" aria-label="Timeline">
+            <li><span class="t-year">About 1697</span><span>Boiled oil is probably rubbed into the back of the canvas.</span></li>
+            <li><span class="t-year">1715</span><span>Cleaned, moved to the Town Hall and cut down.</span></li>
+            <li><span class="t-year">1751–52</span><span>Cleaned by Jan van Dijk; his oil and varnishes later make it look tarred over.</span></li>
+            <li class="is-key"><span class="t-year">1797</span><span>First called <i>The Night Watch</i> in a document.</span></li>
+            <li><span class="t-year">1808</span><span>To the Trippenhuis on the Kloveniersburgwal.</span></li>
+            <li><span class="t-year">1851</span><span>First wax-resin lining; the thick varnish is left on.</span></li>
+            <li><span class="t-year">1885</span><span>Hung in the new Rijksmuseum.</span></li>
+            <li><span class="t-year">1911</span><span>Slashed with a shoemaker's knife; only the varnish is scratched.</span></li>
+            <li><span class="t-year">1939–45</span><span>Rolled and evacuated; from 1942 in a cave near Maastricht.</span></li>
+            <li><span class="t-year">1945–47</span><span>Lined again; part of the old varnish removed.</span></li>
+            <li class="is-key"><span class="t-year">1975</span><span>Twelve knife cuts on 14 September; back on show on 3 June 1976.</span></li>
+            <li><span class="t-year">1990</span><span>Sprayed with sulphuric acid on 6 April.</span></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="research" aria-labelledby="h-research">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IX</p>
+        <h2 id="h-research">Operation Night Watch</h2>
+        <p class="evidence"><b>Evidence</b>The Rijksmuseum&#x27;s announcements and research pages, 2019–2026, and the papers listed under Sources. The treatment is still in progress.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>On 8 July 2019 the Rijksmuseum begins the largest study ever made of the painting, in a glass room in the Gallery of Honour so that visitors can watch. Scientists, conservators and photographers scan every square centimetre: element maps by X-ray fluorescence, reflectance images from visible light to infrared, X-ray diffraction, 3D scans of the surface and photographs at 5 micrometres to the pixel.</p>
+          <p>The scans found the chalk sketch, the lead-containing layer under the ground, a new arsenic pigment and much else in this guide. They also showed what time has done: lead soaps, white crusts and hazes, browned smalt, worn passages such as the dog, and in places remnants of old varnish full of salts that earlier restorations left behind.</p>
+          <p>In 2022 the canvas went onto a new aluminium stretcher with springs, to even out the tension that had rippled its upper left corner. At the end of that year the museum decided on a full treatment: take off the varnish and old retouchings, fill and retouch again, and varnish anew. The varnish removal began at the end of 2024, section by section, with the last traces taken off under the microscope, and as of the Rijksmuseum's 2026 programme it is still under way, with no end date announced. The dog will not be repainted.</p>
+          <p>The project's maps of the elements and its infrared images are published as open data under a CC BY 4.0 licence, including the calcium map that shows the sketch. This guide uses only public-domain images, so it links to them under Sources instead of reproducing them.</p>
+          <div class="note">
+            <h3 class="note-title">What is still not known</h3>
+            <p>Where you painted a canvas this size: in 2025 a curator at the Rembrandt House suggested a room at the back of your house, but nothing documents it. How long it took: at least a year, the Rijksmuseum thinks. The exact size before 1715, since the published measurements do not quite agree, and what the lost strips showed beyond what the copies record. When the shield of names was added. Whether the chalky sketch and the whitish dead colour were one campaign or two.</p>
+          </div>
+        </div>
+        <aside class="aside" aria-label="Timeline">
+          <ol class="timeline" aria-label="Timeline">
+            <li class="is-key"><span class="t-year">July 2019</span><span>Research begins in a glass room in the Gallery of Honour.</span></li>
+            <li><span class="t-year">2019–20</span><span>56 X-ray fluorescence scans of about a day each; reflectance imaging; 3D scans.</span></li>
+            <li><span class="t-year">Dec. 2021</span><span>The chalk sketch under the paint is announced.</span></li>
+            <li><span class="t-year">Jan. 2022</span><span>A 717-gigapixel photograph is published, 5 micrometres to a pixel.</span></li>
+            <li><span class="t-year">Jan.–Apr. 2022</span><span>New aluminium stretcher with springs; ripples in the upper left eased.</span></li>
+            <li><span class="t-year">Dec. 2022</span><span>Decision to remove the old varnish and retouchings.</span></li>
+            <li><span class="t-year">Dec. 2023</span><span>The lead-containing layer under the ground is reported.</span></li>
+            <li class="is-key"><span class="t-year">2024</span><span>Pararealgar reported; varnish removal begins at the end of the year.</span></li>
+            <li><span class="t-year">2025–26</span><span>The dog's model, the lieutenant's costume, smalt and the red lakes published.</span></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Rembrandt thought</h2>
+      <ul class="principles">
+        <li><em>Make the portrait an event.</em> A company setting off, not rows of men posing.</li>
+        <li><em>Let the light choose.</em> A few figures in full light, the rest half lost in shadow.</li>
+        <li><em>Sketch on the canvas, change on the canvas.</em> A chalky sketch on the ground, and changes made from it as you painted.</li>
+        <li><em>Work from the back.</em> Background first, the figures in front left in reserve until last.</li>
+        <li><em>Build the lights.</em> Thick lead white first for the relief, colour and gold on top.</li>
+        <li><em>Think of the wall.</em> A canvas brushed with lead before the ground, perhaps against the damp of the hall it was made for.</li>
+      </ul>
+    </section>
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://www.rijksmuseum.nl/en/collection/SK-C-5" target="_blank" rel="noopener">Rijksmuseum: The Night Watch, collection record</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/whats-on/exhibitions/operation-night-watch" target="_blank" rel="noopener">Rijksmuseum: Operation Night Watch</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/stories/10-things/story/10-things-about-rembrandt-s-night-watch" target="_blank" rel="noopener">Rijksmuseum: 10 things about Rembrandt&#x27;s Night Watch</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/stories/operation-night-watch/story/why-is-the-night-watch-so-famous" target="_blank" rel="noopener">Rijksmuseum: “Why is the Night Watch so famous?”</a></li>
+        <li><a href="https://www.nationalgallery.org.uk/paintings/NG289" target="_blank" rel="noopener">National Gallery, London: the copy after The Night Watch (NG289)</a></li>
+        <li><a href="https://bulletin.rijksmuseum.nl/article/view/9684" target="_blank" rel="noopener">H. Stoop-De Meester, “Gerrit Lundens, His Copy after The Night Watch and the Derivatives in His Oeuvre”, The Rijksmuseum Bulletin 68 (2020)</a></li>
+        <li><a href="https://jhna.org/articles/paintings-three-civic-guard-halls-amsterdam-written-by-g-schaep-1653/" target="_blank" rel="noopener">Gerard Schaep&#x27;s 1653 description of the paintings in Amsterdam&#x27;s three civic guard halls, translated by Tom van der Molen, Journal of Historians of Netherlandish Art 5:1 (2013)</a></li>
+        <li><a href="https://jhna.org/articles/amsterdam-civic-guard-portraits-within-outside-new-rijksmuseum-part-ii/" target="_blank" rel="noopener">D. C. Meijer (1886) on the civic guard portraits, with Jan van Dyk&#x27;s account of 1758, translated in Journal of Historians of Netherlandish Art 5:1 (2013)</a></li>
+        <li><a href="https://www.dbnl.org/tekst/_onz021191601/_onz021191601_01_0007.php" target="_blank" rel="noopener">F. Schmidt-Degener, “Het genetische probleem van de Nachtwacht”, Onze Kunst 15 (1916), on the payment and the album caption</a></li>
+        <li><a href="https://www.dbnl.org/tekst/hoog006inle01_01/hoog006inle01_01_0053.php" target="_blank" rel="noopener">Samuel van Hoogstraten, Inleyding tot de hooge schoole der schilderkonst (1678), p. 176</a></li>
+        <li><a href="https://dbnl.org/tekst/_taa008195401_01/_taa008195401_01_0078.php" target="_blank" rel="noopener">G. Kamphuis, review of Seymour Slive, Rembrandt and His Critics 1630–1730 (1953), De Nieuwe Taalgids 47 (1954)</a></li>
+        <li><a href="https://webpresentations.universiteitleiden.nl/s/Rembrandt/item/945" target="_blank" rel="noopener">Leiden University: Jan Orlers&#x27;s description of Leiden (1641), on your training</a></li>
+        <li><a href="https://www.boijmans.nl/en/collection/artworks/2693/the-concord-of-the-state" target="_blank" rel="noopener">Museum Boijmans Van Beuningen: The Concord of the State</a></li>
+        <li><a href="https://nltimes.nl/2025/02/25/new-research-reveals-rembrandt-paint-night-watch-outdoors" target="_blank" rel="noopener">NL Times (25 February 2025), on where the painting may have been made</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again" target="_blank" rel="noopener">Rijksmuseum: “For the first time in 300 years, The Night Watch is complete again” (23 June 2021)</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/press/press-releases/preparatory-sketch-discovered-beneath-the-night-watch" target="_blank" rel="noopener">Rijksmuseum: “Preparatory sketch discovered beneath The Night Watch” (7 December 2021)</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/press/press-releases/rembrandt-used-a-lead-containing-layer-to-protect-the-night-watch-from-moisture" target="_blank" rel="noopener">Rijksmuseum: the lead-containing layer (14 December 2023)</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/press/press-releases/restoration-begins-of-rembrandt-s-the-night-watch" target="_blank" rel="noopener">Rijksmuseum: “Restoration begins of Rembrandt&#x27;s The Night Watch” (12 November 2024)</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/press/press-releases/original-drawing-of-the-dog-in-the-night-watch-discovered" target="_blank" rel="noopener">Rijksmuseum: the drawing of the dog (17 September 2025)</a></li>
+        <li><a href="https://bulletin.rijksmuseum.nl/article/view/20958" target="_blank" rel="noopener">E. van de Wetering, C. M. Groen and J. A. Mosk, “Summary report on the results of the technical examination of Rembrandt&#x27;s Night Watch”, Bulletin van het Rijksmuseum 24 (1976)</a></li>
+        <li><a href="https://bulletin.rijksmuseum.nl/article/view/20956" target="_blank" rel="noopener">L. Kuiper and W. Hesterman, “Report on the restoration of the Night Watch”, Bulletin van het Rijksmuseum 24 (1976)</a></li>
+        <li><a href="https://doi.org/10.1126/sciadv.adj9394" target="_blank" rel="noopener">F. T. H. Broers and colleagues, on the lead-containing layer and the ground, Science Advances 9 (2023)</a></li>
+        <li><a href="https://doi.org/10.1186/s40494-024-01350-x" target="_blank" rel="noopener">N. De Keyser and colleagues, on the arsenic sulfide pigments, Heritage Science 12 (2024)</a></li>
+        <li><a href="https://doi.org/10.1038/s40494-025-01874-w" target="_blank" rel="noopener">N. De Keyser and colleagues, on the painting of Van Ruytenburch&#x27;s costume, npj Heritage Science 13 (2025)</a></li>
+        <li><a href="https://doi.org/10.1038/s40494-026-02569-6" target="_blank" rel="noopener">F. Gabrieli and colleagues, on the red lakes, npj Heritage Science 14 (2026)</a></li>
+        <li><a href="https://doi.org/10.1021/acs.analchem.5c07178" target="_blank" rel="noopener">F. T. H. Broers and colleagues, on smalt, Analytical Chemistry 98 (2026)</a></li>
+        <li><a href="https://doi.org/10.3390/s21206855" target="_blank" rel="noopener">F. Gabrieli and colleagues, reflectance imaging spectroscopy of The Night Watch, Sensors 21 (2021)</a></li>
+        <li><a href="https://doi.org/10.5092/jhna.2025.17.2.5" target="_blank" rel="noopener">P. Noble, “The Role of the Colored Ground in Rembrandt&#x27;s Painting Practice”, Journal of Historians of Netherlandish Art 17:2 (2025)</a></li>
+        <li><a href="https://doi.org/10.52476/trb.24705" target="_blank" rel="noopener">Lenders, on the dog in The Night Watch, The Rijksmuseum Bulletin 73 (2025)</a></li>
+        <li><a href="https://doi.org/10.1038/s40494-025-02215-7" target="_blank" rel="noopener">Maraghechi and colleagues, on the canvas and its linings, npj Heritage Science (2025)</a></li>
+        <li><a href="https://doi.org/10.1038/s40494-025-02233-5" target="_blank" rel="noopener">Raven and colleagues, on the 1990 acid attack, npj Heritage Science 14 (2026)</a></li>
+        <li><a href="https://www.nasjonalmuseet.no/globalassets/9781916642041-btg-online.pdf" target="_blank" rel="noopener">Woltman and colleagues, on the treatment decision, in Bridging the Gap (Archetype, 2024)</a></li>
+        <li><a href="https://doi.org/10.82382/RIJKS_RD/MAB9PV" target="_blank" rel="noopener">Rijksmuseum Research Data: MA-XRF element maps of The Night Watch (CC BY 4.0, 2026)</a></li>
+        <li><a href="https://doi.org/10.82382/RIJKS_RD/Y0FDLX" target="_blank" rel="noopener">Rijksmuseum Research Data: infrared reflectance images of The Night Watch (CC BY 4.0, 2026)</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="colophon">
+    <p>Images: Rembrandt's paintings, the copy after the painting, the album watercolour (from an old black-and-white reproduction), Van der Helst's militia piece, De Gheyn's prints, Webber's view of the Kloveniersdoelen, Berckheyde's Town Hall and Van de Venne's drawing are in the public domain, from Wikimedia Commons; the 1945 photograph is an Anefo press photograph released into the public domain by the Nationaal Archief. The close-ups, the card and the thumbnail are cut from the Rijksmuseum's public-domain photograph of the painting; the close-up of the shield is brightened to show the names. The stage reconstructions and the five chapter scenes were generated with Prodia (Gemini 3 Pro Image, with SAM 3 to separate the figures), using the painting and, for the strips cut off in 1715, the copy as references. Stages 4 and 5 combine generated layers with regions of the real painting; stage 6 is the real painting with generated strips; stages 7 and 9 are the painting itself, with the lost strips left blank or shown faded. The reconstructions show plausible appearances, not documented ones. Pigment colours are approximate. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paris Street; Rainy Day, Pinned and Ruled</title>
+<meta name="description" content="A step-by-step reconstruction of how Caillebotte painted Paris Street; Rainy Day in 1877, from a pencil sketch made at the corner and pins at the vanishing points to the figures he added last, with AI-generated reconstructions of each stage.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="Paris Street; Rainy Day, Pinned and Ruled">
+<meta property="og:description" content="A step-by-step reconstruction of how Caillebotte painted Paris Street; Rainy Day in 1877, from a pencil sketch made at the corner and pins at the vanishing points to the figures he added last, with AI-generated reconstructions of each stage.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/caillebotte/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/caillebotte/img/stages/07-final.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+:root {
+  --bg: #E6E8EA; --surface: #F3F4F5; --ink: #1B1E22; --muted: #50565E; --rule: #CDD1D6; --rule-strong: #9AA1A9;
+  --accent: #26614F; --accent-2: #9A3F2C; --frame: #1A1D21; --frame-edge: #3A4048;
+  --pg-leadwhite: #EEEAE0; --pg-zincwhite: #F6F6F2; --pg-cobalt: #2457B5; --pg-ultramarine: #2B48A3; --pg-cerulean: #3A86C2;
+  --pg-emerald: #3BAA74; --pg-viridian: #1F7A64; --pg-cadmium: #F2C230; --pg-naples: #F1D486; --pg-ochre: #C99A45;
+  --pg-redoxide: #9E4B2E; --pg-vermilion: #D0402E; --pg-madder: #B23A5B;
+  --pg-canvas: #C9B48F; --pg-canvas-dark: #A8946E; --pg-ground: #EDE9DE; --pg-charcoal: #3A3836; --pg-paint: #A9B1BA;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171A; --surface: #1B1F23; --ink: #E9ECEF; --muted: #A7AEB6; --rule: #2B3036; --rule-strong: #46505A;
+    --accent: #6FC2A6; --accent-2: #E59A80; --frame: #0B0D0F; --frame-edge: #3A4048; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171A; --surface: #1B1F23; --ink: #E9ECEF; --muted: #A7AEB6; --rule: #2B3036; --rule-strong: #46505A;
+  --accent: #6FC2A6; --accent-2: #E59A80; --frame: #0B0D0F; --frame-edge: #3A4048; color-scheme: dark;
+}
+.site-plan .ground { fill: var(--rule); }
+.site-plan .street { stroke: var(--bg); stroke-width: 17; stroke-linecap: butt; fill: none; }
+.site-plan .view { fill: var(--accent); fill-opacity: 0.16; stroke: var(--accent); stroke-width: 1.2; stroke-dasharray: 4 3; }
+.site-plan .me { fill: var(--accent); }
+.site-plan .prow { fill: var(--accent-2); fill-opacity: 0.7; }
+.site-plan .north { stroke: var(--ink); stroke-width: 1.4; fill: none; }
+.site-plan .note { fill: var(--muted); }
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <nav class="series-nav" aria-label="Works in the series" style="--works: 9">
+      <a href="../raphael/"><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens</span></a>
+      <a href="../el-greco/"><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross</span></a>
+      <a href="../rembrandt/"><img src="../rembrandt/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Rembrandt</span><span class="sn-title">The Night Watch</span></a>
+      <a href="../vermeer/"><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring</span></a>
+      <a href="../monet/"><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise</span></a>
+      <a href="../caillebotte/" aria-current="page"><img src="../caillebotte/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Caillebotte</span><span class="sn-title">Paris Street; Rainy Day</span></a>
+      <a href="../manet/"><img src="../manet/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Manet</span><span class="sn-title">A Bar at the Folies-Bergère</span></a>
+      <a href="../van-gogh/"><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night</span></a>
+      <a href="../toulouse-lautrec/"><img src="../toulouse-lautrec/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Toulouse-Lautrec</span><span class="sn-title">At the Moulin Rouge</span></a>
+    </nav>
+  </div>
+</header>
+<div class="page">
+  <header class="hero is-landscape">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Paris, 1877</p>
+      <h1>Paris Street; Rainy Day, <em>pinned and ruled</em></h1>
+      <p class="lede">Imagine you are Gustave Caillebotte, twenty-eight and rich, helping to stage the Impressionists&#x27; third exhibition, with a crossroads near your home to paint nearly three metres wide. This guide follows what your process would have been, from a pencil sketch made at the corner to pins pushed into the canvas at the vanishing points, and the figures you added last.</p>
+      <p class="basis">The Art Institute of Chicago studied the painting when it was cleaned in 2013–14: the pinholes, the ruled underdrawing and many late changes come from that study. The perspective drawing and an oil sketch survive. The order of the middle stages is inferred. Each chapter opens with a note on what its evidence is. The slider steps through seven stages; stages 1 to 6 are reconstructions.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="Late additions. A rainy Paris crossroads: a couple under a grey umbrella walk towards you on a narrow pavement, a man at the right edge is seen from behind, a green lamp post stands in the centre, and across the wet paving stones rises a wedge-shaped block of new apartment buildings.">
+            <img src="img/stages/01-canvas.jpg" width="1000" height="776" alt="" data-name="Primed linen" data-note="A length of linen from a commercially primed roll, off-white: lead white with barite. The roll&#x27;s width, about 2.1 m, set the picture&#x27;s height. The Art Institute thinks you worked on it tacked to a wall.">
+            <img src="img/stages/02-armature.jpg" width="1000" height="776" alt="" data-name="Borders, horizon, pins" data-note="Black painted lines mark the sides, with the lamp post&#x27;s place at the centre; a horizon in thin dark paint and an earlier one 3.5 cm higher; pins at the vanishing points; ruled lines for the façades and the paving. Positions approximate.">
+            <img src="img/stages/03-drawing.jpg" width="1000" height="776" alt="" data-name="Drawing" data-note="Charcoal outlines of every building and figure over the ruled lines; a faint blue line may mark a first place for the lamp post. The man at the right edge, the two women by the lamp post and the carriage are not there yet. The details are invented.">
+            <img src="img/stages/04-layin.jpg" width="1000" height="776" alt="" data-name="Around the figures" data-note="Sky, façades and street laid in, each paving stone outlined in dark paint; the figures and the lamp post left as bare canvas. The order of stages 4 to 6 is inferred.">
+            <img src="img/stages/05-street.jpg" width="1000" height="776" alt="" data-name="The street" data-note="Façades, stones and passers-by worked up around the couple, who are blocked in with a thin black wash. The lamp post still leans slightly to the left.">
+            <img src="img/stages/06-couple.jpg" width="1000" height="776" alt="" data-name="The couple" data-note="The couple painted and repainted. Still no man at the right edge, no women by the lamp post and no carriage, and the picture is unsigned.">
+            <img src="img/stages/07-final.jpg" width="1000" height="776" class="is-on" fetchpriority="high" alt="" data-name="Late additions" data-note="The man at the right edge, the two women, the carriage and a small figure added; the lamp post straightened; a warmer tone in the sky; signed. This is the painting today.">
+          </div>
+        </div>
+        <span class="dim dim-h" aria-hidden="true"><span>212 cm</span></span>
+        <span class="dim dim-w" aria-hidden="true"><span>276 cm</span></span>
+      </div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name">Late additions</p>
+          <span class="scrub-count">Stage 7 of 7</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" min="0" max="6" step="1" value="6" aria-label="Stage of the work" aria-valuetext="Stage 7, Late additions">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note">The man at the right edge, the two women, the carriage and a small figure added; the lamp post straightened; a warmer tone in the sky; signed. This is the painting today.</p>
+      </div>
+      <figcaption>Gustave Caillebotte, <i>Paris Street; Rainy Day</i> (<i>Rue de Paris, temps de pluie</i>), 1877. Oil on canvas, 212.2 × 276.2 cm. Art Institute of Chicago, Charles H. and Mary F. S. Worcester Collection. <span class="tag">AI-generated</span> Stages 1 to 4 are reconstructions made with Prodia from this painting; stages 5 and 6 are the painting with parts removed with Prodia or reworked. The pins and lines in stage 2 are placed from the technical study, approximately.</figcaption>
+    </figure>
+  </header>
+  <nav class="toc" aria-label="Chapters" style="--toc-n: 9">
+    <ol>
+      <li><a href="#training"><span class="toc-num">I</span><span class="toc-name">Training</span></a></li>
+      <li><a href="#crossroads"><span class="toc-num">II</span><span class="toc-name">Crossroads</span></a></li>
+      <li><a href="#spot"><span class="toc-num">III</span><span class="toc-name">On the spot</span></a></li>
+      <li><a href="#studies"><span class="toc-num">IV</span><span class="toc-name">Studies</span></a></li>
+      <li><a href="#materials"><span class="toc-num">V</span><span class="toc-name">Materials</span></a></li>
+      <li><a href="#layout"><span class="toc-num">VI</span><span class="toc-name">Layout</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VII</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#exhibition"><span class="toc-num">VIII</span><span class="toc-name">Exhibition</span></a></li>
+      <li><a href="#time"><span class="toc-num">IX</span><span class="toc-name">Time</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="chapter" id="training" aria-labelledby="h-training">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-training">Your training</h2>
+        <p class="evidence"><b>Evidence</b>Berhaut&#x27;s catalogues raisonnés (1978 and 1994), which cite the École&#x27;s register and the family&#x27;s property records, and the Getty&#x27;s 2025 exhibition texts.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are Gustave Caillebotte, born in Paris in 1848. Your father made a fortune supplying beds to the army, sat as a judge of the commercial court, and built the family a house at 77 rue de Miromesnil with an artist's studio under the roof. Summers are spent at the family estate at Yerres.</p>
+          <p>You took a law degree in 1870 and served in the Garde mobile in the war with Prussia. Soon after, you entered the studio of the painter Léon Bonnat, and in March 1873 you passed the entrance examination of the École des Beaux-Arts, 46th on the list. The École's records show no competitions entered: you hardly attended.</p>
+          <p>Your father died at Christmas 1874 and left you rich. In 1875 the Salon jury refused your <i>Floor Scrapers</i>, and in 1876 you showed it with the Impressionists instead. That November your brother René died. Two days later you wrote a will leaving your collection of your friends' paintings to the State, and money for an Impressionist exhibition in 1878.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-photo.jpg" width="600" height="683" loading="lazy" alt="A photograph of a young man with close-cropped hair and a short beard, in a dark coat.">
+            <figcaption>
+              <span class="source-title">Gustave Caillebotte</span>
+              <span class="source-meta">About 1878 · Photograph · Private collection</span>
+              <span class="source-note">You, at about thirty.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_photo_c1878.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-raboteurs.jpg" width="1000" height="703" loading="lazy" alt="Three shirtless men on their knees scraping a wooden floor in an empty room with a wrought-iron balcony window.">
+            <figcaption>
+              <span class="source-title">The Floor Scrapers</span>
+              <span class="source-meta">1875 · Oil on canvas · Musée d&#x27;Orsay, Paris</span>
+              <span class="source-note">Refused by the Salon jury in 1875; shown at the second Impressionist exhibition in 1876.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_-_The_Floor_Planers_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="crossroads" aria-labelledby="h-crossroads">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-crossroads">Choose the crossroads</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute&#x27;s 2015 catalogue entry, Berhaut, 1877 reviews that name the streets, and the city of Paris on the history of the quarter. Your exact viewpoint is a reconstruction.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/crossroads.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a wide crossroads of new cream stone apartment buildings with iron balconies and a wedge-shaped corner building, wet paving stones, a green gas lamp post, a cab and a few people under umbrellas seen from behind.">
+        <figcaption><span class="tag">AI-generated</span>A crossroads in the quartier de l&#x27;Europe on a wet day, as it might have looked in 1877.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Ten minutes' walk from your house, in the quartier de l'Europe, where the streets are named after European cities, the rues de Turin, de Moscou and de Saint-Pétersbourg cross in an open, shapeless space, and the rue Clapeyron sets off from it. It is known as the carrefour de la rue de Moscou; it became the place de Dublin only in 1987. Private developers laid the quarter out from 1826, and its last buildings were still going up in your youth, as the rue de Turin was extended and the rue Clapeyron cut through.</p>
+          <p>You pass it on your way to the cafés. Stand on the pavement of the rue de Turin, near the curb, and look across: the rue de Moscou goes off to the left, the rue Clapeyron straight ahead behind a lamp post, and between them rises a new wedge of apartments with a pharmacy at its point.</p>
+          <p>In 1876 you painted the Pont de l'Europe, a few hundred metres away, over the tracks into the Gare Saint-Lazare. Before settling on this crossing you had also drawn one at the rue de Madrid, and dropped it.</p>
+          <dl class="decisions">
+            <div class="decision"><dt>An ordinary corner</dt><dd>No monument, and a title that means only “a Paris street”.</dd></div>
+            <div class="decision"><dt>Life size</dt><dd>Figures as large as the people looking at them, on a canvas nearly three metres wide.</dd></div>
+            <div class="decision"><dt>Leave things out</dt><dd>No shop windows, kiosks or advertising columns, as the Art Institute notes; one lamp post in the middle.</dd></div>
+          </dl>
+        </div>
+        <aside class="aside">
+          <figure class="plan-figure">
+            <svg class="plan site-plan" viewBox="0 0 400 300" role="img" aria-labelledby="site-t site-d">
+              <title id="site-t">The crossing seen from above, north at the top</title>
+              <desc id="site-d">Four streets meet in an open crossing. You stand on the pavement of the rue de Turin, south of the crossing, and look north-west across it: the rue de Moscou goes off to the left, the rue Clapeyron straight ahead, the rue de Turin continues to the right, and the wedge of the pharmacy building stands between the rue de Moscou and the rue Clapeyron. The rue de Saint-Pétersbourg crosses behind you towards the place de l'Europe.</desc>
+              <rect x="0" y="0" width="400" height="300" class="ground"/>
+              <line x1="205" y1="150" x2="293.9" y2="394.3" class="street"/>
+              <line x1="205" y1="150" x2="164.3" y2="-106.8" class="street"/>
+              <line x1="205" y1="150" x2="404.2" y2="317.1" class="street"/>
+              <line x1="205" y1="150" x2="-5.3" y2="-2.8" class="street"/>
+              <line x1="205" y1="150" x2="335.0" y2="-75.2" class="street"/>
+              <line x1="205" y1="150" x2="103.4" y2="389.3" class="street"/>
+              <line x1="205" y1="150" x2="87.0" y2="-81.7" class="street"/>
+              <polygon points="240.2,211.7 113.0,132.2 235.0,61.8" class="view"/>
+              <polygon points="178.6,119.1 113.5,71.8 142.1,47.4" class="prow"/>
+              <circle cx="240.2" cy="211.7" r="5.5" class="me"/>
+              <text x="250.2" y="225.7">You</text>
+              <text x="80" y="102">Pharmacy</text>
+              <text x="14" y="62">rue de Moscou</text>
+              <text x="300" y="268">rue de Moscou</text>
+              <text x="60" y="20">rue Clapeyron</text>
+              <text x="176" y="34">rue de Turin</text>
+              <text x="260" y="292">rue de Turin</text>
+              <text x="262" y="66">rue de Saint-</text>
+              <text x="262" y="79">Pétersbourg</text>
+              <text x="14" y="257" class="note">to the place</text>
+              <text x="14" y="270" class="note">de l'Europe,</text>
+              <text x="14" y="283" class="note">220 m</text>
+              <path d="M374 44 V18 M367 27 L374 17 L381 27" class="north"/>
+              <text x="370" y="58">N</text>
+            </svg>
+            <figcaption class="caption"><span class="tag">Inferred</span>Street directions from OpenStreetMap (© OpenStreetMap contributors, ODbL). Your position and the 56° angle of view are approximate.</figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-pont.jpg" width="1000" height="736" loading="lazy" alt="A man and a woman walk across an iron bridge with huge diagonal girders, a worker leaning on the railing, a dog in front.">
+            <figcaption>
+              <span class="source-title">Le Pont de l&#x27;Europe</span>
+              <span class="source-meta">1876 · Oil on canvas · Petit Palais, Geneva</span>
+              <span class="source-note">Your other big street picture of the quarter, shown with this one in 1877.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:G._Caillebotte_-_Le_pont_de_l%27Europe.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-reverbere.jpg" width="600" height="942" loading="lazy" alt="An old photograph of a cast-iron gas lamp post with a glass lantern, in front of the Arc de Triomphe.">
+            <figcaption>
+              <span class="source-title">Charles Marville, Réverbère, place de l&#x27;Étoile</span>
+              <span class="source-meta">1858–71 · Photograph · Musée Carnavalet, Paris</span>
+              <span class="source-note">A Paris gas lamp of the period. Yours was replaced in 1878, when traffic islands were built in the crossing.</span>
+              <span class="source-credit">CC0, Paris Musées · <a href="https://commons.wikimedia.org/wiki/File:R%C3%A9verb%C3%A8re%2C_place_de_l%27Etoile%2C_8%C3%A8me_arrondissement%2C_Paris._PH1644.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="spot" aria-labelledby="h-spot">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-spot">Draw it on the spot</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute&#x27;s technical reports on the drawing (Antoinette Owen) and the painting (Kelly Keegan), 2015. The camera lucida is the museum&#x27;s inference: no document shows that you used one.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/sketch.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: gloved hands hold a small drawing board with a pencil sketch of a street crossing, above a wet cobbled crossroads with cream stone buildings, a gas lamp and a distant cab.">
+        <figcaption><span class="tag">AI-generated</span>Drawing at the corner. Whether you used an optical aid is debated.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Make the first drawing at the corner itself, in soft pencil on half a sheet of tan laid paper. Put in the buildings and the lamp post; mark where the passers-by will go with zigzags, and the couple with a single oversized umbrella.</p>
+          <p>Back in the studio, go over it with a harder pencil, a straightedge and a compass. Rule a faint horizon and the façades, mark the vanishing points, centre the lamp post, draw the edges of the picture, then lower the top edge in charcoal.</p>
+          <p>Then measure. Fifty-seven tiny pricks from the points of calipers or a proportional compass sit on the horizon, on the lamp post's axis and on three of the vanishing points. Multiplied by about seven, their spacings match the painting.</p>
+          <p>Did you draw it through an optical device? In 2015 the artist and researcher Pablo Garcia stood at the corner with a camera lucida, a prism on a stand that lets you trace what you see, and found the drawing lines up with its view from about 127 centimetres above the pavement, chest height for a man of 1.67 metres like you. The Art Institute finds the case compelling, but no document confirms it.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source is-wide">
+            <img src="img/src-study.jpg" width="1000" height="653" loading="lazy" alt="A pencil drawing of a street crossing in perspective: a lamp post in the centre, a wedge of buildings behind, ruled lines and a compass arc.">
+            <figcaption>
+              <span class="source-title">Study for Paris Street; Rainy Day</span>
+              <span class="source-meta">1877 · Graphite, with touches of charcoal, on tan laid paper, 30.2 × 46.5 cm · Art Institute of Chicago</span>
+              <span class="source-note">Sketched on the spot, then ruled in the studio. A greyscale scan from a book; the paper is tan.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Stra%C3%9Fe_in_Paris_bei_Regen_%28Vorzeichnung%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="scene">
+            <img src="img/scenes/table.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a hand rules a line across a pencil drawing of a street with a long wooden straightedge, a brass compass and pencils beside it on a wooden table.">
+            <figcaption><span class="tag">AI-generated</span>Ruling the drawing in the studio with a straightedge and a compass.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="studies" aria-labelledby="h-studies">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-studies">Studies for the figures and the colour</h2>
+        <p class="evidence"><b>Evidence</b>Berhaut&#x27;s catalogue raisonné, the Musée Marmottan Monet, the Art Institute&#x27;s catalogue and the list of a 2019 exhibition in Berlin. The figure drawings are privately owned and not shown here.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Draw the people separately, each on a sheet about 47 by 31 centimetres, mostly without the setting: the couple under one umbrella, a man stepping onto the pavement, two men sharing an umbrella, a woman seen from behind. You draw a man lighting a pipe too, and leave him out.</p>
+          <p>Some of these sheets are squared, according to the list of a 2019 exhibition in Berlin: a grid lets you copy a figure larger, square by square. No grid has been found on the canvas itself, so how the figures reached it is not known.</p>
+          <p>Then try it in colour. An oil sketch less than a quarter of the final width fixes the buildings, the figures and the grey light, and you keep going back to it while you paint the big canvas, as a testing ground. The two women by the lamp post are not in it. A second oil study tries out the rain on the stones.</p>
+          <p>You later give the sketch to Monet, who keeps it in his bedroom at Giverny until his death.</p>
+          <div class="doc">
+            <p class="doc-title">Figure studies, all in private collections</p>
+            <ul>
+              <li>The couple under an umbrella, with the crop marked</li>
+              <li>A man under an umbrella, stepping onto the pavement</li>
+              <li>Two men under one umbrella</li>
+              <li>A woman seen from behind, and one in profile</li>
+              <li>A man under an umbrella, seen from the front, four sheets</li>
+              <li>A sketch inscribed with a first name, “Clotilde”</li>
+            </ul>
+            <p class="doc-note">After Berhaut (1994) and the Art Institute (2015). One sheet is a promised gift to the Frick Collection, New York.</p>
+          </div>
+        </div>
+        <aside class="aside">
+          <figure class="source is-wide">
+            <img src="img/src-marmottan.jpg" width="1000" height="822" loading="lazy" alt="An oil sketch of the same rainy crossroads, more loosely painted: the couple under an umbrella, the lamp post and the wedge of buildings.">
+            <figcaption>
+              <span class="source-title">Paris Street; Rainy Day, oil sketch</span>
+              <span class="source-meta">1877 · Oil on canvas, 54 × 65 cm · Musée Marmottan Monet, Paris</span>
+              <span class="source-note">Close to the final arrangement and more freely painted. Bequest of Michel Monet, 1966.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_-_Rue_de_Paris._Temps_de_pluie_%28%C3%A9tude%29_-_Mus%C3%A9e_Marmottan-Monet.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-etude.jpg" width="550" height="457" loading="lazy" alt="An oil study of wet paving stones crossed by a few figures under umbrellas, the lower storeys of buildings behind.">
+            <figcaption>
+              <span class="source-title">Partial study</span>
+              <span class="source-meta">1877 · Oil on canvas, 54 × 65 cm · Private collection</span>
+              <span class="source-note">The left side of the street in a steeper perspective, showing only the lower storeys. Berhaut wrote that the rain is its real subject. Identified from his description.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte%2C_1877_-_Rue_de_Paris%2C_jour_de_pluie_%28%C3%A9tude%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-materials">Gather your materials</h2>
+        <p class="evidence"><b>Evidence</b>Kelly Keegan&#x27;s technical report (Art Institute, 2015): cross-sections, XRF and SEM/EDX on selected samples. The binding medium was not analysed.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/materials.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a wooden palette with dabs of blue, green, yellow, red and white oil paint, tin tubes, brushes, a palette knife and a rag on a studio table.">
+        <figcaption><span class="tag">AI-generated</span>A palette with the pigments the analysis found.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <div class="chapter-body">
+          <div class="prose">
+            <p>Your canvas is not a standard size. Buy a length of linen already primed by a colour merchant, off-white, a single thick coat of lead white with barite; the width of the roll, about 2.1 metres, sets the height of your picture. No merchant's stamp survives.</p>
+            <p>Tack it to a wall rather than stretch it: the examination suggests you painted at least part of it unstretched. The family house has an artist's studio under the roof; whether you painted this canvas there is not recorded.</p>
+            <p>The analysis found the pigments below, in the samples taken; others may be present.</p>
+          </div>
+          <aside class="aside">
+            <figure class="xsec">
+              <figcaption class="xsec-cap">The layers, schematic · surface at top</figcaption>
+              <div class="xsec-rows">
+                <div class="layer"><span class="band" style="--c: var(--pg-paint); --h: 40px"></span><span class="layer-label"><b>Paint</b><span>one or more layers</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-charcoal); --h: 8px"></span><span class="layer-label"><b>Charcoal</b><span>the drawing, much of it swept into the paint</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 34px"></span><span class="layer-label"><b>Ground</b><span>lead white with barite, 70–150 µm</span></span></div>
+                <div class="layer"><span class="band is-canvas" style="--h: 34px"></span><span class="layer-label"><b>Canvas</b><span>hand-woven linen</span></span></div>
+              </div>
+            </figure>
+          </aside>
+        </div>
+        <div class="pigments">
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-leadwhite)"></div>
+            <div class="pig-body">
+              <h4>Lead white</h4>
+              <p>In the ground, with barite, and throughout the paint.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>ground and paint</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-zincwhite)"></div>
+            <div class="pig-body">
+              <h4>Zinc white</h4>
+              <p>A second white.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>selected samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-cobalt)"></div>
+            <div class="pig-body">
+              <h4>Cobalt blue</h4>
+              <p>Also in the signature.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>paint, signature</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-ultramarine)"></div>
+            <div class="pig-body">
+              <h4>Ultramarine</h4>
+              <p>A second blue.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>selected samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-cerulean)"></div>
+            <div class="pig-body">
+              <h4>Cerulean blue</h4>
+              <p>A variety containing magnesium.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>selected samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-emerald)"></div>
+            <div class="pig-body">
+              <h4>Emerald green</h4>
+              <p>The copper green, identified by SEM/EDX.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>throughout</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-viridian)"></div>
+            <div class="pig-body">
+              <h4>Viridian</h4>
+              <p>The chromium green.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>selected samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-cadmium)"></div>
+            <div class="pig-body">
+              <h4>Cadmium yellow</h4>
+              <p>Found in the warmer tone you later brushed into the sky.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>the reworked sky</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-naples)"></div>
+            <div class="pig-body">
+              <h4>Naples yellow</h4>
+              <p>A pale, warm yellow.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>selected samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: linear-gradient(90deg, var(--pg-ochre) 0 50%, var(--pg-redoxide) 50%)"></div>
+            <div class="pig-body">
+              <h4>Iron oxides</h4>
+              <p>Red and yellow earths. The signature is mostly an iron-oxide brown.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>paint, signature</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-vermilion)"></div>
+            <div class="pig-body">
+              <h4>Vermilion</h4>
+              <p>The bright red.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>selected samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-madder)"></div>
+            <div class="pig-body">
+              <h4>Madder lake</h4>
+              <p>It glows under ultraviolet light: in the faces, the purple of the umbrellas, the background and some drawing lines.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>flesh, umbrellas, drawing</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="layout" aria-labelledby="h-layout">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-layout">Pins, a horizon and a straightedge</h2>
+        <p class="evidence"><b>Evidence</b>Keegan&#x27;s technical report: infrared images show the pinholes, two horizon lines and the ruled underdrawing. Those images belong to the Art Institute and are not reproduced; the positions drawn here are approximate.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/wall.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a painter seen from behind on a low step holds a long straightedge against a huge unstretched canvas tacked to a studio wall, ruled with perspective lines, a small drawing pinned beside it.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: the canvas tacked to the wall, the drawing pinned beside it. The canvas is stage 2 from the slider at the top of the page.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <figure class="stages" style="--stage-n: 3">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/01-canvas.jpg" width="1000" height="776" loading="lazy" alt="AI reconstruction: A bare canvas with an even off-white ground.">
+              <figcaption><b>Primed linen</b>Off-white, cut from a roll. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/02-armature.jpg" width="1000" height="776" loading="lazy" alt="AI reconstruction: Black lines at both sides, two horizontal lines, pins and fans of ruled lines for the façades and the paving.">
+              <figcaption><b>Borders and pins</b>Horizons, pins, ruled lines. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-drawing.jpg" width="1000" height="776" loading="lazy" alt="AI reconstruction: Charcoal outlines of the buildings, the lamp post and the figures over the ruled lines.">
+              <figcaption><b>Drawing</b>Buildings and figures. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Generated with Prodia from the finished painting, so the composition stays in register; the pins and ruled lines are placed from the technical report and from lines measured on the painting. They show plausible stages, not scans of the real layers.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li><h3>Mark the edges</h3><p>Two thick black painted lines at the sides of the composition, with the lamp post's place at the centre between them. You will move the right one at least twice.</p></li>
+          <li><h3>Paint the horizon</h3><p>A thin line of dark paint, almost perfectly straight, perhaps ruled against a string. An earlier one, with its own pins, sits about 3.5 centimetres higher.</p></li>
+          <li><h3>Pin the vanishing points</h3><p>Transfer them from the drawing with calipers, at about seven times its size, and push in pins: one just right of the lamp post for the façades of the rue Clapeyron, the main one where the heads of two women will go, three at the far left, one in the hair of the woman in front. Brace your straightedge against them.</p></li>
+          <li><h3>Rule, then draw</h3><p>Rule the façades and the rows of paving only where they will show, stopping short of the horizon. Then draw every building and figure in charcoal, black paint and fine lines of blue and red-lake paint, hanging the heads of the distant figures from the horizon.</p></li>
+        </ol>
+        <p class="prose-intro">Compared with the drawing, you add about 17 percent to the height at the bottom: the stones splay out towards you and the horizon sits at your eye level. In 2015 Pablo Garcia redid the transfer at full size, on a primed canvas tacked to a wall, to show how it could be done.</p>
+      </div>
+    </section>
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-painting">Paint, scrape and add</h2>
+        <p class="evidence"><b>Evidence</b>Keegan&#x27;s technical report: X-rays, infrared, ultraviolet and cross-sections show the reserves, the scraping and the changes. That the four figures came late is documented; the order of the other steps is inferred.</p>
+      </header>
+      <div class="chapter-stack">
+        <p class="prose-intro">You paint largely inside your drawn lines, with round and flat brushes, strokes up to 1.5 centimetres wide, and a palette knife to scrape back what you want to change. The X-ray first suggests a carefully planned picture that hardly changed; closer study shows that you altered every building and every figure.</p>
+        <div class="paint-grid is-landscape">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with four numbered markers showing the order of work.">
+                <img src="img/stages/04-layin.jpg" width="1000" height="776" loading="lazy" alt="" data-caption="After step 1: around the figures">
+                <img src="img/stages/05-street.jpg" width="1000" height="776" loading="lazy" alt="" data-caption="After step 2: stones and passers-by">
+                <img src="img/stages/06-couple.jpg" width="1000" height="776" loading="lazy" alt="" data-caption="After step 3: the couple">
+                <img src="img/stages/07-final.jpg" width="1000" height="776" loading="lazy" alt="" class="is-on" data-caption="After step 4: late additions">
+              </div>
+              <a class="marker" href="#around" data-target="around" style="--x: 30%; --y: 36%" aria-label="Step 1, Around the figures">1</a>
+              <a class="marker" href="#street" data-target="street" style="--x: 20%; --y: 82%" aria-label="Step 2, Stones and passers-by">2</a>
+              <a class="marker" href="#couple" data-target="couple" style="--x: 66%; --y: 42%" aria-label="Step 3, The couple">3</a>
+              <a class="marker" href="#late" data-target="late" style="--x: 93%; --y: 48%" aria-label="Step 4, Late additions">4</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span aria-live="polite">After step 4: late additions</span></p>
+            <ol class="map-legend">
+              <li><a href="#around"><span class="dot">1</span>Around the figures</a></li>
+              <li><a href="#street"><span class="dot">2</span>Stones and passers-by</a></li>
+              <li><a href="#couple"><span class="dot">3</span>The couple</a></li>
+              <li><a href="#late"><span class="dot">4</span>Late additions</a></li>
+            </ol>
+          </div>
+          <div class="steps">
+            <article class="step" id="around" aria-labelledby="h-around">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-around">Around the figures</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/04-layin.jpg" width="1000" height="776" loading="lazy" alt="AI reconstruction after step 1: Sky, façades and street laid in, each paving stone outlined in dark paint; the figures and the lamp post left as bare canvas. The order of stages 4 to 6 is inferred.">
+                <figcaption>After step 1 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-pharmacy.jpg" width="480" height="480" loading="lazy" alt="Close-up of the pharmacy building&#x27;s corner: a dark shopfront, a woman under an umbrella and a horse in the street.">
+                  <figcaption>The pharmacy corner and the passers-by in front of it.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Lay in the sky, the façades and the street inside your drawn lines, leaving the figures as bare canvas. In the X-ray they stand in pale halos. Some small figures far off are kept in reserve; others you paint first and bring the background round them.</p>
+                  <p>Outline each paving stone in dark paint. The left edge stays as you set it: the details of the far-left building stop at the black painted line, and a strip about five centimetres wide is left largely unpainted.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-edge.jpg" width="480" height="480" loading="lazy" alt="Close-up of the far-left building&#x27;s balcony and windows ending at a vertical line near the left edge.">
+                  <figcaption>The left edge: details stop at the painted line.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="street" aria-labelledby="h-street">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-street">Stones and passers-by</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/05-street.jpg" width="1000" height="776" loading="lazy" alt="AI reconstruction after step 2: Façades, stones and passers-by worked up around the couple, who are blocked in with a thin black wash. The lamp post still leans slightly to the left.">
+                <figcaption>After step 2 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-stones.jpg" width="480" height="480" loading="lazy" alt="Close-up of rounded grey and pink paving stones with pale wet edges.">
+                  <figcaption>Stones painted wet into wet, more than once.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Work the paving wet into wet, more than once, until it is thick. Under the people crossing, dig into the wet paint with the back of the brush, for puddles and moving reflections.</p>
+                  <p>Block in the couple with a thin layer of black inside their outlines, a start the report finds in some figures, and leave their umbrella bare for now.</p>
+                </div>
+              </div>
+            </article>
+            <article class="step" id="couple" aria-labelledby="h-couple">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-couple">The couple</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/06-couple.jpg" width="1000" height="776" loading="lazy" alt="AI reconstruction after step 3: The couple painted and repainted. Still no man at the right edge, no women by the lamp post and no carriage, and the picture is unsigned.">
+                <figcaption>After step 3 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-couple.jpg" width="480" height="480" loading="lazy" alt="Close-up of the couple&#x27;s heads: a man with a moustache in a top hat and a woman in a dark hat and veil, looking to the left.">
+                  <figcaption>Looking at something out of the picture.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Paint the couple and keep changing them. At first both looked up, their heads turned further towards profile; you alter the folds, the collar, the length of his jacket and his hat. The woman has no gloves at first; you add them late.</p>
+                  <p>Who they are is not known. A preparatory sketch carries the young woman&#x27;s first name, Clotilde.</p>
+                </div>
+              </div>
+            </article>
+            <article class="step" id="late" aria-labelledby="h-late">
+              <header class="step-head"><span class="step-num" aria-hidden="true">4</span><h3 id="h-late">Late additions</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/07-final.jpg" width="1000" height="776" loading="lazy" alt="AI reconstruction after step 4: The man at the right edge, the two women, the carriage and a small figure added; the lamp post straightened; a warmer tone in the sky; signed. This is the painting today.">
+                <figcaption>After step 4 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-women.jpg" width="480" height="480" loading="lazy" alt="Close-up of two small women walking away under umbrellas beside the green lamp post, next to the head of the man in the top hat.">
+                  <figcaption>Two women added late, framing the main vanishing point.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Now the biggest changes. Move the café building at the right further right, scrape much of it away, and paint over it a man seen from behind and cut by the frame. His umbrella&#x27;s tip takes three tries. No drawing for him is known.</p>
+                  <p>Scrape a patch by the lamp post and add two women walking away, their heads either side of your main vanishing point. Add the carriage and its driver at the far left, which you never finish: there is no horse. Add a small figure opening an umbrella.</p>
+                  <p>Straighten the lamp post, which leaned a little to the left. Over the dry sky between the buildings, brush a warmer, slightly darker tone. Sign at lower left in grey-brown: G. Caillebotte. 1877.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 3">
+                <figure class="plate">
+                  <img src="img/detail-rightman.jpg" width="480" height="480" loading="lazy" alt="Close-up of the back of a man&#x27;s head in a top hat at the right edge, against the red-brown wall, an umbrella above.">
+                  <figcaption>Painted over the scraped wall.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-carriage.jpg" width="480" height="480" loading="lazy" alt="Close-up of a dark blue carriage with red-spoked wheels behind two men under an umbrella.">
+                  <figcaption>The carriage, with no horse.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-signature.jpg" width="480" height="480" loading="lazy" alt="Close-up of the signature G. Caillebotte 1877 on the paving stones.">
+                  <figcaption>The signature, lower left.</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="exhibition" aria-labelledby="h-exhibition">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-exhibition">Show it, April 1877</h2>
+        <p class="evidence"><b>Evidence</b>Letters and memoirs collected by Berhaut and by the French Ministry of Culture; Rivière&#x27;s and Bigot&#x27;s accounts of the rooms; the 1877 reviews as printed by Berhaut and the Art Institute.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/exhibition.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: the painting, larger than the visitors, in a gilt frame on the wall of a high room with a parquet floor and tall windows, smaller paintings around it, three visitors seen from behind.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: the rented flat at 6 rue Le Peletier, April 1877.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>In January 1877 the gallery that housed the last show has been let to an upholsterer. “The exhibition will happen; it has to happen,” you write to Pissarro. With Renoir you rent an empty first-floor flat across the street, at 6 rue Le Peletier; Rivière thought you knew the owner. Each exhibitor guarantees 350 francs, and two or three of the richer ones, probably including you, advance the costs.</p>
+          <p>You hang the show with Renoir, Monet and Pissarro. It opens on 5 April: eighteen painters, 241 works in the catalogue, and the word <i>impressionnistes</i> on the shields over the door. Your six entries begin with this one, number 1, and <i>Le Pont de l'Europe</i>, number 2. You also lend paintings by Pissarro, Monet and Sisley from your own collection.</p>
+          <p>According to the critic Charles Bigot, your picture faces Renoir's <i>Bal du moulin de la Galette</i> from the next room, a painting that will later enter your collection.</p>
+          <p>At least 27 reviews mention it. Edmond Lepelletier calls it the most striking work in the show, with stones you could count and measure. Others complain that the rain is missing, that the umbrellas are all one silver, that the lamp post stands right in the middle and that the frame cuts a man in half. One calls you a millionaire who paints in his spare time.</p>
+        </div>
+        <aside class="aside">
+          <figure class="quote">
+            <p>“The rain is nowhere to be seen”</p>
+            <cite>Roger Ballu, Chronique des arts et de la curiosité, 14 April 1877</cite>
+          </figure>
+          <figure class="source">
+            <img src="img/src-catalogue.jpg" width="600" height="952" loading="lazy" alt="The printed cover of a small catalogue: Catalogue de la 3e exposition de peinture, 6 rue Le Peletier, 1877.">
+            <figcaption>
+              <span class="source-title">Catalogue de la 3e exposition de peinture</span>
+              <span class="source-meta">1877 · Printed catalogue · Bibliothèque nationale de France</span>
+              <span class="source-note">Your painting is number 1. The word impressionnistes was on the posters and the door, not on the cover.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:%28couverture%29_Catalogue_de_la_3e_exposition_de_peinture%2C_C_%283rd_Impressionist_exhibition%2C_Paris%29_1877.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-renoir.jpg" width="1000" height="743" loading="lazy" alt="A crowd dancing and talking under trees in dappled sunlight at an open-air dance hall in Montmartre.">
+            <figcaption>
+              <span class="source-title">Pierre-Auguste Renoir, Bal du moulin de la Galette</span>
+              <span class="source-meta">1876 · Oil on canvas · Musée d&#x27;Orsay, Paris</span>
+              <span class="source-note">It hung facing your picture from the next room, according to Bigot, and later came into your collection.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Auguste_Renoir_-_Dance_at_Le_Moulin_de_la_Galette_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-cham.jpg" width="600" height="726" loading="lazy" alt="A caricature: a man in a top hat looks at a painting held up by a bearded painter with a palette.">
+            <figcaption>
+              <span class="source-title">Cham, cartoon in Le Charivari</span>
+              <span class="source-meta">26 April 1877 · Lithograph</span>
+              <span class="source-note">A cartoonist on the show: “But these are the colours of a corpse!” “Yes, unfortunately I can&#x27;t manage the smell.”</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Cham_-_Peintre_impressionniste.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="time" aria-labelledby="h-time">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IX</p>
+        <h2 id="h-time">A photograph? And what time has changed</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute&#x27;s 2015 catalogue on the debate and on the 2013–14 treatment; Varnedoe and Galassi (1976); reviews of a 2011 exhibition of Martial Caillebotte&#x27;s photographs; the museum&#x27;s provenance record.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Since the 1970s people have asked whether you used photographs. In 1976 Kirk Varnedoe and Peter Galassi compared the picture's field of view to a wide-angle lens and suggested you might have traced your drawings from photographs. Others have found reasons to doubt it: a 3D model of the site gives an angle of view of 56 degrees, about a 38 mm lens, not wide-angle; the drawing's paper is too thick to trace through; and in 1877 a camera could not catch moving people and buildings sharply in one shot. The Art Institute now argues for a camera lucida, without a document to prove it. Your brother Martial's photographs, sometimes cited, were made from about 1891.</p>
+          <ul class="changes">
+            <li>After your death in 1894 the painting stayed with your family, from 1900 to 1950 in the care of Martial's brother-in-law at the Château de Montglat, near Provins. Long vertical cracks suggest it was kept rolled up for years; when is not known.</li>
+            <li>Walter P. Chrysler Jr. bought it in 1954, and the Art Institute bought it from Wildenstein in 1964, as <i>Umbrellas in the Place de l'Europe on a Rainy Day</i>: the wrong place, a title kept until 1991.</li>
+            <li>By then it had been lined and varnished. In 2013–14 the conservator Faye Wrubel removed yellowed varnish and later overpaint: the umbrellas turned lavender again, the darks deepened, and the warmer tone near the buildings proved to be yours.</li>
+          </ul>
+          <figure class="compare">
+            <div><img src="img/cleaning-before.jpg" width="800" height="600" loading="lazy" alt="The couple, the umbrellas and the red wall under a yellowish varnish, before the cleaning."><span class="caption">Before the 2013–14 cleaning: Google Art Project's photograph, online by December 2011.</span></div>
+            <div><img src="img/cleaning-after.jpg" width="800" height="600" loading="lazy" alt="The same detail after the cleaning: cooler greys and lavender umbrellas."><span class="caption">After: the Art Institute's photograph. Some of the difference is the photography.</span></div>
+          </figure>
+        </div>
+        <aside class="aside">
+          <figure class="quote">
+            <p>“no documentary evidence has yet been found”</p>
+            <cite>Art Institute of Chicago catalogue (2015), on the camera lucida</cite>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Caillebotte thought</h2>
+      <ul class="principles">
+        <li><em>Look, then measure.</em> A corner drawn on the spot, then ruled, measured with calipers and carried to the canvas seven times larger.</li>
+        <li><em>Build the space first.</em> Borders, a horizon, pins and ruled lines before a single figure.</li>
+        <li><em>Paint at life size.</em> Passers-by as big as the people looking at them.</li>
+        <li><em>Choose the ordinary.</em> A nameless crossing, called only “a Paris street”.</li>
+        <li><em>Keep changing it.</em> Buildings moved, figures added, paint scraped back and painted over.</li>
+      </ul>
+    </section>
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://www.artic.edu/artworks/20684/paris-street-rainy-day" target="_blank" rel="noopener">Art Institute of Chicago: Paris Street; Rainy Day</a></li>
+        <li><a href="https://api.artic.edu/api/v1/artworks/20684" target="_blank" rel="noopener">Art Institute of Chicago: catalogue data, provenance and exhibition history</a></li>
+        <li><a href="https://www.artic.edu/digital-publications/44/caillebotte-paintings-and-drawings-at-the-art-institute-of-chicago/223/cat-2-paris-street-rainy-day-1877" target="_blank" rel="noopener">Gloria Groom and Kelly Keegan, “Paris Street; Rainy Day”, in Caillebotte Paintings and Drawings at the Art Institute of Chicago (2015), with the technical report</a></li>
+        <li><a href="https://www.artic.edu/digital-publications/44/caillebotte-paintings-and-drawings-at-the-art-institute-of-chicago/222/cat-1-study-for-paris-street-rainy-day-1877" target="_blank" rel="noopener">Kelly Keegan and Antoinette Owen, “Study for Paris Street; Rainy Day”, same catalogue</a></li>
+        <li><a href="https://www.artic.edu/articles/826/caillebotte-and-seurat-setting-the-stage-for-masterworks" target="_blank" rel="noopener">Gloria Groom, “Caillebotte and Seurat: Setting the Stage for Masterworks”, Art Institute of Chicago (2020)</a></li>
+        <li><a href="https://www.marmottan.fr/en/notice/5062" target="_blank" rel="noopener">Musée Marmottan Monet: the oil sketch</a></li>
+        <li><a href="https://archive.org/details/c.rgustavecaillebottewildensteininstitute" target="_blank" rel="noopener">Marie Berhaut, Gustave Caillebotte: catalogue raisonné (Wildenstein Institute, 1994)</a></li>
+        <li><a href="https://archive.org/details/c.rgustavecaillebotte1978wildensteininstitute" target="_blank" rel="noopener">Marie Berhaut, Caillebotte, sa vie et son œuvre (1978), with the 1877 reviews</a></li>
+        <li><a href="https://www.culture.gouv.fr/thematiques/musees/Les-musees-en-France/les-collections-des-musees-de-france/decouvrir-les-collections/les-huit-expositions-impressionnistes-1874-1886/1877-troisieme-exposition" target="_blank" rel="noopener">Ministère de la Culture: the third Impressionist exhibition, 1877</a></li>
+        <li><a href="https://archives.seine-et-marne.fr/fr/le-testament-de-gustave-caillebotte" target="_blank" rel="noopener">Archives de Seine-et-Marne: Caillebotte&#x27;s will of 1876</a></li>
+        <li><a href="https://media.getty.edu/Text/8c470c8d-5862-5e82-ae0e-6f43ff568d1e.pdf" target="_blank" rel="noopener">J. Paul Getty Museum, Gustave Caillebotte: Painting Men, exhibition texts (2025)</a></li>
+        <li><a href="https://www.pablogarcia.org/paris-street-rainy-day/" target="_blank" rel="noopener">Pablo Garcia: the camera lucida experiment</a></li>
+        <li><a href="https://www.paris.fr/pages/a-paris-l-europe-celebree-partout-dans-les-rues-26871" target="_blank" rel="noopener">Ville de Paris: the quartier de l&#x27;Europe</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="colophon">
+    <p>Images: Caillebotte's paintings, drawing and photograph, Renoir's painting, the 1877 catalogue and Cham's cartoon are in the public domain, and Marville's photograph of a gas lamp is CC0 from Paris Musées, all from Wikimedia Commons. The close-ups are cut from the Art Institute's photograph; the before-and-after pair also uses the Google Art Project photograph. The stage reconstructions and chapter scenes were generated with Prodia (Gemini 3 Pro Image, with SAM 3 to separate the figures), using the painting and the drawing as references. Stages 3 to 6 are built on a version of the painting with the late additions removed by AI edits. The pins and ruled lines of stage 2 are placed from the technical report and from lines measured on the painting. Stages 5 and 6 combine generated layers with the real painting, and stage 7 is the painting itself. The reconstructions show plausible appearances, not documented ones. Pigment colours are approximate. Street plan from OpenStreetMap data, © OpenStreetMap contributors. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>

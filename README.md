@@ -1,6 +1,6 @@
 # Imagining Artist Methods
 
-Seven step-by-step reconstructions of how famous paintings were made: what each artist's process would have been, from training and first decisions to the last stroke, using technical studies, documents and the intermediate works that survive.
+Nine step-by-step reconstructions of how famous paintings were made: what each artist's process would have been, from training and first decisions to the last stroke, using technical studies, documents and the intermediate works that survive.
 
 **Live site:** https://cat1060.github.io/imagining-artist-methods/
 
@@ -8,8 +8,10 @@ Seven step-by-step reconstructions of how famous paintings were made: what each 
 |---|---|
 | [The School of Athens, day by day](https://cat1060.github.io/imagining-artist-methods/raphael/) | Raphael, fresco, 1509–11, Vatican Palace |
 | [Christ Carrying the Cross, layer by layer](https://cat1060.github.io/imagining-artist-methods/el-greco/) | El Greco, about 1580–85, Metropolitan Museum of Art |
+| [The Night Watch, back to front](https://cat1060.github.io/imagining-artist-methods/rembrandt/) | Rembrandt van Rijn, 1642, Rijksmuseum, Amsterdam |
 | [Girl with a Pearl Earring, layer by layer](https://cat1060.github.io/imagining-artist-methods/vermeer/) | Johannes Vermeer, about 1665, Mauritshuis |
 | [Impression, Sunrise, in one sitting](https://cat1060.github.io/imagining-artist-methods/monet/) | Claude Monet, 1872, Musée Marmottan Monet |
+| [Paris Street; Rainy Day, pinned and ruled](https://cat1060.github.io/imagining-artist-methods/caillebotte/) | Gustave Caillebotte, 1877, Art Institute of Chicago |
 | [A Bar at the Folies-Bergère, rethought](https://cat1060.github.io/imagining-artist-methods/manet/) | Édouard Manet, 1882, The Courtauld, London |
 | [The Starry Night, stroke by stroke](https://cat1060.github.io/imagining-artist-methods/van-gogh/) | Vincent van Gogh, 1889, Museum of Modern Art |
 | [At the Moulin Rouge, cut and rejoined](https://cat1060.github.io/imagining-artist-methods/toulouse-lautrec/) | Henri de Toulouse-Lautrec, 1892–95, Art Institute of Chicago |

@@ -1,4 +1,18 @@
 (() => {
+  // Series selector: where the works scroll sideways, start with the current one in view.
+  const nav = document.querySelector(".series-nav");
+  const current = nav && nav.querySelector('a[aria-current="page"]');
+  const centre = () => {
+    if (nav.scrollWidth <= nav.clientWidth) return;
+    const left = current.getBoundingClientRect().left - nav.getBoundingClientRect().left;
+    nav.scrollLeft += left - (nav.clientWidth - current.offsetWidth) / 2;
+  };
+  if (current) {
+    centre();
+    // The web fonts change the widths once they arrive.
+    if (document.fonts) document.fonts.ready.then(centre);
+  }
+
   // Stage viewers: a slider steps through stacked images of the work at successive stages.
   for (const fig of document.querySelectorAll("[data-stages]")) {
     const viewer = fig.querySelector(".viewer");

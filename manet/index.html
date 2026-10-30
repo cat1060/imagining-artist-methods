@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Bar at the Folies-Bergère, Rethought</title>
+<meta name="description" content="A step-by-step reconstruction of how Manet painted A Bar at the Folies-Bergère in 1881–82, from the oil sketch he copied to the reflection he kept moving, with AI-generated reconstructions of each stage.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="A Bar at the Folies-Bergère, Rethought">
+<meta property="og:description" content="A step-by-step reconstruction of how Manet painted A Bar at the Folies-Bergère in 1881–82, from the oil sketch he copied to the reflection he kept moving, with AI-generated reconstructions of each stage.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/manet/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/manet/img/stages/07-final.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+:root {
+  --bg: #EAE8E4; --surface: #F5F3F0; --ink: #1D1C21; --muted: #56535C; --rule: #D2CEC8; --rule-strong: #A39E96;
+  --accent: #A3461A; --accent-2: #2F4170; --frame: #1C1B22; --frame-edge: #3A3946;
+  --pg-leadwhite: #EEE9DE; --pg-cerulean: #3A86C2; --pg-cobalt: #2457B5; --pg-prussian: #1C3A5E; --pg-emerald: #3BAA74;
+  --pg-chrome: #E8A317; --pg-naples: #F1D486; --pg-vermilion: #D0402E; --pg-black: #24221F;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15141A; --surface: #1D1C23; --ink: #ECEAF0; --muted: #ABA7B3; --rule: #302E38; --rule-strong: #4C4956;
+    --accent: #F0884B; --accent-2: #9BAEDB; --frame: #0B0A0F; --frame-edge: #3A3946; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15141A; --surface: #1D1C23; --ink: #ECEAF0; --muted: #ABA7B3; --rule: #302E38; --rule-strong: #4C4956;
+  --accent: #F0884B; --accent-2: #9BAEDB; --frame: #0B0A0F; --frame-edge: #3A3946; color-scheme: dark;
+}
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <nav class="series-nav" aria-label="Works in the series" style="--works: 7">
+      <a href="../raphael/"><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens</span></a>
+      <a href="../el-greco/"><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross</span></a>
+      <a href="../vermeer/"><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring</span></a>
+      <a href="../monet/"><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise</span></a>
+      <a href="../manet/" aria-current="page"><img src="../manet/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Manet</span><span class="sn-title">A Bar at the Folies-Bergère</span></a>
+      <a href="../van-gogh/"><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night</span></a>
+      <a href="../toulouse-lautrec/"><img src="../toulouse-lautrec/img/thumb.jpg" width="96" height="96" alt=""><span class="sn-artist">Toulouse-Lautrec</span><span class="sn-title">At the Moulin Rouge</span></a>
+    </nav>
+  </div>
+</header>
+<div class="page">
+  <header class="hero is-landscape">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Paris, winter 1881–82</p>
+      <h1>A Bar at the Folies-Bergère, <em>rethought</em></h1>
+      <p class="lede">Imagine you are Édouard Manet, ill and often painting seated, with a marble bar set up in your studio and a barmaid from the Folies-Bergère posing behind it for the Salon of 1882. This guide follows what your process would have been, from copying your oil sketch onto a big canvas to the reflection you kept moving.</p>
+      <p class="basis">X-rays published in 1986, the Courtauld&#x27;s 2019 catalogue and a 2019 imaging study show what you changed; no one has published the ground, an underdrawing or a full pigment analysis, so the order of the later stages is inferred. Each chapter opens with a note on what its evidence is. The slider steps through seven stages; all but the last are AI reconstructions.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="Still life. A barmaid in a black velvet bodice stands behind a marble counter laden with bottles and a dish of mandarins; the mirror behind her reflects a crowded balcony, chandeliers, her own back and a man in a top hat.">
+            <img src="img/stages/01-canvas.jpg" width="1000" height="734" alt="" data-name="Primed canvas" data-note="A standard size-60 canvas, probably bought ready-primed. Its ground has not been published.">
+            <img src="img/stages/02-layin.jpg" width="1000" height="734" alt="" data-name="Lay-in after the sketch" data-note="The X-rays show the oil sketch&#x27;s arrangement underneath: hands clasped at the waist, the reflection close behind her, the man lower. The details here are invented.">
+            <img src="img/stages/03-first.jpg" width="1000" height="734" alt="" data-name="First arrangement" data-note="That arrangement worked up in colour. How far you took it before changing it is not known.">
+            <img src="img/stages/04-change.jpg" width="1000" height="734" alt="" data-name="The change" data-note="Repainted: she faces you, arms straight to the counter; her reflection moves right (it was altered twice) and the man moves up into the corner.">
+            <img src="img/stages/05-mirror.jpg" width="1000" height="734" alt="" data-name="The mirror" data-note="The balcony, crowd, chandeliers and globe lamps in the mirror, loosely painted. The order of stages 5 to 7 is inferred.">
+            <img src="img/stages/06-figures.jpg" width="1000" height="734" alt="" data-name="Barmaid and reflections" data-note="Her face, lace, choker and corsage, and the reflections of her back and of the man.">
+            <img src="img/stages/07-final.jpg" width="1000" height="734" class="is-on" fetchpriority="high" alt="" data-name="Still life" data-note="Bottles, mandarins and roses on the marble, more finely painted than the figure, and your name on a label. This is the painting today.">
+          </div>
+        </div>
+        <span class="dim dim-h" aria-hidden="true"><span>96 cm</span></span>
+        <span class="dim dim-w" aria-hidden="true"><span>130 cm</span></span>
+      </div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name">Still life</p>
+          <span class="scrub-count">Stage 7 of 7</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" min="0" max="6" step="1" value="6" aria-label="Stage of the work" aria-valuetext="Stage 7, Still life">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note">Bottles, mandarins and roses on the marble, more finely painted than the figure, and your name on a label. This is the painting today.</p>
+      </div>
+      <figcaption>Édouard Manet, <i>A Bar at the Folies-Bergère</i>, 1882. Oil on canvas, 96 × 130 cm. The Courtauld, London (Samuel Courtauld Trust). <span class="tag">AI-generated</span> Stages 1 to 6 are reconstructions made with Prodia from this painting and, for stages 2 and 3, from the oil sketch.</figcaption>
+    </figure>
+  </header>
+  <nav class="toc" aria-label="Chapters" style="--toc-n: 9">
+    <ol>
+      <li><a href="#training"><span class="toc-num">I</span><span class="toc-name">Training</span></a></li>
+      <li><a href="#subject"><span class="toc-num">II</span><span class="toc-name">Subject</span></a></li>
+      <li><a href="#first"><span class="toc-num">III</span><span class="toc-name">First version</span></a></li>
+      <li><a href="#studio"><span class="toc-num">IV</span><span class="toc-name">Studio</span></a></li>
+      <li><a href="#materials"><span class="toc-num">V</span><span class="toc-name">Materials</span></a></li>
+      <li><a href="#rethink"><span class="toc-num">VI</span><span class="toc-name">Rethinking</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VII</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#salon"><span class="toc-num">VIII</span><span class="toc-name">Salon</span></a></li>
+      <li><a href="#time"><span class="toc-num">IX</span><span class="toc-name">Time</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="chapter" id="training" aria-labelledby="h-training">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-training">Your training</h2>
+        <p class="evidence"><b>Evidence</b>Standard biographies, the Courtauld&#x27;s 2019 catalogue and the museums&#x27; records of the café pictures.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are Édouard Manet. In the 1850s you trained in the studio of Thomas Couture, and for twenty years since, your Salon pictures have been mocked as often as admired.</p>
+          <p>Between 1878 and 1880 you painted a run of café-concert pictures, set at the Brasserie de Reichshoffen on the boulevard Rochechouart: waitresses carrying beer, customers in top hats, a singer glimpsed on a stage. One canvas you cut in two; its halves are now <i>Corner of a Café-Concert</i> in London and <i>Au Café</i> in Winterthur.</p>
+          <p>In them a working woman stands at the front of a crowded room, busy and looking elsewhere. The bar picture takes that idea to the scale of a Salon painting.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-corner.jpg" width="720" height="897" loading="lazy" alt="A waitress holding beer glasses looks out over a crowded café-concert, a man in a blue smock in front of her.">
+            <figcaption>
+              <span class="source-title">Corner of a Café-Concert</span>
+              <span class="source-meta">About 1878–80 · Oil on canvas · National Gallery, London</span>
+              <span class="source-note">One half of a canvas you cut in two.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Edouard_Manet%2C_Corner_of_a_Caf%C3%A9-Concert%2C_ca._1878-80.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-serveuse.jpg" width="720" height="880" loading="lazy" alt="A waitress with beer glasses beside a man smoking a pipe, in a café.">
+            <figcaption>
+              <span class="source-title">La Serveuse de bocks</span>
+              <span class="source-meta">1878–79 · Oil on canvas · Musée d&#x27;Orsay, Paris</span>
+              <span class="source-note">The same waitress-and-customer theme, closer up.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:La_Serveuse_de_bocks_%281878-1879%29_-_Edouard_Manet_%28Mus%C3%A9e_d%27Orsay%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="subject" aria-labelledby="h-subject">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-subject">Choose the subject</h2>
+        <p class="evidence"><b>Evidence</b>The Getty&#x27;s 2007 exhibition texts, period images of the hall, and the Courtauld&#x27;s 2019 catalogue, citing John House.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/venue.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a long marble bar laden with bottles and mandarins before a huge mirror reflecting a crowded balcony, chandeliers and globe lamps, people seen from behind.">
+        <figcaption><span class="tag">AI-generated</span>The promenade bars of the Folies-Bergère, as they might have looked around 1881.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The Folies-Bergère opened in 1869 at 32 rue Richer. It is a music hall with walkways lined with bars, chandeliers and mirrors, and acrobats on the trapeze overhead. A poster of the period boasts that it is lit entirely by electricity. Maupassant, Huysmans and the Goncourts all wrote about it.</p>
+          <p>You have sent pictures to the Salon for more than twenty years, and in 1881 you finally won a medal, second class. That exempts you from the jury: whatever you send in 1882 will be hung.</p>
+          <dl class="decisions">
+            <div class="decision"><dt>One big figure</dt><dd>A near life-size woman seen straight on, close up. In a Salon hung floor to ceiling, a frontal figure stands out. That was your strategy, as the historian John House argued.</dd></div>
+            <div class="decision"><dt>A mirror</dt><dd>Put the whole hall behind her as a reflection, so the crowd, the lights and the show are all seen in the glass.</dd></div>
+            <div class="decision"><dt>A real bar</dt><dd>A first-floor bar to the right of the stage, according to notes kept by Léon Leenhoff, your wife's son. You will rebuild it in the studio.</dd></div>
+          </dl>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-vierge.jpg" width="1000" height="706" loading="lazy" alt="An engraving of a packed hall with balconies, a stage and a great chandelier.">
+            <figcaption>
+              <span class="source-title">Daniel Vierge, Aux Folies-Bergère</span>
+              <span class="source-meta">Wood engraving · Le Monde illustré, 11 February 1871</span>
+              <span class="source-note">The hall during an election meeting: the balcony that your mirror reflects.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Les_r%C3%A9unions_%C3%A9lectorales._Aux_Folies_Berg%C3%A8re_-_Le_Monde_illustr%C3%A9_%2811_f%C3%A9vrier_1871%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-forain.jpg" width="476" height="768" loading="lazy" alt="A gouache of a barmaid behind a counter of bottles, a crowd beyond.">
+            <figcaption>
+              <span class="source-title">Jean-Louis Forain, The Bar at the Folies-Bergère</span>
+              <span class="source-meta">About 1878 · Gouache and graphite · Brooklyn Museum</span>
+              <span class="source-note">The subject was in the air: a younger painter&#x27;s barmaid, a few years earlier.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Bar_at_the_Folies-Berg%C3%A8re_%28Le_Bar_aux_Folies-Berg%C3%A8re%29_-_Jean-Louis_Forain_-_overall.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-postcard.jpg" width="1000" height="650" loading="lazy" alt="A street photograph of a theatre façade with tall arched windows, carriages in front.">
+            <figcaption>
+              <span class="source-title">The Folies-Bergère, rue Richer</span>
+              <span class="source-meta">Postcard, about 1900</span>
+              <span class="source-note">The building&#x27;s front, some twenty years later.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Th%C3%A9%C3%A2tre_des_Folies_Berg%C3%A8re.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="first" aria-labelledby="h-first">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-first">Make a first version</h2>
+        <p class="evidence"><b>Evidence</b>Sotheby&#x27;s 2015 catalogue of the oil sketch, summarising Juliet Wilson-Bareau&#x27;s 1986 X-rays and Leenhoff&#x27;s notes; the Dijon museum&#x27;s pastel.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You make quick ink sketches at the Folies-Bergère itself: one of the balcony, and one of a barmaid talking to a man, both seen in the mirror. Where those sheets are now has not been traced.</p>
+          <p>From the second you paint an oil sketch in the studio, about half a metre wide. The barmaid stands at an angle, her hands clasped at her waist; her reflection stands close beside her, where a reflection should be; and the customer, a man in a bowler hat, is your neighbour Henry Dupray, a military painter, according to Leenhoff. Leenhoff dates it to summer 1881; others place it as late as the end of that year.</p>
+          <p>An X-ray of the sketch shows it was hardly altered: you moved the man and bared a little more of her bosom. You also draw Suzon, the barmaid who will pose for you, in pastel, in a black hat with a pink bouquet.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source is-wide">
+            <img src="img/src-sketch.jpg" width="1000" height="833" loading="lazy" alt="An oil sketch of a blond barmaid with clasped hands behind a black counter, her reflection close behind her and a man in a bowler at right.">
+            <figcaption>
+              <span class="source-title">Un bar aux Folies-Bergère (oil sketch)</span>
+              <span class="source-meta">1881 · Oil on canvas, 47 × 56 cm · Private collection</span>
+              <span class="source-note">The arrangement you first copied onto the big canvas. It was on loan to the Stedelijk Museum for decades, but it was never theirs.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Un_bar_aux_Folies-Berg%C3%A8re.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-pastel.jpg" width="600" height="982" loading="lazy" alt="A pastel of a young woman in a black hat and black jacket against a blue ground.">
+            <figcaption>
+              <span class="source-title">Le Modèle du Bar aux Folies-Bergère</span>
+              <span class="source-meta">1881 · Pastel on canvas · Musée des Beaux-Arts de Dijon</span>
+              <span class="source-note">Suzon, the model, in her own clothes.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Edouard_Manet-Study_of_the_barmaid_for_Le_Bar_des_Folies_Bergeres_mg_1821.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="studio" aria-labelledby="h-studio">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-studio">Bring the bar to the studio</h2>
+        <p class="evidence"><b>Evidence</b>The Courtauld&#x27;s 2019 catalogue, Colin Bailey&#x27;s 2020 account of your last years, and Henri Jeanniot&#x27;s memoir, published about 25 years after the event.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/studio.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a studio with a marble-topped counter laden with champagne bottles and a bowl of mandarins, an armchair facing a large canvas on an easel, daylight from a tall window.">
+        <figcaption><span class="tag">AI-generated</span>The studio at 77 rue d&#x27;Amsterdam, with a marble counter brought in and an armchair to paint from.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You paint the picture in your studio at 77 rue d'Amsterdam, where you have worked since April 1879. A restaurant buffet with a marble top is brought in, loaded with bottles, and Suzon, a real barmaid from the Folies-Bergère, poses behind it.</p>
+          <p>You are ill. Tertiary syphilis has brought on locomotor ataxia, and you often have to paint sitting down; your friend Théodore Duret said you were practically nailed to your chair. You will die on 30 April 1883, a year after the Salon.</p>
+          <p>The painter Henri Jeanniot visits in January 1882 and finds a pretty girl posing behind a table laden with bottles. Writing long afterwards, he adds that although you painted from life, you were in no way copying nature. Your advice to him is “Pas de pensum!”: painting must never become a chore.</p>
+        </div>
+        <aside class="aside">
+          <figure class="scene">
+            <img src="img/scenes/model.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a woman's hands in black velvet sleeves with lace cuffs resting on a marble counter beside champagne bottles and a bowl of mandarins.">
+            <figcaption><span class="tag">AI-generated</span>The pose: hands on the marble, among the bottles.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-materials">Gather your materials</h2>
+        <p class="evidence"><b>Evidence</b>A 2019 imaging study (Amato and colleagues) that mapped elements over the barmaid and her reflection only. No paint samples were taken from this painting.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/materials.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a small table beside a studio armchair with tin paint tubes, a palette of mixtures, flat brushes, a rag and a bottle of turpentine.">
+        <figcaption><span class="tag">AI-generated</span>Tubes, a palette and flat brushes by the armchair.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <div class="chapter-body">
+          <div class="prose">
+            <p>At 96 by 130 centimetres your canvas matches the standard French size 60 for figures, so you probably bought it ready-primed. Its ground has not been published, and no underdrawing has been reported.</p>
+            <p>The only scientific study of the paint mapped the elements over the barmaid and her reflection; nobody has taken a sample. The cards below say how far each identification goes: mapped on this painting, a hypothesis from the maps, or reported for the four Courtauld Manets as a group.</p>
+          </div>
+        </div>
+        <div class="pigments">
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-cerulean)"></div>
+            <div class="pig-body">
+              <h4>Cerulean blue</h4>
+              <p>Cobalt and tin found together.</p>
+              <dl class="pig-meta">
+                <div><dt>Mapped</dt><dd>the upper part of her dress</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: linear-gradient(90deg, var(--pg-cobalt) 0 50%, var(--pg-prussian) 50%)"></div>
+            <div class="pig-body">
+              <h4>Cobalt and Prussian blue</h4>
+              <p>With cerulean, in the thick repainting over her first hands.</p>
+              <dl class="pig-meta">
+                <div><dt>Mapped</dt><dd>over the first hands</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-emerald)"></div>
+            <div class="pig-body">
+              <h4>Emerald green</h4>
+              <p>Copper and arsenic in the same repainting, with a chromium pigment.</p>
+              <dl class="pig-meta">
+                <div><dt>Mapped</dt><dd>over the first hands</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: linear-gradient(90deg, var(--pg-chrome) 0 50%, var(--pg-naples) 50%)"></div>
+            <div class="pig-body">
+              <h4>Chrome yellow and Naples yellow</h4>
+              <p>Chromium, antimony and zinc together.</p>
+              <dl class="pig-meta">
+                <div><dt>Hypothesis</dt><dd>the mandarins</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-vermilion)"></div>
+            <div class="pig-body">
+              <h4>Vermilion</h4>
+              <p>Reds, and flesh mixed with lead white.</p>
+              <dl class="pig-meta">
+                <div><dt>Group</dt><dd>the four Courtauld Manets studied</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-black)"></div>
+            <div class="pig-body">
+              <h4>Bone black</h4>
+              <p>Calcium in the blacks.</p>
+              <dl class="pig-meta">
+                <div><dt>Group</dt><dd>the four Courtauld Manets studied</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="rethink" aria-labelledby="h-rethink">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-rethink">Copy the sketch, then change it</h2>
+        <p class="evidence"><b>Evidence</b>Juliet Wilson-Bareau&#x27;s X-rays (1986), as summarised by Sotheby&#x27;s in 2015; the Courtauld&#x27;s 2019 catalogue; Amato and colleagues (2019). The X-ray images are not openly published, so these stages are drawn from descriptions.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/painting.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a painter seated in an armchair, seen from behind, reaching up with a brush to a large canvas on an easel, beside a marble counter with champagne bottles.">
+        <figcaption><span class="tag">AI-generated</span>Working seated, at full scale.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <figure class="stages" style="--stage-n: 3">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/02-layin.jpg" width="1000" height="734" loading="lazy" alt="AI reconstruction: A loose lay-in of a blond barmaid with clasped hands, her reflection close behind her and a man in a bowler at lower right.">
+              <figcaption><b>Lay-in</b>The sketch&#x27;s arrangement, copied. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-first.jpg" width="1000" height="734" loading="lazy" alt="AI reconstruction: The same arrangement painted in dark blues, pinks and creams.">
+              <figcaption><b>First arrangement</b>Worked up in colour. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/04-change.jpg" width="1000" height="734" loading="lazy" alt="AI reconstruction: The final arrangement in broad flat masses, with a bare counter.">
+              <figcaption><b>The change</b>Frontal, arms straight, reflection moved. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Generated with Prodia from the oil sketch and the finished painting. They follow the X-ray findings in outline only: positions, colours and details are invented.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li><h3>Copy the sketch</h3><p>Beneath the surface lies a composition much closer to the sketch: her hands clasped across her waist, her reflection near her, the man lower down.</p></li>
+          <li><h3>Turn her to face you</h3><p>Paint out the clasped hands and give her straight arms, hands resting on the marble. The repainting is thick: over the first hands the element maps point to blues, emerald green and a chromium pigment.</p></li>
+          <li><h3>Move the reflection</h3><p>Shift her reflection to the right, to a less logical place; the X-ray shows it was altered twice. Move the man up into the top right corner.</p></li>
+          <li><h3>Keep reworking</h3><p>The Courtauld's catalogue says the X-rays reveal endless reworking at every stage, directly on the canvas. In March 1882 your brother Eugène writes to his wife, Berthe Morisot, that you are still reworking the same picture.</p></li>
+        </ol>
+        <p class="prose-intro">The first hands are still faintly there: in infrared light at 2,100 nanometres, where the thick paint over them turns more transparent, faint traces of them show through.</p>
+      </div>
+    </section>
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-painting">Mirror, figure, counter</h2>
+        <p class="evidence"><b>Evidence</b>The Courtauld&#x27;s records and 2019 catalogue for the handling and the objects. The order of these three steps is not recorded.</p>
+      </header>
+      <div class="chapter-stack">
+        <p class="prose-intro">The big canvas is under way by January 1882, when Jeanniot sees it, and must be ready for the Salon in May. These three steps are one plausible order for finishing it.</p>
+        <div class="paint-grid is-landscape">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with three numbered markers showing the order of work.">
+                <img src="img/stages/05-mirror.jpg" width="1000" height="734" loading="lazy" alt="" data-caption="After step 1: the mirror world">
+                <img src="img/stages/06-figures.jpg" width="1000" height="734" loading="lazy" alt="" data-caption="After step 2: her face, and the reflections">
+                <img src="img/stages/07-final.jpg" width="1000" height="734" loading="lazy" alt="" class="is-on" data-caption="After step 3: the still life">
+              </div>
+              <a class="marker" href="#mirror" data-target="mirror" style="--x: 20%; --y: 24%" aria-label="Step 1, The mirror world">1</a>
+              <a class="marker" href="#barmaid" data-target="barmaid" style="--x: 49%; --y: 17%" aria-label="Step 2, Her face, and the reflections">2</a>
+              <a class="marker" href="#counter" data-target="counter" style="--x: 73%; --y: 82%" aria-label="Step 3, The still life">3</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span aria-live="polite">After step 3: the still life</span></p>
+            <ol class="map-legend">
+              <li><a href="#mirror"><span class="dot">1</span>The mirror world</a></li>
+              <li><a href="#barmaid"><span class="dot">2</span>Her face, and the reflections</a></li>
+              <li><a href="#counter"><span class="dot">3</span>The still life</a></li>
+            </ol>
+          </div>
+          <div class="steps">
+            <article class="step" id="mirror" aria-labelledby="h-mirror">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-mirror">The mirror world</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/05-mirror.jpg" width="1000" height="734" loading="lazy" alt="AI reconstruction after step 1: The balcony, crowd, chandeliers and globe lamps in the mirror, loosely painted. The order of stages 5 to 7 is inferred.">
+                <figcaption>After step 1 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-crowd.jpg" width="480" height="480" loading="lazy" alt="Close-up of the balcony: a woman in white with yellow gloves and a crowd of top hats, in quick dabs.">
+                  <figcaption>The balcony crowd, in quick dabs.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Everything behind her is a reflection: the balcony across the hall, its crowd, the columns with their globe lamps and the chandeliers. Paint it loosely, as dabs and smears; the Courtauld calls the crowd loosely painted.</p>
+                  <p>Among the faces, the woman in white is thought to be Méry Laurent and the one beside her Jeanne Demarsy. Neither identification is documented.</p>
+                  <p>At top left, put in a pair of legs in green boots on a trapeze: the act is going on over everyone&#x27;s heads. The performer is not identified.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-trapeze.jpg" width="480" height="480" loading="lazy" alt="Close-up of the top left corner: two legs in green boots on a trapeze above a globe lamp.">
+                  <figcaption>The trapeze act at top left.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="barmaid" aria-labelledby="h-barmaid">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-barmaid">Her face, and the reflections</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/06-figures.jpg" width="1000" height="734" loading="lazy" alt="AI reconstruction after step 2: Her face, lace, choker and corsage, and the reflections of her back and of the man.">
+                <figcaption>After step 2 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-face.jpg" width="480" height="480" loading="lazy" alt="Close-up of the barmaid&#x27;s face: a straight blond fringe, small earrings and a level, unreadable gaze.">
+                  <figcaption>A straight fringe and a Grecian nose.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>The barmaid of the sketch had piled-up curls and a snub nose. Now give her a straight-cut fringe and a severe Grecian nose, a black velvet choker with a medallion, lace at the neck and a corsage of flowers.</p>
+                  <p>Her body is more broadly handled than the objects in front of her. Her reflection, at right, is plumper than the wasp-waisted woman you see from the front, and it leans towards the man, whom you have moved up into the corner.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-reflection.jpg" width="480" height="480" loading="lazy" alt="Close-up of the top right: the back of the barmaid&#x27;s head reflected beside a man in a top hat with a moustache.">
+                  <figcaption>Her reflection and the man, at top right.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="counter" aria-labelledby="h-counter">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-counter">The still life</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/07-final.jpg" width="1000" height="734" loading="lazy" alt="AI reconstruction after step 3: Bottles, mandarins and roses on the marble, more finely painted than the figure, and your name on a label. This is the painting today.">
+                <figcaption>After step 3 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-mandarins.jpg" width="480" height="480" loading="lazy" alt="Close-up of a crystal dish heaped with mandarins on a marble counter beside the barmaid&#x27;s arm.">
+                  <figcaption>Mandarins in a crystal dish.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Then the counter, though the order is a guess: bottles of Bass with its red triangle, champagne in gold foil and green crème de menthe, a crystal dish of mandarins and two roses in a glass. These are painted with more finesse than the barmaid.</p>
+                  <p>The element maps suggest the mandarins&#x27; orange is a mixture of chrome-type yellow and orange with Naples yellow. That is the imaging team&#x27;s hypothesis, not a sampled result.</p>
+                  <p>Sign on the label of the bottle at far left: “Manet / 1882”.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-signature.jpg" width="480" height="480" loading="lazy" alt="Close-up of the far-left bottle, a red liqueur with a label reading Manet 1882.">
+                  <figcaption>The signed label.</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="salon" aria-labelledby="h-salon">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-salon">Send it to the Salon</h2>
+        <p class="evidence"><b>Evidence</b>The Courtauld&#x27;s 2019 catalogue and Colin Bailey (2020) on the Salon; reviews as summarised there.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/salon.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: the painting in a heavy gilt frame among many paintings hung close together in a skylit Salon gallery, visitors seen from behind.">
+        <figcaption><span class="tag">AI-generated</span>May 1882: the Salon, hung floor to ceiling.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>In May 1882 the picture hangs at the Salon, as does your other entry, <i>Jeanne (Spring)</i>, a half-length of a young woman with a parasol. Critics like <i>Jeanne</i> better.</p>
+          <p>The bar puzzles them. In <i>Le Journal amusant</i> the caricaturist Stop redraws it as “a seller of consolation at the Folies-Bergère” and puts the reflections where they ought to be. In <i>L'Art moderne</i> (1883), Joris-Karl Huysmans judges it a flawed masterpiece.</p>
+          <p>By 1884 the engraver Henri Guérard has etched it, so the composition circulates in print.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-jeanne.jpg" width="600" height="868" loading="lazy" alt="A young woman in a flowered dress and bonnet holding a parasol, against leaves.">
+            <figcaption>
+              <span class="source-title">Jeanne (Spring)</span>
+              <span class="source-meta">1881 · Oil on canvas · J. Paul Getty Museum</span>
+              <span class="source-note">Your other picture at the 1882 Salon, the better liked of the two.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Jeanne_%28Spring%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-guerard.jpg" width="1000" height="585" loading="lazy" alt="An etching of the barmaid behind the counter with the mirror behind her.">
+            <figcaption>
+              <span class="source-title">Henri Guérard, after the painting</span>
+              <span class="source-meta">Etching · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">An impression in the Bibliothèque nationale is dated 1884.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Bar_in_de_Folies-Berg%C3%A8re%2C_RP-P-1951-129.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="time" aria-labelledby="h-time">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IX</p>
+        <h2 id="h-time">The mirror, and what time has changed</h2>
+        <p class="evidence"><b>Evidence</b>Malcolm Park (2000–01) and Thierry de Duve (2012) on the reflection; the Courtauld&#x27;s records; an archive catalogue entry whose contents were not checked.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Is the reflection possible? Many viewers have said no: she faces you, yet her reflection is off to the right, talking to a man who should be standing where you are. In 2000 and 2001 Malcolm Park showed that a consistent arrangement can be built if the viewer stands off to the right and the man stands outside the picture. Thierry de Duve accepts Park's model but argues that the painting is made to work against what you intuitively see. The question is still argued.</p>
+          <ul class="changes">
+            <li>Samuel Courtauld bought the painting in March 1926 and gave it in 1934. It is in the Courtauld Gallery, London.</li>
+            <li>An archive file in the papers of Lord Butler at Trinity College, Cambridge, is titled for the painting's restoration. Its listed items, not checked for this guide, name the restorer Stanley Kennedy North in 1932–33. What he did is unknown.</li>
+            <li>No varnish, cleaning or lining record for the painting has been published.</li>
+          </ul>
+        </div>
+        <aside class="aside">
+          <figure class="quote">
+            <p>“still reworking the same picture”</p>
+            <cite>Eugène Manet to Berthe Morisot, March 1882, as quoted by Sotheby's (2015)</cite>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Manet thought</h2>
+      <ul class="principles">
+        <li><em>Sketch it, then outgrow it.</em> You copied the oil sketch onto the big canvas and then changed what mattered.</li>
+        <li><em>Paint from life, don&#x27;t copy it.</em> A real counter and a real barmaid, rearranged until the picture worked.</li>
+        <li><em>Choose the strong image over the correct one.</em> A frontal figure for the Salon wall, with the reflection left where it made the picture, not the optics.</li>
+        <li><em>Spend your finish where it counts.</em> Loose crowd, broader figure, careful bottles and fruit.</li>
+        <li><em>Rework on the canvas.</em> The X-rays show changes made directly in the paint, at every stage.</li>
+      </ul>
+    </section>
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://gallerycollections.courtauld.ac.uk/object-p-1934-sc-234" target="_blank" rel="noopener">The Courtauld: A Bar at the Folies-Bergère, collection record</a></li>
+        <li><a href="https://courtauld.ac.uk/highlights/a-bar-at-the-folies-bergere/" target="_blank" rel="noopener">The Courtauld: highlights page</a></li>
+        <li><a href="https://pure.courtauld.ac.uk/ws/portalfiles/portal/14403260/V0423_The_Courtauld_Collection_ENG.pdf" target="_blank" rel="noopener">Karen Serres (ed.), The Courtauld Collection: A Vision for Impressionism (2019)</a></li>
+        <li><a href="https://www.sothebys.com/en/auctions/ecatalogue/2015/impressionist-modern-art-evening-sale-l15006/lot.8.html" target="_blank" rel="noopener">Sotheby&#x27;s, 24 June 2015, lot 8: the oil sketch (citing Wilson-Bareau and Leenhoff)</a></li>
+        <li><a href="http://openportal.ino.cnr.it/data/2019/388528/2019_388528.published.pdf" target="_blank" rel="noopener">Amato et al., “Interpreting technical evidence from spectral imaging of paintings by Édouard Manet in the Courtauld Gallery”, X-Ray Spectrometry 48 (2019)</a></li>
+        <li><a href="https://www.getty.edu/art/exhibitions/manet_bar/" target="_blank" rel="noopener">J. Paul Getty Museum: Manet&#x27;s Bar at the Folies-Bergère (2007)</a></li>
+        <li><a href="https://www.nybooks.com/articles/2020/12/03/suffering-unfaltering-manet/" target="_blank" rel="noopener">Colin B. Bailey, “Suffering, Unfaltering Manet”, New York Review of Books, 2020</a></li>
+        <li><a href="https://nonsite.org/intentionality-and-art-historical-methodology-a-case-study/" target="_blank" rel="noopener">Thierry de Duve, nonsite.org (2012), on the mirror and Park&#x27;s reconstruction</a></li>
+        <li><a href="https://ts2i.ac-besancon.fr/wp-content/uploads/sites/78/2016/06/manet_le_modele_de_la_serveuse_du_bar.pdf" target="_blank" rel="noopener">Académie de Besançon: the Dijon pastel</a></li>
+        <li><a href="https://archives.trin.cam.ac.uk/index.php/papers-of-samuel-courtauld-restoration-of-manets-un-bar-aux-folies-bergere" target="_blank" rel="noopener">Trinity College, Cambridge: papers on the painting&#x27;s restoration (catalogue entry)</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="colophon">
+    <p>Images: Manet's paintings, the sketch and the pastel, Forain's gouache, Vierge's engraving, Guérard's etching and the postcard are in the public domain, from Wikimedia Commons. The close-ups are cut from the painting's reproduction. The stage reconstructions and chapter scenes were generated with Prodia (Gemini 3 Pro Image, with SAM 3 to separate the figures and the objects on the counter), using the painting and the oil sketch as references. Stages 5 and 6 combine generated layers with regions of the real painting, and stage 7 is the painting itself. The reconstructions show plausible appearances, not documented ones. Pigment colours are approximate. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>

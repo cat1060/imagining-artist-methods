@@ -418,7 +418,7 @@ h2 {
   .after-step figcaption { font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.45; color: var(--muted); }
 }
 
-/* Series selector: every page opens with the five works, in date order */
+/* Series selector: every page opens with the works, in date order */
 .series-bar { background: var(--surface); border-bottom: 1px solid var(--rule); }
 .series-inner {
   max-width: 1180px;
@@ -447,17 +447,17 @@ h2 {
 }
 .series-name:hover { color: var(--accent); }
 .series-nav { min-width: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; padding-block: 2px; }
-@media (min-width: 760px) {
-  .series-nav { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); overflow: visible; }
-  .series-nav a { min-width: 0; }
+@media (min-width: 1180px) {
+  .series-nav { display: grid; grid-template-columns: repeat(var(--works, 7), minmax(0, 1fr)); overflow: visible; }
+  .series-nav a { min-width: 0; align-items: start; }
   .series-nav .sn-title { white-space: normal; }
 }
 .series-nav a {
   flex: none;
   display: grid;
-  grid-template-columns: 32px auto;
+  grid-template-columns: 28px auto;
   grid-template-rows: auto auto;
-  column-gap: 9px;
+  column-gap: 7px;
   align-items: center;
   padding: 4px 10px 4px 4px;
   border: 1px solid transparent;
@@ -465,8 +465,8 @@ h2 {
   color: var(--ink);
   text-decoration: none;
 }
-.series-nav img { grid-row: span 2; width: 32px; height: 32px; object-fit: cover; border-radius: 3px; background: var(--frame); }
-.sn-artist { font-family: var(--font-display); font-size: 1.05rem; line-height: 1.1; }
+.series-nav img { grid-row: span 2; width: 28px; height: 28px; object-fit: cover; border-radius: 3px; background: var(--frame); }
+.sn-artist { font-family: var(--font-display); font-size: 0.92rem; line-height: 1.1; white-space: nowrap; }
 .sn-title { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.03em; line-height: 1.3; color: var(--muted); white-space: nowrap; }
 .series-nav a:hover { border-color: var(--rule-strong); }
 .series-nav a[aria-current="page"] { border-color: var(--accent); background: var(--bg); }

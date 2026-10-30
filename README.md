@@ -1,6 +1,6 @@
 # Imagining Artist Methods
 
-Five step-by-step reconstructions of how famous paintings were made: what each artist's process would have been, from training and first decisions to the last stroke, using technical studies, documents and the intermediate works that survive.
+Seven step-by-step reconstructions of how famous paintings were made: what each artist's process would have been, from training and first decisions to the last stroke, using technical studies, documents and the intermediate works that survive.
 
 **Live site:** https://cat1060.github.io/imagining-artist-methods/
 
@@ -10,7 +10,9 @@ Five step-by-step reconstructions of how famous paintings were made: what each a
 | [Christ Carrying the Cross, layer by layer](https://cat1060.github.io/imagining-artist-methods/el-greco/) | El Greco, about 1580–85, Metropolitan Museum of Art |
 | [Girl with a Pearl Earring, layer by layer](https://cat1060.github.io/imagining-artist-methods/vermeer/) | Johannes Vermeer, about 1665, Mauritshuis |
 | [Impression, Sunrise, in one sitting](https://cat1060.github.io/imagining-artist-methods/monet/) | Claude Monet, 1872, Musée Marmottan Monet |
+| [A Bar at the Folies-Bergère, rethought](https://cat1060.github.io/imagining-artist-methods/manet/) | Édouard Manet, 1882, The Courtauld, London |
 | [The Starry Night, stroke by stroke](https://cat1060.github.io/imagining-artist-methods/van-gogh/) | Vincent van Gogh, 1889, Museum of Modern Art |
+| [At the Moulin Rouge, cut and rejoined](https://cat1060.github.io/imagining-artist-methods/toulouse-lautrec/) | Henri de Toulouse-Lautrec, 1892–95, Art Institute of Chicago |
 
 ## What's here
 

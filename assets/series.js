@@ -3,7 +3,7 @@
   const nav = document.querySelector(".series-nav");
   const current = nav && nav.querySelector('a[aria-current="page"]');
   const centre = () => {
-    if (nav.scrollWidth <= nav.clientWidth) return;
+    if (!nav.clientWidth || nav.scrollWidth <= nav.clientWidth) return;
     const left = current.getBoundingClientRect().left - nav.getBoundingClientRect().left;
     nav.scrollLeft += left - (nav.clientWidth - current.offsetWidth) / 2;
   };

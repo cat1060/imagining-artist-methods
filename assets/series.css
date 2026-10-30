@@ -418,20 +418,23 @@ h2 {
   .after-step figcaption { font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.45; color: var(--muted); }
 }
 
-/* Series selector: every page opens with the works, in date order */
-.series-bar { background: var(--surface); border-bottom: 1px solid var(--rule); }
+/* Series selector: the series name, then a dropdown of every work in date order */
+.series-bar { position: relative; z-index: 20; background: var(--surface); border-bottom: 1px solid var(--rule); }
 .series-inner {
   max-width: 1180px;
   margin-inline: auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 10px 8px;
+  padding-block: 8px;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 6px;
+  align-items: center;
 }
 @media (min-width: 720px) {
   .series-inner {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 24px;
     padding-left: max(32px, env(safe-area-inset-left, 0px));
     padding-right: max(32px, env(safe-area-inset-right, 0px));
   }
@@ -446,31 +449,71 @@ h2 {
   text-decoration: none;
 }
 .series-name:hover { color: var(--accent); }
-.series-nav { min-width: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; padding-block: 2px; }
-@media (min-width: 1180px) {
-  .series-nav { display: grid; grid-template-columns: repeat(var(--works, 9), minmax(0, 1fr)); overflow: visible; }
-  .series-nav a { min-width: 0; align-items: start; align-content: start; }
-  .series-nav .sn-artist, .series-nav .sn-title { white-space: normal; }
-}
-.series-nav a {
-  flex: none;
-  display: grid;
-  grid-template-columns: 28px auto;
-  grid-template-rows: auto auto;
-  column-gap: 7px;
+.series-pick { position: relative; min-width: 0; justify-self: stretch; }
+@media (min-width: 720px) { .series-pick { justify-self: end; width: min(100%, 440px); } }
+.series-pick > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
   align-items: center;
-  padding: 4px 10px 4px 4px;
+  gap: 10px;
+  min-height: 48px;
+  padding: 5px 10px 5px 5px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+}
+.series-pick > summary::-webkit-details-marker { display: none; }
+.series-pick > summary:hover { border-color: var(--accent); }
+.series-pick > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.series-pick[open] > summary { border-color: var(--accent); }
+.sp-chev { flex: none; width: 14px; height: 14px; color: var(--muted); transition: transform 0.15s; }
+.series-pick[open] .sp-chev { transform: rotate(180deg); }
+.sp-count { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+/* A work is shown by two thumbnails, the artist and the painting, then the names */
+.sw-faces { flex: none; display: flex; gap: 3px; }
+.sw-faces img { display: block; width: 36px; height: 36px; object-fit: cover; border-radius: 4px; background: var(--frame); }
+.sw-faces .sw-artist { border-radius: 50%; }
+.sw-text { display: grid; min-width: 0; }
+.sn-artist { font-family: var(--font-display); font-size: 0.98rem; line-height: 1.15; }
+.sn-title { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.03em; line-height: 1.35; color: var(--muted); }
+.series-pick > summary .sn-artist, .series-pick > summary .sn-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.series-pick > summary .sw-text { flex: 1; }
+.sp-home .sw-text { padding-left: 6px; }
+.series-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: min(72vh, 620px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 10px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+}
+@media (min-width: 720px) { .series-menu { left: auto; width: min(680px, calc(100vw - 64px)); } }
+.series-menu ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; }
+@media (min-width: 720px) { .series-menu ol { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(var(--rows, 8), auto); grid-auto-flow: column; } }
+.series-menu a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
   border: 1px solid transparent;
-  border-radius: 6px;
+  border-radius: 7px;
   color: var(--ink);
   text-decoration: none;
 }
-.series-nav img { grid-row: span 2; width: 28px; height: 28px; object-fit: cover; border-radius: 3px; background: var(--frame); }
-.sn-artist { font-family: var(--font-display); font-size: 0.92rem; line-height: 1.1; white-space: nowrap; }
-.sn-title { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.03em; line-height: 1.3; color: var(--muted); white-space: nowrap; }
-.series-nav a:hover { border-color: var(--rule-strong); }
-.series-nav a[aria-current="page"] { border-color: var(--accent); background: var(--bg); }
-.series-nav a[aria-current="page"] .sn-artist { color: var(--accent); }
+.series-menu .sw-faces img { width: 44px; height: 44px; }
+.series-menu a:hover, .series-menu a:focus-visible { border-color: var(--rule-strong); background: var(--bg); outline: none; }
+.series-menu a[aria-current="page"] { border-color: var(--accent); background: var(--bg); }
+.series-menu a[aria-current="page"] .sn-artist { color: var(--accent); }
+.sn-date { color: var(--muted); }
 
 /* Intermediate sources: real drawings, cartoons, versions and documents */
 .source-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px 28px; align-items: start; }

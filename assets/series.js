@@ -1,16 +1,26 @@
 (() => {
-  // Series selector: where the works scroll sideways, start with the current one in view.
-  const nav = document.querySelector(".series-nav");
-  const current = nav && nav.querySelector('a[aria-current="page"]');
-  const centre = () => {
-    if (!nav.clientWidth || nav.scrollWidth <= nav.clientWidth) return;
-    const left = current.getBoundingClientRect().left - nav.getBoundingClientRect().left;
-    nav.scrollLeft += left - (nav.clientWidth - current.offsetWidth) / 2;
-  };
-  if (current) {
-    centre();
-    // The web fonts change the widths once they arrive.
-    if (document.fonts) document.fonts.ready.then(centre);
+  // Series selector: a dropdown of every work. It opens with the current work in view, and
+  // closes on Escape, on a click outside it, or when focus leaves it.
+  const pick = document.querySelector(".series-pick");
+  if (pick) {
+    const summary = pick.querySelector("summary");
+    const menu = pick.querySelector(".series-menu");
+    const current = menu && menu.querySelector('a[aria-current="page"]');
+    pick.addEventListener("toggle", () => {
+      if (pick.open && current) menu.scrollTop = current.offsetTop - (menu.clientHeight - current.offsetHeight) / 2;
+    });
+    pick.addEventListener("keydown", (ev) => {
+      if (ev.key === "Escape" && pick.open) {
+        pick.open = false;
+        summary.focus();
+      }
+    });
+    document.addEventListener("click", (ev) => {
+      if (pick.open && !pick.contains(ev.target)) pick.open = false;
+    });
+    pick.addEventListener("focusout", (ev) => {
+      if (pick.open && ev.relatedTarget && !pick.contains(ev.relatedTarget)) pick.open = false;
+    });
   }
 
   // Stage viewers: a slider steps through stacked images of the work at successive stages.

@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Self-Portrait, Caught Mid-Stroke</title>
+<meta name="description" content="A step-by-step reconstruction of how Judith Leyster painted her Self-Portrait about 1630, from the white ground and grey-brown imprimatura to the woman&#x27;s face she painted out on her easel for a laughing violinist, with AI-generated reconstructions of each stage.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="Self-Portrait, Caught Mid-Stroke">
+<meta property="og:description" content="A step-by-step reconstruction of how Judith Leyster painted her Self-Portrait about 1630, from the white ground and grey-brown imprimatura to the woman&#x27;s face she painted out on her easel for a laughing violinist, with AI-generated reconstructions of each stage.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/leyster/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/leyster/img/card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+:root {
+  --bg: #E8E5E0; --surface: #F4F2EE; --ink: #1D1A1C; --muted: #59525A; --rule: #D3CDD0; --rule-strong: #A39AA2;
+  --accent: #8A3346; --accent-2: #3D5C80; --frame: #1E1A1B; --frame-edge: #423A3D;
+  --pg-canvas: #B9A782; --pg-canvas-dark: #9C8A63; --pg-white: #EEEAE2; --pg-imprim: #85735E; --pg-flesh: #D7A58E; --pg-black: #25211F;
+  --pg-purple: #8C6E8E; --pg-pink: #D9A3A6; --pg-glaze: #8E2F3F;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151314; --surface: #1D1A1C; --ink: #EEEAEC; --muted: #B3AAB0; --rule: #312B2F; --rule-strong: #514850;
+    --accent: #E58FA0; --accent-2: #8FB2DA; --frame: #0B0A0A; --frame-edge: #423A3D; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151314; --surface: #1D1A1C; --ink: #EEEAEC; --muted: #B3AAB0; --rule: #312B2F; --rule-strong: #514850;
+  --accent: #E58FA0; --accent-2: #8FB2DA; --frame: #0B0A0A; --frame-edge: #423A3D; color-scheme: dark;
+}
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <details class="series-pick">
+      <summary aria-label="Leyster, Self-Portrait. Choose another of the 15 works"><span class="sw-faces"><img class="sw-artist" src="../leyster/img/artist.jpg" width="96" height="96" alt=""><img src="../leyster/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Leyster</span><span class="sn-title">Self-Portrait · c. 1630</span></span><span class="sp-count">All 15</span><svg class="sp-chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></summary>
+      <nav class="series-menu" aria-label="Works in the series">
+        <ol style="--rows: 8">
+        <li><a href="../raphael/"><span class="sw-faces"><img class="sw-artist" src="../raphael/img/artist.jpg" width="96" height="96" alt=""><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens <span class="sn-date">· 1509–11</span></span></span></a></li>
+        <li><a href="../el-greco/"><span class="sw-faces"><img class="sw-artist" src="../el-greco/img/artist.jpg" width="96" height="96" alt=""><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross <span class="sn-date">· c. 1580</span></span></span></a></li>
+        <li><a href="../gentileschi/"><span class="sw-faces"><img class="sw-artist" src="../gentileschi/img/artist.jpg" width="96" height="96" alt=""><img src="../gentileschi/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Artemisia Gentileschi</span><span class="sn-title">Self Portrait as Saint Catherine of Alexandria <span class="sn-date">· c. 1615–17</span></span></span></a></li>
+        <li><a href="../leyster/" aria-current="page"><span class="sw-faces"><img class="sw-artist" src="../leyster/img/artist.jpg" width="96" height="96" alt=""><img src="../leyster/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Leyster</span><span class="sn-title">Self-Portrait <span class="sn-date">· c. 1630</span></span></span></a></li>
+        <li><a href="../rembrandt/"><span class="sw-faces"><img class="sw-artist" src="../rembrandt/img/artist.jpg" width="96" height="96" alt=""><img src="../rembrandt/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Rembrandt</span><span class="sn-title">The Night Watch <span class="sn-date">· 1642</span></span></span></a></li>
+        <li><a href="../vermeer/"><span class="sw-faces"><img class="sw-artist" src="../vermeer/img/artist.jpg" width="96" height="96" alt=""><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring <span class="sn-date">· c. 1665</span></span></span></a></li>
+        <li><a href="../ruysch/"><span class="sw-faces"><img class="sw-artist" src="../ruysch/img/artist.jpg" width="96" height="96" alt=""><img src="../ruysch/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Ruysch</span><span class="sn-title">Bouquet of Flowers <span class="sn-date">· 1708</span></span></span></a></li>
+        <li><a href="../vigee-le-brun/"><span class="sw-faces"><img class="sw-artist" src="../vigee-le-brun/img/artist.jpg" width="96" height="96" alt=""><img src="../vigee-le-brun/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vigée Le Brun</span><span class="sn-title">Self Portrait in a Straw Hat <span class="sn-date">· c. 1782</span></span></span></a></li>
+        <li><a href="../bonheur/"><span class="sw-faces"><img class="sw-artist" src="../bonheur/img/artist.jpg" width="96" height="96" alt=""><img src="../bonheur/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Bonheur</span><span class="sn-title">The Horse Fair <span class="sn-date">· 1852–55</span></span></span></a></li>
+        <li><a href="../monet/"><span class="sw-faces"><img class="sw-artist" src="../monet/img/artist.jpg" width="96" height="96" alt=""><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise <span class="sn-date">· 1872</span></span></span></a></li>
+        <li><a href="../caillebotte/"><span class="sw-faces"><img class="sw-artist" src="../caillebotte/img/artist.jpg" width="96" height="96" alt=""><img src="../caillebotte/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Caillebotte</span><span class="sn-title">Paris Street; Rainy Day <span class="sn-date">· 1877</span></span></span></a></li>
+        <li><a href="../manet/"><span class="sw-faces"><img class="sw-artist" src="../manet/img/artist.jpg" width="96" height="96" alt=""><img src="../manet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Manet</span><span class="sn-title">A Bar at the Folies-Bergère <span class="sn-date">· 1882</span></span></span></a></li>
+        <li><a href="../van-gogh/"><span class="sw-faces"><img class="sw-artist" src="../van-gogh/img/artist.jpg" width="96" height="96" alt=""><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night <span class="sn-date">· 1889</span></span></span></a></li>
+        <li><a href="../toulouse-lautrec/"><span class="sw-faces"><img class="sw-artist" src="../toulouse-lautrec/img/artist.jpg" width="96" height="96" alt=""><img src="../toulouse-lautrec/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Toulouse-Lautrec</span><span class="sn-title">At the Moulin Rouge <span class="sn-date">· 1892–95</span></span></span></a></li>
+        <li><a href="../af-klint/"><span class="sw-faces"><img class="sw-artist" src="../af-klint/img/artist.jpg" width="96" height="96" alt=""><img src="../af-klint/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">af Klint</span><span class="sn-title">The Ten Largest, No. 7 <span class="sn-date">· 1907</span></span></span></a></li>
+        </ol>
+      </nav>
+    </details>
+  </div>
+</header>
+<div class="page">
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Haarlem, about 1630</p>
+      <h1>Self-Portrait, <em>caught mid-stroke</em></h1>
+      <p class="lede">Imagine you are Judith Leyster, about twenty-one, the brewer&#x27;s daughter whom Haarlem&#x27;s chronicler has already praised in print. You paint yourself turning from your easel, brush raised, in a collar no one would work in. This guide follows how you might have made it: a white ground and a grey-brown wash, a sketch in paint, a dress laid in with liquid strokes, and on the easel a woman&#x27;s face that you painted out for a laughing fiddler. Then it follows the canvas: sold as a Frans Hals, damaged and cleaned, and given back to you.</p>
+      <p class="basis">The National Gallery of Art&#x27;s catalogue entry of 1995 and its technical summary describe the canvas, the ground, how several passages were painted, and the head found under the violinist by infrared. No pigment analysis of this painting has been published, and the order of the stages is inferred. Each chapter opens with a note on its evidence. The slider steps through eight stages; stages 1 to 7 are AI reconstructions or imagined states.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="Today. A young woman in a white cap and a wide lace collar sits sideways on a chair, her arm over its back, a brush in her right hand and a palette and brushes in her left. She turns to us, smiling, lips parted. Behind her on an easel stands an unfinished painting of a laughing violinist in a blue beret.">
+            <img src="img/stages/01-ground.jpg" width="800" height="910" alt="" data-name="Canvas and white ground" data-note="A plain-weave canvas full of slubs, covered all over with a smooth, thin white ground. The NGA&#x27;s technical summary records both.">
+            <img src="img/stages/02-imprimatura.jpg" width="800" height="910" alt="" data-name="Grey-brown imprimatura" data-note="A thin grey-brown layer over the white, the colour you paint into. Documented; its streaks here are invented.">
+            <img src="img/stages/03-sketch.jpg" width="800" height="910" alt="" data-name="Lay-in in brown" data-note="A quick sketch in thin brown oil, straight onto the canvas. Your habit of drawing directly in paint is reported for your work in general; no underdrawing is reported here, and these lines are invented.">
+            <img src="img/stages/04-layin.jpg" width="800" height="910" alt="" data-name="Dress, chair and a first head" data-note="The black dress in loose, liquid strokes, thin purple on the sleeves, pink under the skirt; on the easel, a woman&#x27;s head, as the infrared images show. Its looks are imagined.">
+            <img src="img/stages/05-head.jpg" width="800" height="910" alt="" data-name="Face, hands and collar" data-note="Your face and hands blended wet into wet, the collar and cap. The easel still holds the woman&#x27;s head; the cuff and the red glazes are still to come.">
+            <img src="img/stages/06-change.jpg" width="800" height="910" alt="" data-name="The violinist" data-note="The head on the easel painted over and a laughing violinist from your Merry Company brushed in its place, left unfinished. The head still shows faintly, as it does today.">
+            <img src="img/stages/07-varnish.jpg" width="800" height="910" alt="" data-name="Under yellowed varnish" data-note="Before 1992 the painting lay under discoloured varnish that, the NGA says, severely disfigured it. Imagined from today&#x27;s photograph.">
+            <img src="img/stages/08-today.jpg" width="800" height="910" class="is-on" fetchpriority="high" alt="" data-name="Today" data-note="After the cleaning of 1992. The red skirt at lower left is painted on a later insert of new canvas, not by you.">
+          </div>
+        </div>
+        <span class="dim dim-h" aria-hidden="true"><span>74.6 cm</span></span>
+        <span class="dim dim-w" aria-hidden="true"><span>65.1 cm</span></span>
+      </div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name">Today</p>
+          <span class="scrub-count">Stage 8 of 8</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" min="0" max="7" step="1" value="7" aria-label="Stage of the work" aria-valuetext="Stage 8, Today">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note">After the cleaning of 1992. The red skirt at lower left is painted on a later insert of new canvas, not by you.</p>
+      </div>
+      <figcaption>Judith Leyster, <i>Self-Portrait</i>, about 1630. Oil on canvas, 74.6 × 65.1 cm. National Gallery of Art, Washington, Gift of Mr. and Mrs. Robert Woods Bliss, 1949.6.1. <span class="tag">AI-generated</span> Stages 3 to 6 are reconstructions made with Prodia from the NGA's open-access photograph; stages 1, 2 and 7 are imagined states made from it.</figcaption>
+    </figure>
+  </header>
+  <nav class="toc" aria-label="Chapters" style="--toc-n: 8">
+    <ol>
+      <li><a href="#haarlem"><span class="toc-num">I</span><span class="toc-name">Haarlem</span></a></li>
+      <li><a href="#star"><span class="toc-num">II</span><span class="toc-name">Leading star</span></a></li>
+      <li><a href="#idea"><span class="toc-num">III</span><span class="toc-name">Idea</span></a></li>
+      <li><a href="#materials"><span class="toc-num">IV</span><span class="toc-name">Ground</span></a></li>
+      <li><a href="#layin"><span class="toc-num">V</span><span class="toc-name">Lay-in</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VI</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#easel"><span class="toc-num">VII</span><span class="toc-name">The easel</span></a></li>
+      <li><a href="#found"><span class="toc-num">VIII</span><span class="toc-name">Found</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="chapter" id="haarlem" aria-labelledby="h-haarlem">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-haarlem">A brewer&#x27;s daughter in Haarlem</h2>
+        <p class="evidence"><b>Evidence</b>The NGA&#x27;s biography of Leyster and its catalogue notes, citing Ampzing (1628), Schrevelius (1648) and Hofrichter (1989). Who taught you is not documented.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/haarlem.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a canal street of stepped brick gables in grey light, a brewery gate with barrels and a gilded star hanging over it.">
+        <figcaption><span class="tag">AI-generated</span>A Haarlem street around 1630, as it might have looked. Your father&#x27;s brewery was called the Leyster, the lodestar; its sign is imagined.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are baptised in Haarlem on 28 July 1609. Your father, Jan Willemsz, owns a brewery called the Leyster, the lodestar, and the family takes its name from it.</p>
+          <p>Who taught you is not recorded. Samuel Ampzing's book in praise of Haarlem, published in 1628 and written before February 1627, mentions you beside the workshop of Frans Pietersz de Grebber, whose daughter Maria also painted, but his wording leaves it unclear whether you trained there. No document says you studied with Frans Hals, though your work comes closer to his than almost anyone's.</p>
+          <p>Ampzing's own question shows how rare you are: "Who ever saw a painting made by the hand of a daughter?" Your family moves to Vreeland near Utrecht and, by September 1629, to Zaandam; you are back in Haarlem by November 1631, a witness at the baptism of one of Hals's children.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-ampzing.jpg" width="600" height="736" loading="lazy" alt="An engraved title page: the Maid of Haarlem seated with the town&#x27;s arms, between allegorical figures, a view of the town above.">
+            <figcaption>
+              <span class="source-title">Title page of Ampzing&#x27;s Beschryvinge ende lof der stad Haerlem</span>
+              <span class="source-meta">1628 · Engraving · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">The book that praised you at nineteen.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Haarlemse_Stedenmaagd_met_stadsgezicht_Titelpagina_voor_Samuel_Ampzing%2C_Beschryvinge_ende_lof_der_stad_Haerlem_in_Holland_%28%E2%80%A6%29%2C_1628%2C_RP-P-AO-9-4.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="star" aria-labelledby="h-star">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-star">The leading star</h2>
+        <p class="evidence"><b>Evidence</b>The NGA&#x27;s biography and catalogue; the Rijksmuseum&#x27;s entry for The Jolly Drinker; Peter Sutton&#x27;s review of the 1993 exhibition. Sources differ on details of the guild dispute of 1635.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>From 1629 you sign and date your pictures, with a monogram of your own: the letters J and L joined, with a star beside them, a play on your name. This self-portrait carries no signature.</p>
+          <p>By 1633 you are a master in Haarlem's Guild of St Luke, one of very few women ever admitted; the NGA calls you the first for whom a body of work can be named. In 1635 you have three pupils. One of them, Willem Woutersz, leaves for Frans Hals's studio, and in October you go before the guild and win payment from his mother.</p>
+          <p>In 1648 the Haarlem historian Theodorus Schrevelius, listing women who could compete with men in painting, singles you out as the true "leading star" in art, the same pun on your name.</p>
+          <div class="note">
+            <h3 class="note-title">Was Hals fined?</h3>
+            <p>Accounts of the guild case differ. The NGA says only that your claim succeeded. Other accounts say you were fined for not registering the pupil, or that Hals was; a 1994 review dates the complaint to 1633. This guide follows the NGA.</p>
+          </div>
+        </div>
+        <aside class="aside">
+          <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-monogram.jpg" width="600" height="372" loading="lazy" alt="Close-up of a grey-green background with the date 1629 painted above a monogram of a looped J and L and a small star.">
+                  <figcaption>Your monogram on The Jolly Drinker: 1629, JL and a star.</figcaption>
+                </figure>
+          </div>
+          <figure class="source">
+            <img src="img/src-toper.jpg" width="600" height="634" loading="lazy" alt="A laughing man in a black beret with a long red feather tips a stoneware jug towards us.">
+            <figcaption>
+              <span class="source-title">The Jolly Drinker</span>
+              <span class="source-meta">1629 · Oil on canvas · Rijksmuseum, Amsterdam</span>
+              <span class="source-note">Signed and dated with your monogram at upper right.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:De_vrolijke_drinker%2C_SK-A-1685.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-proposition.jpg" width="600" height="767" loading="lazy" alt="By lamplight, a woman bent over her sewing ignores a man leaning over her shoulder holding out coins.">
+            <figcaption>
+              <span class="source-title">Man Offering Money to a Young Woman</span>
+              <span class="source-meta">1631 · Oil on panel · Mauritshuis, The Hague</span>
+              <span class="source-note">Another of your pictures from these years, painted by lamplight.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Judith_Leyster_-_Man_Offering_Money_to_a_Young_Woman_-_564_-_Mauritshuis.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="idea" aria-labelledby="h-idea">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-idea">Fine clothes, a quick turn</h2>
+        <p class="evidence"><b>Evidence</b>Arthur Wheelock&#x27;s catalogue entry (NGA, 1995) and its notes, and the NGA&#x27;s article of 2025. The reasons given here are scholars&#x27; readings, not your words.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/studio.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: an empty room with whitewashed walls and a tiled floor, light from a high leaded window, an easel with a blank canvas, a chair with turned posts and a small table with a palette, brushes and a white cloth.">
+        <figcaption><span class="tag">AI-generated</span>A painter&#x27;s room in Haarlem around 1630, as it might have looked. Where you painted is not recorded.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>A self-portrait at the easel is an old type. Painters show themselves dressed well, at work, to claim that painting is a liberal art and not a craft; Catharina van Hemessen did it in 1548. You keep to that tradition and break it at once.</p>
+          <dl class="decisions">
+            <div class="decision"><dt>Dress for the claim</dt><dd>A starched collar edged with lace, a fine cap, silk sleeves: formal clothes, the NGA notes, inappropriate for anyone busy painting. They say what you can afford, and what painting is worth.</dd></div>
+            <div class="decision"><dt>Turn and speak</dt><dd>Your arm over the back of the chair, your lips parted, you turn to us as if interrupted. That momentary air belongs to Frans Hals's portraits of the 1620s; such active poses were rare in portraits of women.</dd></div>
+            <div class="decision"><dt>Show what you sell</dt><dd>On the easel, not your own face but a laughing fiddler from one of your merry company scenes: the kind of picture a buyer could order from you.</dd></div>
+            <div class="decision"><dt>Bow and brush</dt><dd>His bow and your brush lie almost parallel. Wheelock reads it as a claim: as he has mastered his instrument, you have mastered yours.</dd></div>
+          </dl>
+          <p>When is this? The NGA dates it about 1630, from the collar's style, the cap (close to one in your <i>Carousing Couple</i> of 1630) and the violinist's source. Frima Fox Hofrichter proposed instead that you painted it in 1633 as your masterpiece for the guild, which required a painting "two feet large" of new masters; Wheelock thinks that probably not correct.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-hemessen.jpg" width="600" height="787" loading="lazy" alt="A young woman in a dark dress with red sleeves sits at an easel, a brush in one hand and a palette and maulstick in the other, looking out.">
+            <figcaption>
+              <span class="source-title">Catharina van Hemessen, Self-Portrait</span>
+              <span class="source-meta">1548 · Oil on panel · Kunstmuseum Basel</span>
+              <span class="source-note">The tradition you follow: the painter at work in good clothes, turned to the viewer.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Hemessen-Selbstbildnis.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-massa.jpg" width="600" height="734" loading="lazy" alt="A bearded man in a black hat and wide white collar sits sideways with his arm over the back of a chair, turning to look out.">
+            <figcaption>
+              <span class="source-title">Frans Hals, Isaac Abrahamsz. Massa</span>
+              <span class="source-meta">1626 · Oil on canvas · Art Gallery of Ontario, Toronto</span>
+              <span class="source-note">The informal turn over a chair back that the NGA compares with yours.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Isaac_Abrahamsz._Massa_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-materials">Canvas, white ground, grey-brown wash</h2>
+        <p class="evidence"><b>Evidence</b>The NGA&#x27;s technical summary for this painting; Hendriks and Groen&#x27;s study of six of your paintings (1993), known here only through a review. No sample from this canvas has been published.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/ground.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a hand brushing a thin grey-brown wash over a white-primed canvas lying on a trestle table, a dish of the wash and a jug of oil beside it.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: a grey-brown imprimatura brushed over the white ground.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The canvas is a plain weave with many slubs and irregular threads. Over it goes a smooth, thin white ground, and over that a grey-brown imprimatura, a thin coloured wash that will show through in the half-tones and give the whole picture its key.</p>
+          <p>The X-radiographs show cusping, the wavy distortion of the weave where it was pulled onto a frame, along all the edges except at the lower left. So the picture is about the size you made it, though the tacking margins were trimmed when it was lined.</p>
+          <p>Ella Hendriks and Karin Groen examined six of your signed paintings for the 1993 exhibition. As a review summarised them, your canvases had an oil imprimatura over a flesh-coloured chalk ground, the usual Haarlem practice. The NGA describes this ground as white; this guide follows the NGA for this painting.</p>
+          <p>What pigments you used here is not known: no analysis of this painting has been published. The swatches in the diagram are colours seen, not colours found.</p>
+        </div>
+        <aside class="aside">
+            <figure class="xsec">
+              <figcaption class="xsec-cap">The layers, as described · surface at top</figcaption>
+              <div class="xsec-rows">
+                <div class="layer"><span class="band" style="--c: var(--pg-glaze); --h: 12px"></span><span class="layer-label"><b>Red glazes</b><span>in the skirt, over the pink</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-pink); --h: 16px"></span><span class="layer-label"><b>Opaque pink</b><span>underpaint of the skirt</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-imprim); --h: 10px"></span><span class="layer-label"><b>Imprimatura</b><span>thin, grey-brown</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-white); --h: 14px"></span><span class="layer-label"><b>Ground</b><span>smooth, thin, white</span></span></div>
+                <div class="layer"><span class="band is-canvas" style="--h: 26px"></span><span class="layer-label"><b>Canvas</b><span>plain weave, with many slubs</span></span></div>
+              </div>
+            </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="layin" aria-labelledby="h-layin">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-layin">Draw with the brush</h2>
+        <p class="evidence"><b>Evidence</b>Hendriks and Groen (1993) through Sutton&#x27;s review, on your work in general. For this painting no underdrawing and no preparatory drawing are reported; the lay-in shown is inferred.</p>
+      </header>
+      <div class="chapter-stack">
+        <figure class="stages" style="--stage-n: 4">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/01-ground.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction: A bare canvas with a pale ground through which the weave shows.">
+              <figcaption><b>Ground</b>White, smooth, thin. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/02-imprimatura.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction: The same canvas covered with an even grey-brown wash.">
+              <figcaption><b>Imprimatura</b>A grey-brown wash. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-sketch.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction: A loose sketch in brown paint of the seated painter, her chair, palette and the easel.">
+              <figcaption><b>Lay-in</b>Brown lines in oil. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/04-layin.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction: The dress and background laid in in flat colour, the face still pale, a woman&#x27;s head roughly painted on the easel.">
+              <figcaption><b>Laying in</b>Dress, chair, a first head. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Generated with Prodia from the finished painting, so the composition stays in register. They show plausible stages, not scans of the real layers.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li><h3>No drawing first</h3><p>No preparatory drawing for this painting is known, and none of the technical reports mentions an underdrawing. Hendriks and Groen found that you usually did without preliminary studies and sketched straight onto the primed canvas in oil, as Hals did.</p></li>
+          <li><h3>Sketch in thin paint</h3><p>Brush in the figure, the chair, the palette and the easel in a thin, dark paint on the grey-brown. The lines in stage 3 are invented: they show the kind of sketch the evidence allows, not the one beneath this picture.</p></li>
+          <li><h3>Hold the pose</h3><p>Looking over your shoulder with your arm on a chair back is hard to keep up. You would have had to take the pose again and again to paint it, presumably at a mirror.</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-painting">Paint the figure, then change the easel</h2>
+        <p class="evidence"><b>Evidence</b>The NGA&#x27;s technical summary describes how the peplum, the flesh, the sleeves and cuffs, and the skirt were painted. The order of the four steps is inferred; on The Jolly Drinker (1629) the Rijksmuseum found you worked from the back to the front.</p>
+      </header>
+      <div class="chapter-stack">
+        <p class="prose-intro">The paint changes from passage to passage: liquid in the black, thick and blended in the flesh, thin in the sleeves, glazed in the skirt. The technical summary does not say in what order you worked; the four steps below are one plausible sequence.</p>
+        <div class="paint-grid">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with four numbered markers showing the order of work.">
+                <img src="img/stages/04-layin.jpg" width="800" height="910" loading="lazy" alt="" data-caption="After step 1: dress, sleeves and skirt">
+                <img src="img/stages/05-head.jpg" width="800" height="910" loading="lazy" alt="" data-caption="After step 2: face, hands and collar">
+                <img src="img/stages/06-change.jpg" width="800" height="910" loading="lazy" alt="" data-caption="After step 3: change the picture on the easel">
+                <img src="img/stages/08-today.jpg" width="800" height="910" loading="lazy" alt="" class="is-on" data-caption="After step 4: cuffs, glazes and the palette">
+              </div>
+              <a class="marker" href="#dress" data-target="dress" style="--x: 30%; --y: 70%" aria-label="Step 1, Dress, sleeves and skirt">1</a>
+              <a class="marker" href="#face" data-target="face" style="--x: 37%; --y: 30%" aria-label="Step 2, Face, hands and collar">2</a>
+              <a class="marker" href="#change" data-target="change" style="--x: 80%; --y: 36%" aria-label="Step 3, Change the picture on the easel">3</a>
+              <a class="marker" href="#finish" data-target="finish" style="--x: 68%; --y: 87%" aria-label="Step 4, Cuffs, glazes and the palette">4</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span aria-live="polite">After step 4: cuffs, glazes and the palette</span></p>
+            <ol class="map-legend">
+              <li><a href="#dress"><span class="dot">1</span>Dress, sleeves and skirt</a></li>
+              <li><a href="#face"><span class="dot">2</span>Face, hands and collar</a></li>
+              <li><a href="#change"><span class="dot">3</span>Change the picture on the easel</a></li>
+              <li><a href="#finish"><span class="dot">4</span>Cuffs, glazes and the palette</a></li>
+            </ol>
+          </div>
+          <div class="steps">
+            <article class="step" id="dress" aria-labelledby="h-dress">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-dress">Dress, sleeves and skirt</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/04-layin.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction after step 1: The black dress in loose, liquid strokes, thin purple on the sleeves, pink under the skirt; on the easel, a woman&#x27;s head, as the infrared images show. Its looks are imagined.">
+                <figcaption>After step 1 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-sleeve.jpg" width="600" height="360" loading="lazy" alt="Close-up of a purple silk sleeve with a gold-studded seam, over a black bodice.">
+                  <figcaption>The sleeve: thin purple, scumbled.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Lay in the background and the dress first. The NGA&#x27;s conservators describe fluid paint in loose, liquid strokes in the black peplum, the short skirt of the bodice.</p>
+                  <p>Keep the purple of the sleeves thin, scumbled over what lies beneath, and put an opaque pink under the red skirt, ready for glazes later.</p>
+                </div>
+              </div>
+            </article>
+            <article class="step" id="face" aria-labelledby="h-face">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-face">Face, hands and collar</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/05-head.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction after step 2: Your face and hands blended wet into wet, the collar and cap. The easel still holds the woman&#x27;s head; the cuff and the red glazes are still to come.">
+                <figcaption>After step 2 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-face.jpg" width="480" height="480" loading="lazy" alt="Close-up of a young woman&#x27;s face under a white cap, her lips parted, her cheeks flushed.">
+                  <figcaption>Your face, blended wet into wet.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Now the flesh: thicker pastes, blended wet into wet, so the cheeks turn without a hard edge.</p>
+                  <p>Then the great collar, starched and edged with lace, and the hand that holds the brush. The NGA notes how smoothly the head is modelled; it is one of the reasons the catalogue dates the painting to about 1630.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 2">
+                <figure class="plate">
+                  <img src="img/detail-collar.jpg" width="480" height="480" loading="lazy" alt="Close-up of a wide white collar edged with lace, below the chin.">
+                  <figcaption>The collar&#x27;s lace edge.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-brushhand.jpg" width="480" height="480" loading="lazy" alt="Close-up of a hand holding a long brush lightly between the fingers, a lace cuff at the wrist.">
+                  <figcaption>The brush hand.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="change" aria-labelledby="h-change">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-change">Change the picture on the easel</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/06-change.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction after step 3: The head on the easel painted over and a laughing violinist from your Merry Company brushed in its place, left unfinished. The head still shows faintly, as it does today.">
+                <figcaption>After step 3 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-violinist.jpg" width="480" height="480" loading="lazy" alt="Close-up of the unfinished painting on the easel: a laughing young man in a blue beret playing a violin.">
+                  <figcaption>The violinist, left unfinished.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>The canvas on your easel first held a woman&#x27;s head. Paint it out and put in its place a laughing violin player, the same figure as in your Merry Company.</p>
+                  <p>Leave him unfinished, as if you had just turned from him to look at us. His bow, raised, answers the brush in your hand.</p>
+                </div>
+              </div>
+            </article>
+            <article class="step" id="finish" aria-labelledby="h-finish">
+              <header class="step-head"><span class="step-num" aria-hidden="true">4</span><h3 id="h-finish">Cuffs, glazes and the palette</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/08-today.jpg" width="800" height="910" loading="lazy" alt="AI reconstruction after step 4: After the cleaning of 1992. The red skirt at lower left is painted on a later insert of new canvas, not by you.">
+                <figcaption>After step 4 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-cuff.jpg" width="480" height="480" loading="lazy" alt="Close-up of a hand holding a palette, a white cloth and a bundle of brushes, with a lace cuff at the wrist.">
+                  <figcaption>Palette, brushes and a cloth in one hand.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>When the sleeves are dry, put the white cuffs on top of them, wet over dry.</p>
+                  <p>Over the opaque pink of the skirt, lay red glazes. Then the palette with its dabs of colour, the white painter&#x27;s cloth and the bundle of brushes in your left hand.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-palette.jpg" width="600" height="360" loading="lazy" alt="Close-up of a dark palette with small dabs of white, red and ochre paint, a white cloth and many brush handles.">
+                  <figcaption>The palette, with dabs of paint.</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="easel" aria-labelledby="h-easel">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-easel">The face under the fiddler</h2>
+        <p class="evidence"><b>Evidence</b>The NGA&#x27;s catalogue and technical summary, from infrared photography and infrared reflectography; its figures are not reproduced here. Whose face it was, and why you changed it, are scholars&#x27; suggestions.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Infrared photography and infrared reflectography, which see through some paint to darker layers beneath, show that the picture on your easel first held something else: a woman's head, with parted lips, turned slightly to the left. The NGA's conservators call it a major change. It is now partly visible to the naked eye, as a pentimento.</p>
+          <p>Whose head? Wheelock thinks it was probably you, a self-portrait within the self-portrait, as the tradition of the painter at the easel would lead one to expect. Why change it? Perhaps because the merry company with the fiddler had sold well, or, as Hofrichter suggested, to show that you could paint both portraits and lively scenes from life. No document says.</p>
+          <p>The fiddler comes from your <i>Merry Company</i> of about 1629 to 1631: the same blue beret, the same open laugh, the same bow raised across the strings. On the easel you leave him unfinished. Today he is the most worn part of the painting.</p>
+          <figure class="compare">
+            <div><img src="img/detail-easel.jpg" width="480" height="600" loading="lazy" alt="The painting on the easel: the violinist in blue against a brownish ground."><span class="caption">The easel today.</span></div>
+            <div><img src="img/detail-easel-eq.jpg" width="480" height="600" loading="lazy" alt="The same area in grey with its contrast stretched: to the left of the violinist's head, a darker shape like a head turned to the left."><span class="caption">The same, contrast stretched: a darker head-shaped form left of his face.</span></div>
+          </figure>
+          <p class="caption">Both are cut from the NGA's open-access photograph; the right one is only that photograph in grey with its contrast stretched, not an infrared image. The NGA's reflectogram, which shows the head clearly, is in its <a href="https://www.nga.gov/research/publications/online-editions/dutch-paintings-seventeenth-century-self-portrait-c-1630" target="_blank" rel="noopener">online catalogue</a>.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-merry.jpg" width="600" height="718" loading="lazy" alt="Three laughing young men in a room: one in red with a feathered cap holds a glass, one behind, and at right a fiddler in pale blue playing, children peering through a window.">
+            <figcaption>
+              <span class="source-title">Merry Company</span>
+              <span class="source-meta">About 1629–31 · Oil on canvas · Private collection (the Klesch Collection, according to the NGA)</span>
+              <span class="source-note">The fiddler at right is the figure on your easel.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Judith_Leyster_Merry_Trio.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-carousing.jpg" width="600" height="756" loading="lazy" alt="A man playing a fiddle and a laughing woman holding up a glass sit together at a table.">
+            <figcaption>
+              <span class="source-title">Carousing Couple</span>
+              <span class="source-meta">1630 · Oil · Musée du Louvre, Paris</span>
+              <span class="source-note">Signed with your monogram; once sold as a Hals. The NGA compares its cap and its smooth heads with the self-portrait&#x27;s.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Leyster%2C_Judith_-_La_Joyeuse_Compagnie%2C_1630%2C_RF_2131.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="found" aria-labelledby="h-found">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-found">Lost to Hals, found again</h2>
+        <p class="evidence"><b>Evidence</b>The NGA&#x27;s provenance, exhibition history and technical summary. The London sales of 1810–12 are only possibly this painting; when the canvas at lower left was lost is not known.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/lining.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a restorer&#x27;s hands pressing a heated iron onto an old canvas laid face down on a table, glue pots and a small stove beside it.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: a canvas being lined with a hot iron. Such heat can leave the tiny pits seen all over this painting; when it was lined is not recorded.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>After your death your name fades, and dealers and scholars give your pictures to Hals. This one carries no monogram to argue with them. It was attributed to you in 1926, then given to Hals by many scholars through the 1930s, shown at the Hals exhibition in Haarlem in 1937, and is now accepted as yours by the NGA and by scholars generally.</p>
+          <p>The canvas has had a hard life. A long horizontal rectangle of it is missing at the lower left, in the red skirt, and has been replaced by an insert of fine, tightly woven canvas with none of your paint or ground; the red there is a restorer's. The paint is pitted all over with tiny holes of the kind made by too much heat during lining, abraded and flattened, with small losses at the top and in your left cheek.</p>
+          <p>In 1992 the NGA removed the discoloured varnishes that, in Wheelock's words, had severely disfigured the painting, and the old retouching. Since then the picture has become, as he puts it, iconic.</p>
+          <figure class="source">
+            <img src="img/detail-skirt.jpg" width="600" height="360" loading="lazy" alt="Close-up of a red silk skirt with pale highlights, below a black bodice and beside a gilt chair post.">
+            <figcaption>
+              <span class="source-title">The red skirt at lower left</span>
+              <span class="source-meta">Cut from the NGA&#x27;s photograph</span>
+              <span class="source-note">Much of this area is painted on the later insert. Its exact outline shows in the NGA&#x27;s X-radiograph, not here.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Judith_Leyster%2C_Self-Portrait%2C_c._1630%2C_NGA_37003.jpg" target="_blank" rel="noopener">National Gallery of Art, via Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <div class="note">
+            <h3 class="note-title">What is still not known</h3>
+            <p>What pigments and medium you used here: no samples have been published. Whether the head on the easel was ever more than a lay-in, and whose it was. Whether you began with a sketch in paint, as in your other works, since no underdrawing is reported. The order in which you painted the parts. When the canvas was lined and when the piece at lower left was lost. Whether the painting was finished about 1630 or in 1633. The technical study of 1993 by Hendriks and Groen, and the NGA's own fuller reports, were not read for this guide.</p>
+          </div>
+        </div>
+        <aside class="aside" aria-label="Timeline">
+          <ol class="timeline" aria-label="Timeline">
+            <li><span class="t-year">1636</span><span>You marry the painter Jan Miense Molenaer and move to Amsterdam. You paint little after this.</span></li>
+            <li><span class="t-year">1660</span><span>Buried in Heemstede on 10 February.</span></li>
+            <li><span class="t-year">1810–12</span><span>A “Portrait of F. Hals' Daughter by F. Hals” passes through four London sales; possibly this painting.</span></li>
+            <li class="is-key"><span class="t-year">1893</span><span>Cornelis Hofstede de Groot publishes the pictures signed with your monogram and gives them back to you.</span></li>
+            <li><span class="t-year">1926</span><span>Sold at Christie's, London; attributed to you that year.</span></li>
+            <li><span class="t-year">1928–37</span><span>Published and exhibited in America and Haarlem as by Frans Hals; a 1930 article calls it Hals's portrait of you.</span></li>
+            <li><span class="t-year">1929</span><span>Bought by Mr and Mrs Robert Woods Bliss, Washington.</span></li>
+            <li><span class="t-year">1949</span><span>Given to the National Gallery of Art.</span></li>
+            <li class="is-key"><span class="t-year">1992</span><span>Cleaned: discoloured varnish and old retouching removed; the insert kept.</span></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Leyster thought</h2>
+      <ul class="principles">
+        <li><em>Claim the profession.</em> Fine clothes and a brush in hand: a painter, not a craftswoman, and a woman at that.</li>
+        <li><em>Catch a moment.</em> A turn, a half-spoken word, the work interrupted, as in Hals&#x27;s portraits.</li>
+        <li><em>Advertise your wares.</em> The picture on the easel is the kind of picture you sell.</li>
+        <li><em>Draw in paint.</em> No drawings first; the sketch goes straight onto the toned canvas.</li>
+        <li><em>Let each passage have its own paint.</em> Liquid black, blended flesh, thin purple, glazed red.</li>
+        <li><em>Change your mind on the canvas.</em> A face painted out, a fiddler put in.</li>
+      </ul>
+    </section>
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://www.nga.gov/research/publications/online-editions/dutch-paintings-seventeenth-century-self-portrait-c-1630" target="_blank" rel="noopener">Arthur K. Wheelock Jr., “Self-Portrait, c. 1630”, in Dutch Paintings of the Seventeenth Century, NGA Systematic Catalogue (1995; online 2014), with the technical summary</a></li>
+        <li><a href="https://www.nga.gov/artworks/37003-self-portrait" target="_blank" rel="noopener">National Gallery of Art: Self-Portrait, 1949.6.1, provenance, exhibitions and bibliography</a></li>
+        <li><a href="https://www.nga.gov/artists/1485-judith-leyster" target="_blank" rel="noopener">National Gallery of Art: Judith Leyster, biography</a></li>
+        <li><a href="https://www.nga.gov/stories/articles/art-close-judith-leyster-leading-star-her-time" target="_blank" rel="noopener">Annie Yi, “Art up Close: Judith Leyster, the Leading Star of Her Time”, NGA (2025), with the infrared reflectogram</a></li>
+        <li><a href="https://www.nybooks.com/articles/1994/02/17/dutch-treat/" target="_blank" rel="noopener">Peter C. Sutton, “Dutch Treat”, New York Review of Books 41:4 (1994), on the 1993 exhibition and Hendriks and Groen&#x27;s technical study</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/collection/SK-A-1685" target="_blank" rel="noopener">Rijksmuseum: The Jolly Drinker, SK-A-1685, with technical notes (2022)</a></li>
+        <li><a href="https://www.mauritshuis.nl/en/our-collection/our-masters/judith-leyster" target="_blank" rel="noopener">Mauritshuis: Judith Leyster</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Judith_Leyster%2C_Self-Portrait%2C_c._1630%2C_NGA_37003.jpg" target="_blank" rel="noopener">Wikimedia Commons: the NGA&#x27;s open-access photograph of the painting (CC0)</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="colophon">
+    <p>Images: the painting, its close-ups, the card, the thumbnail and the artist portrait are from the National Gallery of Art's open-access photograph (CC0), via Wikimedia Commons; one close-up of the easel is that photograph in grey with its contrast stretched. Your other paintings, Catharina van Hemessen's and Frans Hals's portraits and Ampzing's title page are in the public domain or CC0, from Wikimedia Commons; the monogram is cut from the Rijksmuseum's photograph of The Jolly Drinker (CC0). The NGA's infrared, reflectogram and X-ray images are described and linked, not reproduced. The stage reconstructions and the four chapter scenes were generated with Prodia (Gemini 3 Pro Image, with SAM 3 to separate the figures), using the painting as reference. Stages 5 and 6 are the painting with generated regions: the easel, and the skirt and lower cuff; stage 6 shows the first head faintly through the violinist; stages 1, 2 and 7 are imagined states. The reconstructions show plausible appearances, not documented ones; the face on the easel is invented from a written description. Layer colours are approximate. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>

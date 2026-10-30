@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artemisia&#x27;s Saint Catherine, a Face from the Mirror</title>
+<meta name="description" content="A step-by-step reconstruction of how Artemisia Gentileschi painted her Self Portrait as Saint Catherine of Alexandria in Florence about 1615–17, from a traced design and a hidden book to the wheel, crown and palm added late, with AI-generated reconstructions of each stage.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="Artemisia&#x27;s Saint Catherine, a Face from the Mirror">
+<meta property="og:description" content="A step-by-step reconstruction of how Artemisia Gentileschi painted her Self Portrait as Saint Catherine of Alexandria in Florence about 1615–17, from a traced design and a hidden book to the wheel, crown and palm added late, with AI-generated reconstructions of each stage.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/gentileschi/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/gentileschi/img/card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+:root {
+  --bg: #EEE8E2; --surface: #F7F3EF; --ink: #1F1817; --muted: #5E514C; --rule: #DACFC7; --rule-strong: #AC9C92;
+  --accent: #8A2232; --accent-2: #8A6414; --frame: #1E1715; --frame-edge: #3E322D;
+  --pg-leadwhite: #EEE9DE; --pg-vermilion: #C9402B; --pg-lake: #8A1E3A; --pg-azurite: #3F6DA6; --pg-purple: #6E5C7E;
+  --pg-lta: #F0D45A; --pg-leadtin: #E3C64E; --pg-ochre: #B8862F; --pg-umber: #5C4128; --pg-black: #24201B;
+  --pg-redearth: #9A4A2C; --pg-copper: #5E7A4A; --pg-glass: #D9DEDB; --pg-yellowlake: #C9A23A;
+  --pg-canvas: #B9A47F; --pg-size: #8C7A62; --pg-ground: #A9874A; --pg-paint: #7A2A32;
+}
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: end; }
+.trio > div { display: grid; gap: 4px; align-content: start; min-width: 0; }
+.trio img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); background: var(--frame); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171211; --surface: #201918; --ink: #F0E8E4; --muted: #B9ABA4; --rule: #352B28; --rule-strong: #564843;
+    --accent: #E88A95; --accent-2: #E0B455; --frame: #0D0A09; --frame-edge: #3E322D; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171211; --surface: #201918; --ink: #F0E8E4; --muted: #B9ABA4; --rule: #352B28; --rule-strong: #564843;
+  --accent: #E88A95; --accent-2: #E0B455; --frame: #0D0A09; --frame-edge: #3E322D; color-scheme: dark;
+}
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <details class="series-pick">
+      <summary aria-label="Artemisia Gentileschi, Self Portrait as Saint Catherine of Alexandria. Choose another of the 15 works"><span class="sw-faces"><img class="sw-artist" src="../gentileschi/img/artist.jpg" width="96" height="96" alt=""><img src="../gentileschi/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Artemisia Gentileschi</span><span class="sn-title">Self Portrait as Saint Catherine of Alexandria · c. 1615–17</span></span><span class="sp-count">All 15</span><svg class="sp-chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></summary>
+      <nav class="series-menu" aria-label="Works in the series">
+        <ol style="--rows: 8">
+        <li><a href="../raphael/"><span class="sw-faces"><img class="sw-artist" src="../raphael/img/artist.jpg" width="96" height="96" alt=""><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens <span class="sn-date">· 1509–11</span></span></span></a></li>
+        <li><a href="../el-greco/"><span class="sw-faces"><img class="sw-artist" src="../el-greco/img/artist.jpg" width="96" height="96" alt=""><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross <span class="sn-date">· c. 1580</span></span></span></a></li>
+        <li><a href="../gentileschi/" aria-current="page"><span class="sw-faces"><img class="sw-artist" src="../gentileschi/img/artist.jpg" width="96" height="96" alt=""><img src="../gentileschi/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Artemisia Gentileschi</span><span class="sn-title">Self Portrait as Saint Catherine of Alexandria <span class="sn-date">· c. 1615–17</span></span></span></a></li>
+        <li><a href="../leyster/"><span class="sw-faces"><img class="sw-artist" src="../leyster/img/artist.jpg" width="96" height="96" alt=""><img src="../leyster/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Leyster</span><span class="sn-title">Self-Portrait <span class="sn-date">· c. 1630</span></span></span></a></li>
+        <li><a href="../rembrandt/"><span class="sw-faces"><img class="sw-artist" src="../rembrandt/img/artist.jpg" width="96" height="96" alt=""><img src="../rembrandt/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Rembrandt</span><span class="sn-title">The Night Watch <span class="sn-date">· 1642</span></span></span></a></li>
+        <li><a href="../vermeer/"><span class="sw-faces"><img class="sw-artist" src="../vermeer/img/artist.jpg" width="96" height="96" alt=""><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring <span class="sn-date">· c. 1665</span></span></span></a></li>
+        <li><a href="../ruysch/"><span class="sw-faces"><img class="sw-artist" src="../ruysch/img/artist.jpg" width="96" height="96" alt=""><img src="../ruysch/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Ruysch</span><span class="sn-title">Bouquet of Flowers <span class="sn-date">· 1708</span></span></span></a></li>
+        <li><a href="../vigee-le-brun/"><span class="sw-faces"><img class="sw-artist" src="../vigee-le-brun/img/artist.jpg" width="96" height="96" alt=""><img src="../vigee-le-brun/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vigée Le Brun</span><span class="sn-title">Self Portrait in a Straw Hat <span class="sn-date">· c. 1782</span></span></span></a></li>
+        <li><a href="../bonheur/"><span class="sw-faces"><img class="sw-artist" src="../bonheur/img/artist.jpg" width="96" height="96" alt=""><img src="../bonheur/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Bonheur</span><span class="sn-title">The Horse Fair <span class="sn-date">· 1852–55</span></span></span></a></li>
+        <li><a href="../monet/"><span class="sw-faces"><img class="sw-artist" src="../monet/img/artist.jpg" width="96" height="96" alt=""><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise <span class="sn-date">· 1872</span></span></span></a></li>
+        <li><a href="../caillebotte/"><span class="sw-faces"><img class="sw-artist" src="../caillebotte/img/artist.jpg" width="96" height="96" alt=""><img src="../caillebotte/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Caillebotte</span><span class="sn-title">Paris Street; Rainy Day <span class="sn-date">· 1877</span></span></span></a></li>
+        <li><a href="../manet/"><span class="sw-faces"><img class="sw-artist" src="../manet/img/artist.jpg" width="96" height="96" alt=""><img src="../manet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Manet</span><span class="sn-title">A Bar at the Folies-Bergère <span class="sn-date">· 1882</span></span></span></a></li>
+        <li><a href="../van-gogh/"><span class="sw-faces"><img class="sw-artist" src="../van-gogh/img/artist.jpg" width="96" height="96" alt=""><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night <span class="sn-date">· 1889</span></span></span></a></li>
+        <li><a href="../toulouse-lautrec/"><span class="sw-faces"><img class="sw-artist" src="../toulouse-lautrec/img/artist.jpg" width="96" height="96" alt=""><img src="../toulouse-lautrec/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Toulouse-Lautrec</span><span class="sn-title">At the Moulin Rouge <span class="sn-date">· 1892–95</span></span></span></a></li>
+        <li><a href="../af-klint/"><span class="sw-faces"><img class="sw-artist" src="../af-klint/img/artist.jpg" width="96" height="96" alt=""><img src="../af-klint/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">af Klint</span><span class="sn-title">The Ten Largest, No. 7 <span class="sn-date">· 1907</span></span></span></a></li>
+        </ol>
+      </nav>
+    </details>
+  </div>
+</header>
+<div class="page">
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Florence, about 1615–17</p>
+      <h1>Self Portrait as Saint Catherine, <em>a face from the mirror</em></h1>
+      <p class="lede">Imagine you are Artemisia Gentileschi, in your early twenties, newly arrived in Florence from Rome with a husband, a studio and ambitions at the Medici court. This guide follows how this painting may have been made: a design traced from another self-portrait, a woman in a turban with a book under her hand, and then, late, a spiked wheel, a crown and a palm that turn her into a saint. Then it follows the canvas to a Paris auction room in 2017 and the National Gallery&#x27;s studio in 2018.</p>
+      <p class="basis">The National Gallery studied the painting during its treatment in 2018 with X-rays, infrared imaging and paint samples, and found the book and the changes beneath the wheel; the Uffizi&#x27;s own Saint Catherine, X-rayed in Florence in 2019, has a near copy of this figure underneath. How the design was transferred and the order of the changes are inferred. Each chapter opens with a note on its evidence. The slider steps through eight stages; stages 1 to 5 are AI reconstructions.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="Today. A young woman with auburn curls in a cream turban, a pearl-topped crown and a faint halo, turns to look over her shoulder; she wears a crimson dress and a yellow shawl, rests her left hand on a broken spiked wheel and holds a palm to her breast.">
+            <img src="img/stages/01-ground.jpg" width="1000" height="1040" alt="" data-name="Canvas and ground" data-note="Two strips of linen joined, the lower one about 7 cm wide, stretched tight, sized and covered with a yellow-brown ground. The seam&#x27;s look is approximate.">
+            <img src="img/stages/02-transfer.jpg" width="1000" height="1040" alt="" data-name="The design traced on" data-note="Head and shoulders transferred from a tracing, probably taken from your lute-player self-portrait. No transfer lines have been found; the chalk lines here are invented.">
+            <img src="img/stages/03-laying-in.jpg" width="1000" height="1040" alt="" data-name="Laying in" data-note="The dress in a cool purple underpaint, a thin dark background. The book and the cloth over the chest are documented changes; how they looked is imagined.">
+            <img src="img/stages/04-turban.jpg" width="1000" height="1040" alt="" data-name="A self-portrait in a turban" data-note="Perhaps a sibyl, the National Gallery suggests: a book or tablet under your left hand, turban cloth falling over your chest. No wheel, crown, halo or palm.">
+            <img src="img/stages/05-wheel.jpg" width="1000" height="1040" alt="" data-name="Book into wheel" data-note="The book painted out with dark umber, the spiked wheel painted over it and the shawl over the wheel. The cloth on the chest is gone.">
+            <img src="img/stages/06-saint.jpg" width="1000" height="1040" alt="" data-name="Saint Catherine" data-note="A pearl-topped crown on the turban, a halo and a palm, all added late. The painting as photographed after its 2018 treatment.">
+            <img src="img/stages/07-before.jpg" width="1000" height="1040" alt="" data-name="As bought, 2018" data-note="Under yellowed varnish and old retouching, with a tear at lower left; the photograph published when the National Gallery bought it.">
+            <img src="img/stages/08-today.jpg" width="1000" height="1040" class="is-on" fetchpriority="high" alt="" data-name="Today" data-note="The painting today, 71.4 × 69 cm. Above the dashed line, a thin strip of new canvas added in 2018 to complete the crown and the palm.">
+          </div>
+        </div>
+        <span class="dim dim-h" aria-hidden="true"><span>71.4 cm</span></span>
+        <span class="dim dim-w" aria-hidden="true"><span>69 cm</span></span>
+      </div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name">Today</p>
+          <span class="scrub-count">Stage 8 of 8</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" min="0" max="7" step="1" value="7" aria-label="Stage of the work" aria-valuetext="Stage 8, Today">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note">The painting today, 71.4 × 69 cm. Above the dashed line, a thin strip of new canvas added in 2018 to complete the crown and the palm.</p>
+      </div>
+      <figcaption>Artemisia Gentileschi, <i>Self Portrait as Saint Catherine of Alexandria</i>, about 1615–17. Oil on canvas, 71.4 × 69 cm. The National Gallery, London (NG6671). <span class="tag">AI-generated</span> Stages 1 to 5 are reconstructions made with Prodia from the photograph of the painting; stage 3 is filtered and recoloured from stage 4. Stage 7 is the photograph published at the purchase in 2018.</figcaption>
+    </figure>
+  </header>
+  <nav class="toc" aria-label="Chapters" style="--toc-n: 9">
+    <ol>
+      <li><a href="#rome"><span class="toc-num">I</span><span class="toc-name">Rome</span></a></li>
+      <li><a href="#florence"><span class="toc-num">II</span><span class="toc-name">Florence</span></a></li>
+      <li><a href="#face"><span class="toc-num">III</span><span class="toc-name">Your face</span></a></li>
+      <li><a href="#materials"><span class="toc-num">IV</span><span class="toc-name">Materials</span></a></li>
+      <li><a href="#transfer"><span class="toc-num">V</span><span class="toc-name">Transfer</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VI</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#saint"><span class="toc-num">VII</span><span class="toc-name">Becoming a saint</span></a></li>
+      <li><a href="#twin"><span class="toc-num">VIII</span><span class="toc-name">A twin</span></a></li>
+      <li><a href="#after"><span class="toc-num">IX</span><span class="toc-name">After you</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="chapter" id="rome" aria-labelledby="h-rome">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-rome">Trained by your father, in Rome</h2>
+        <p class="evidence"><b>Evidence</b>The National Gallery&#x27;s catalogue entry (2024) and its notes on the 1612 trial and the marriage documents; the dated Susanna. Your birth date and training are from standard biographies.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are Artemisia Gentileschi, born in Rome in 1593, the eldest child of the painter Orazio Gentileschi. You learn to paint in his workshop. Among the shortcuts you learn there: keep a cartoon or a tracing of a figure and use it again on another canvas.</p>
+          <p>At about seventeen you sign and date a large <i>Susanna and the Elders</i>. In 1612 the painter Agostino Tassi, your father's collaborator, is tried in Rome for raping you and is convicted; during the trial you are made to confirm your testimony under judicial torture, with cords tightened round your fingers.</p>
+          <p>On 29 November 1612 you marry Pierantonio Stiattesi, a Florentine, in Rome. Within weeks the couple moves to Florence.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-susanna.jpg" width="480" height="682" loading="lazy" alt="A naked young woman seated on a stone bench twists away from two bearded men leaning over the wall behind her.">
+            <figcaption>
+              <span class="source-title">Susanna and the Elders</span>
+              <span class="source-meta">Signed and dated 1610 · Oil on canvas, 170 × 119 cm · Schloss Weissenstein, Pommersfelden</span>
+              <span class="source-note">Your earliest dated painting, made in your father&#x27;s workshop.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Susanna_and_the_Elders_%281610%29%2C_Artemisia_Gentileschi.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <div class="note">
+            <h3 class="note-title">Not autobiography</h3>
+            <p>It is tempting to read your saints and heroines as your answer to the trial. The National Gallery's catalogue calls that reading of this painting far-fetched: who asked for it, and why you painted yourself, are not known.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="florence" aria-labelledby="h-florence">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-florence">A studio in Florence</h2>
+        <p class="evidence"><b>Evidence</b>The National Gallery&#x27;s catalogue entry, drawing on Sheila Barker (2021) for your addresses, the Academy&#x27;s records and the Casa Buonarroti payments. Where in your house you painted is not recorded.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/studio.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: an empty whitewashed room with half-shuttered windows, an easel holding a small canvas primed yellow-brown, a large mirror on a stand, and a table with brushes, pigments and a folded yellow shawl.">
+        <figcaption><span class="tag">AI-generated</span>A painter&#x27;s room in Florence around 1615, as it might have looked, with a mirror for a self-portrait.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You set up a studio almost at once in the house of your father-in-law, the tailor Vincenzo Stiattesi, on the via del Campaccio near San Lorenzo; after his death in 1615 you move to Borgo Ognissanti. In Florence you learn to read and write, and you make friends who matter: the poet Michelangelo Buonarroti the Younger, great-nephew of the sculptor, who stands guarantor for you and commissions a ceiling painting for his house; the painter Cristofano Allori, godfather to your son Cristofano, born in November 1615. Through the Academy you come to know Galileo.</p>
+          <p>On 19 July 1616 you are enrolled in the Accademia delle Arti del Disegno, one of the first women in its fifty years. You look for Medici patronage, perhaps through the dowager Grand Duchess Christina of Lorraine, and paint a <i>Judith beheading Holofernes</i> for Grand Duke Cosimo II.</p>
+          <p>Who paid for this painting, or whether you made it to sell, is not known. Its origins, and those of many of your Florentine works, are lost.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-inclinazione.jpg" width="300" height="778" loading="lazy" alt="A tall, narrow ceiling painting of a nude young woman seated on clouds holding a compass, a star above her head; her lower body is draped in blue.">
+            <figcaption>
+              <span class="source-title">Allegory of Inclination</span>
+              <span class="source-meta">1615–16 · Oil on canvas, 152 × 61 cm · Casa Buonarroti, Florence</span>
+              <span class="source-note">Your only documented Florentine commission, for Buonarroti&#x27;s gallery ceiling. The drapery was added later by another painter, Volterrano.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:A_Gentileschi_Allegoria_dell%27inclinazione.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="face" aria-labelledby="h-face">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-face">Your own face, in different roles</h2>
+        <p class="evidence"><b>Evidence</b>The National Gallery&#x27;s catalogue entry; the Medici inventory of 1638; Jérôme David&#x27;s engraving and Simon Vouet&#x27;s portrait of you, which fix your features. That you used a mirror is general practice and your own later complaint about models&#x27; fees.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>In your first Florentine years you paint yourself again and again, sometimes as yourself and sometimes in a part: a martyr with a palm, a musician with a lute, a warrior in a helmet, now lost. A mirror is cheaper than a model; years later you will complain of the “intolerable expense” of models. And a woman painter's face is something collectors want.</p>
+          <dl class="decisions">
+            <div class="decision"><dt>Head turned</dt><dd>Body to the left, head back over your shoulder to meet the viewer's eye: the same pose as in your lute player.</dd></div>
+            <div class="decision"><dt>Close crop</dt><dd>Half-length, the elbow and the wheel pushed out at the picture's edges, so the viewer stands very close.</dd></div>
+            <div class="decision"><dt>A cloth on your head</dt><dd>A turban wound round your hair, its fringed end trailing behind you. It recurs in your self-portraits of these years.</dd></div>
+            <div class="decision"><dt>A quieter face</dt><dd>Compared with the lute player, the bump on your nose is smoothed and the face less full: you, but idealised, as befits a saint.</dd></div>
+          </dl>
+          <figure class="compare">
+            <div><img src="img/head-lute.jpg" width="480" height="480" loading="lazy" alt="Close-up of a woman's face with flushed cheeks, a striped headcloth and a small gold hoop earring, looking back over her shoulder."><span class="caption">The lute player's head.</span></div>
+            <div><img src="img/detail-face.jpg" width="480" height="480" loading="lazy" alt="Close-up of the same face in the London painting, paler and smoother, under a cream turban."><span class="caption">This painting's head. Tracings of the two align, the National Gallery found.</span></div>
+          </figure>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-lute.jpg" width="600" height="650" loading="lazy" alt="A young woman in a blue gown and a striped turban plays a lute, turning her head to look at the viewer.">
+            <figcaption>
+              <span class="source-title">Self Portrait as a Lute Player</span>
+              <span class="source-meta">About 1615–17 · Oil on canvas, 77.5 × 71.8 cm · Wadsworth Atheneum Museum of Art, Hartford</span>
+              <span class="source-note">Probably the first of the three related pictures; probably the “portrait of Artemisia playing the lute by her own hand” in a Medici villa in 1638.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_-_Autoritratto_come_suonatrice_di_liuto_%28ca._1615-18%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-martyr.jpg" width="480" height="644" loading="lazy" alt="A small panel of a young woman in a blue turban and pink dress holding a palm, looking out at the viewer.">
+            <figcaption>
+              <span class="source-title">Self Portrait as a Female Martyr</span>
+              <span class="source-meta">About 1613–14 · Oil on panel, 31.8 × 24.8 cm · Private collection, USA</span>
+              <span class="source-note">Your earliest known likeness of yourself. Here too the palm seems to have been added late.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_Selfportrait_Martyr.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-david.jpg" width="480" height="662" loading="lazy" alt="An engraved oval portrait of a woman with loose wavy hair and a pearl necklace, with an inscription round the frame.">
+            <figcaption>
+              <span class="source-title">Jérôme David, after your lost self-portrait</span>
+              <span class="source-meta">About 1627–28 · Engraving · Rijksmuseum, Amsterdam (another impression in the British Museum)</span>
+              <span class="source-note">Rounded face, heavy-lidded eyes, the bump on the nose.</span>
+              <span class="source-credit">Public domain (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Portret_van_Artemisia_Gentileschi%2C_RP-P-OB-63.787.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-materials">Two strips of linen and a yellow-brown ground</h2>
+        <p class="evidence"><b>Evidence</b>The National Gallery&#x27;s catalogue entry (2024): X-radiograph, thread count, paint samples and XRF scanning; the Getty&#x27;s Conserving Canvas (2023) on the seam. Many pigments were identified by XRF scanning only.</p>
+      </header>
+      <div class="chapter-stack">
+        <div class="chapter-body">
+          <div class="prose">
+            <p>The canvas is small, about 71 by 69 centimetres, and made of two horizontal strips of medium-weight linen: a narrow one, about 7 centimetres wide, along the bottom. They could have come from the same roll. The join is uneven and wavy; the conservator who relined it thinks you sewed it yourself, perhaps from cloth you had to hand.</p>
+            <p>The strips are joined, then stretched hard: the X-radiograph shows the threads pulled into scallops. A thin layer, probably animal glue with a little calcium sulphate and some black and red pigment, fills the gaps in the weave. Over it goes a yellow-brown ground of yellow earth with plenty of chalk, some lead white and a little umber and black.</p>
+            <p>You never leave that ground bare in the finished picture, but it shows through enough to warm the shadows and deepen the middle tones.</p>
+          </div>
+          <aside class="aside">
+            <figure class="xsec">
+              <figcaption class="xsec-cap">The dress, as found · surface at top · schematic</figcaption>
+              <div class="xsec-rows">
+                <div class="layer"><span class="band" style="--c: var(--pg-lake); --h: 14px"></span><span class="layer-label"><b>Cochineal glazes</b><span>the last layer, somewhat faded</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-paint); --h: 20px"></span><span class="layer-label"><b>Pinks and reds</b><span>opaque pinks, translucent reds</span></span></div>
+                <div class="layer"><span class="band" style="--c: #9A3A48; --h: 12px"></span><span class="layer-label"><b>First glaze</b><span>red lake with powdered glass and a little vermilion</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-purple); --h: 22px"></span><span class="layer-label"><b>Purple underpaint</b><span>azurite, red lake, lead white</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 26px"></span><span class="layer-label"><b>Ground</b><span>yellow earth, chalk, some lead white, umber</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-size); --h: 8px"></span><span class="layer-label"><b>Size</b><span>probably animal glue, with calcium sulphate</span></span></div>
+                <div class="layer"><span class="band is-canvas" style="--h: 28px"></span><span class="layer-label"><b>Canvas</b><span>medium-weight linen, two strips joined</span></span></div>
+              </div>
+            </figure>
+          </aside>
+        </div>
+        <div class="prose">
+          <p class="prose-intro">Pigments found by the National Gallery in 2018–19. The swatches approximate each pigment's colour in oil; the cards say where it was found and how.</p>
+        </div>
+        <div class="pigments">
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-leadwhite)"></div>
+            <div class="pig-body">
+              <h4>Lead white</h4>
+              <p>In the ground and through the paint; the lights of flesh and linen.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Ground, flesh, chemise, pinks of the dress</dd></div>
+                <div><dt>Found</dt><dd>Samples and XRF</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-vermilion)"></div>
+            <div class="pig-body">
+              <h4>Vermilion</h4>
+              <p>In the flesh, and in the red that draws your features and ear. Scarcely in the dress.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Flesh, features, first glaze of the dress</dd></div>
+                <div><dt>Found</dt><dd>Samples and XRF</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-lake)"></div>
+            <div class="pig-body">
+              <h4>Red lakes</h4>
+              <p>Translucent reds; the top glazes made from cochineal insects, now somewhat faded.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The dress</dd></div>
+                <div><dt>Found</dt><dd>Samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-glass)"></div>
+            <div class="pig-body">
+              <h4>Powdered glass</h4>
+              <p>Colourless, ground fine and mixed into the first red glazes of the dress.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Glazes of the dress</dd></div>
+                <div><dt>Found</dt><dd>Samples</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-purple)"></div>
+            <div class="pig-body">
+              <h4>Azurite in a purple</h4>
+              <p>A copper blue, mixed with red lake and white for the cool underlayer of the dress.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Underpaint of the dress</dd></div>
+                <div><dt>Found</dt><dd>Samples; the copper map</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-lta)"></div>
+            <div class="pig-body">
+              <h4>Lead-tin-antimony yellow</h4>
+              <p>An unusual artificial yellow, first found in paintings made in Rome.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Shawl, veil, crown points, palm</dd></div>
+                <div><dt>Found</dt><dd>Samples; XRF elsewhere</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-leadtin)"></div>
+            <div class="pig-body">
+              <h4>Lead-tin yellow</h4>
+              <p>The commoner yellow, in the crown and the flesh.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Crown, flesh</dd></div>
+                <div><dt>Found</dt><dd>XRF</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: linear-gradient(90deg, var(--pg-ochre) 0 50%, var(--pg-redearth) 50%)"></div>
+            <div class="pig-body">
+              <h4>Yellow and red earths</h4>
+              <p>In the ground, the shawl, the background and the flesh.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Ground, shawl, background</dd></div>
+                <div><dt>Found</dt><dd>Samples and XRF</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-yellowlake)"></div>
+            <div class="pig-body">
+              <h4>Yellow lake</h4>
+              <p>A translucent yellow in the shawl&#x27;s shadows, now much faded.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Shawl</dd></div>
+                <div><dt>Found</dt><dd>Samples; source unidentified</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-umber)"></div>
+            <div class="pig-body">
+              <h4>Umber</h4>
+              <p>A brown earth with manganese; it covers the shape under the wheel, and models the hair.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Over the book, hair, crown shadows</dd></div>
+                <div><dt>Found</dt><dd>XRF maps of iron and manganese</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-copper)"></div>
+            <div class="pig-body">
+              <h4>A copper green</h4>
+              <p>Unidentified, in the palm&#x27;s darker tones and, a little, in the background.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Palm, background</dd></div>
+                <div><dt>Found</dt><dd>XRF</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-black)"></div>
+            <div class="pig-body">
+              <h4>Bone black</h4>
+              <p>In the shawl, the hair and the darkest shadows.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>Shawl, hair, crown</dd></div>
+                <div><dt>Found</dt><dd>Samples and XRF</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="transfer" aria-labelledby="h-transfer">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-transfer">Trace the design, then change it</h2>
+        <p class="evidence"><b>Evidence</b>The National Gallery&#x27;s tracings and overlays (Keith and colleagues, 2019); infrared reflectography and short-wave infrared imaging. No transfer lines have been found on this canvas: the method is inferred from the comparisons.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/transfer.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: two hands pressing a stick of white chalk along a traced outline of a woman&#x27;s head and shoulders on a small canvas primed yellow-brown.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: a design transferred with white chalk, one of the media the National Gallery suggests. How it was done is not known.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <figure class="stages" style="--stage-n: 4">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/01-ground.jpg" width="1000" height="1040" loading="lazy" alt="AI reconstruction: A bare canvas covered with an even yellow-brown ground, a faint horizontal seam near the bottom.">
+              <figcaption><b>Ground</b>Two strips, yellow-brown. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/02-transfer.jpg" width="1000" height="1040" loading="lazy" alt="AI reconstruction: Thin white outlines of a woman in a turban with a book on the yellow-brown ground, a few dark painted curls by her ear.">
+              <figcaption><b>Transfer</b>Outlines, a few painted curls. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-laying-in.jpg" width="1000" height="1040" loading="lazy" alt="AI reconstruction: The figure laid in, the dress a cool purple, the background a thin brown, a book under her left hand.">
+              <figcaption><b>Lay-in</b>Purple dress, thin background. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/04-turban.jpg" width="1000" height="1040" loading="lazy" alt="AI reconstruction: The woman in a turban finished, a large book under her left hand, cream cloth over her chest; no saint&#x27;s attributes.">
+              <figcaption><b>Turban</b>A book, cloth over the chest. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Generated with Prodia from the photograph of the painting, so the composition stays in register. They show plausible stages, not scans of the real layers.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li><h3>Bring a design</h3><p>Lay a tracing of your lute player over the new canvas. Tracings made by the National Gallery show the two heads align exactly; the shoulders do not, unless you shift the tracing. So the design went over in parts, and your neck comes out longer.</p></li>
+          <li><h3>Mark it lightly</h3><p>No transfer lines have been found: they may be hidden under the paint, lost as you painted, or drawn in something that X-rays and infrared cannot see, such as white chalk.</p></li>
+          <li><h3>Sketch with the brush</h3><p>Infrared shows only a few fine painted strokes: the curls over your ear and, at the left, a shape beneath where the wheel is now. The dark lines along the turban and the neck are contours you refined as you painted.</p></li>
+          <li><h3>Don't copy the rest</h3><p>Below the shoulders you invent as you go: the sleeve's white turn-up, the cloth over your chest, the shawl's folds.</p></li>
+        </ol>
+        <div class="chapter-body">
+          <div class="prose">
+            <p>Your father reused cartoons, and so do you: your two great <i>Judith</i> paintings, in Naples and in Florence, share one design, with the second made from a cartoon or tracing of the first. Here a self-portrait made for one purpose becomes the starting point for another.</p>
+            <p>The National Gallery's own figures, the infrared images, the X-radiograph and the overlays of the tracings, are under copyright and are not reproduced here. They are in the catalogue entry listed under Sources.</p>
+          </div>
+          <aside class="aside">
+            <div class="trio" style="grid-template-columns: repeat(2, minmax(0, 1fr))">
+              <div><img src="img/src-judith-naples.jpg" width="480" height="604" loading="lazy" alt="Two women hold down a bearded man on a bed while one cuts his throat with a sword; a blue dress, red blood."><span class="caption">Naples, about 1612–13. Public domain · <a href="https://commons.wikimedia.org/wiki/File:Gentileschi_Artemisia_Judith_Beheading_Holofernes_Naples.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></div>
+              <div><img src="img/src-judith-uffizi.jpg" width="480" height="592" loading="lazy" alt="The same scene in a larger version, Judith in a golden dress with a bracelet, more blood on the sheets."><span class="caption">Florence, Uffizi, about 1614–20. Public domain · <a href="https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_-_Giuditta_decapita_Oloferne_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></div>
+            </div>
+            <p class="caption">Judith beheading Holofernes, twice: one design, two quite different pictures.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-painting">Paint the figure</h2>
+        <p class="evidence"><b>Evidence</b>Paint samples (cross-sections, SEM-EDX) and XRF maps, in the National Gallery&#x27;s catalogue entry; the medium is heat-bodied linseed oil. The layers are documented; the order of the three steps here is inferred.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/glaze.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a close-up of an unfinished painting of a sleeve and bodice in greyish purple, half glazed in deep crimson, with a young woman&#x27;s hand laying on a glaze with a soft brush.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: crimson glazes going on over the purple underpaint of the dress.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <p class="prose-intro">The samples show how each part was built up, layer by layer. The map beside the steps shows the picture laid in (imagined), worked up (imagined) and finished; the numbers mark where each step happens.</p>
+        <div class="paint-grid">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with three numbered markers: the dress, the face and the shawl.">
+                <img src="img/stages/03-laying-in.jpg" width="1000" height="1040" loading="lazy" alt="" data-caption="Stage 3: laid in, the dress still purple">
+                <img src="img/stages/04-turban.jpg" width="1000" height="1040" loading="lazy" alt="" data-caption="Stage 4: dress, face and shawl worked up">
+                <img src="img/stages/06-saint.jpg" width="1000" height="1040" loading="lazy" alt="" class="is-on" data-caption="Stage 6: the painting as it is">
+              </div>
+              <a class="marker" href="#dress" data-target="dress" style="--x: 66%; --y: 58%" aria-label="Step 1, The crimson dress">1</a>
+              <a class="marker" href="#flesh" data-target="flesh" style="--x: 54%; --y: 26%" aria-label="Step 2, Face and arms">2</a>
+              <a class="marker" href="#shawl" data-target="shawl" style="--x: 80%; --y: 82%" aria-label="Step 3, Shawl and veil">3</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span aria-live="polite">Stage 6: the painting as it is</span></p>
+            <ol class="map-legend">
+              <li><a href="#dress"><span class="dot">1</span>The crimson dress</a></li>
+              <li><a href="#flesh"><span class="dot">2</span>Face and arms</a></li>
+              <li><a href="#shawl"><span class="dot">3</span>Shawl and veil</a></li>
+            </ol>
+          </div>
+          <div class="steps">
+            <article class="step" id="dress" aria-labelledby="h-dress">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-dress">The crimson dress</h3></header>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-dress.jpg" width="480" height="480" loading="lazy" alt="Close-up of the crimson dress on the shoulder: deep red folds with pinkish lights and dark, almost purple shadows.">
+                  <figcaption>The dress: red glazes over a purple underlayer.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Lay the whole dress in first with a cool purple: finely ground azurite and red lake with lead white, a little black and a touch of yellow earth. It will give the red its crimson cast and the shadows their depth.</p>
+                  <p>Over it, glaze the shadows with red lake mixed with colourless powdered glass and a trace of vermilion. Add lead white to the same mixture for the first pinks of the lit folds.</p>
+                  <p>Then work up and down the folds in opaque pinks and translucent reds, and finish with glazes of a lake made from cochineal insects. Those top glazes have faded a little since; the red was once brighter.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 2">
+                <figure class="plate">
+                  <img src="img/detail-sleeve.jpg" width="480" height="480" loading="lazy" alt="Close-up of the rolled white sleeve at the elbow over the bare forearm, its folds thick and three-dimensional.">
+                  <figcaption>The rolled sleeve, painted over the red.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-hand.jpg" width="480" height="480" loading="lazy" alt="Close-up of a hand held to the breast, thumb and forefinger pinching the stem of a palm, under a sheer veil.">
+                  <figcaption>Your right hand, under the veil.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="flesh" aria-labelledby="h-flesh">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-flesh">Face and arms</h3></header>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-face.jpg" width="480" height="480" loading="lazy" alt="Close-up of the young woman&#x27;s face turned over her shoulder towards the viewer, auburn curls at her ear, a cream turban above.">
+                  <figcaption>Your face, from the mirror.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Paint the flesh opaque and smooth: lead white with vermilion, lead-tin yellow and earths, with a little umber in the shadows. Define the features and the ear with a red that contains vermilion.</p>
+                  <p>Let the yellow-brown ground do some of the work under the half-tones: it is never left bare in the finished picture, but it warms and deepens everything above it.</p>
+                  <p>Your hair is umber with touches of black and white. A few curls were set down early in thin strokes of paint; infrared shows them over your ear.</p>
+                </div>
+              </div>
+            </article>
+            <article class="step" id="shawl" aria-labelledby="h-shawl">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-shawl">Shawl and veil</h3></header>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-shawl.jpg" width="480" height="480" loading="lazy" alt="Close-up of a golden-yellow shawl falling in folds beside the red dress, with a fringed white headcloth hanging over it.">
+                  <figcaption>The shawl, and the tasselled end of the turban.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Paint the shawl in a brownish yellow of yellow earth with a little black, umber and red earth. Glaze its shadows with a yellow lake, now much faded; it was once a deeper yellow.</p>
+                  <p>Put the highlights in with lead white and lead-tin-antimony yellow, an unusual artificial yellow first found in paintings made in Rome. The same pale yellow, with white and yellow earth, makes the sheer veil across your body.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="saint" aria-labelledby="h-saint">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-saint">From a woman with a book to a saint with a wheel</h2>
+        <p class="evidence"><b>Evidence</b>Infrared and short-wave infrared images, and XRF maps of iron and manganese, in the National Gallery&#x27;s catalogue entry. That the figure began as a sibyl is the Gallery&#x27;s hypothesis; why it changed is not known.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The imaging shows that the picture began as something else. Under the wheel is a shape, “perhaps a prophetic tablet or, more probably, a book”, which you then covered with a dark paint containing umber. Some of the turban's cloth first fell across your chest, held under your right hand. The headcloth, the book and the pose suggest a learned woman, perhaps a sibyl, the prophetesses of antiquity; or the book was Catherine's from the start, for her learning.</p>
+          <p>Then you change course. You paint a broken wheel studded with iron spikes over the covered book and part of the background, the instrument of Catherine's torture, and bring the yellow shawl over its edge. Last come the signs of a saint: a gold crown with eight pearl-tipped points, sitting a little awkwardly on the turban; a halo; and the palm of martyrdom, pinched between your thumb and forefinger like a brush, painted over the drapery and the background.</p>
+          <p>Catherine of Alexandria was a learned princess who, in the legend, out-argued fifty philosophers, refused the emperor, survived the spiked wheels and was beheaded. Whether a client asked for a saint, or you made the change to sell the picture more easily, is not recorded.</p>
+          <figure class="compare">
+            <div><img src="img/stages/04-turban.jpg" width="1000" height="1040" loading="lazy" alt="AI reconstruction: the woman in a turban with a large book under her left hand and cloth over her chest, without wheel, crown, halo or palm."><span class="caption">Imagined: before the change. <span class="tag">AI-generated</span></span></div>
+            <div><img src="img/stages/06-saint.jpg" width="1000" height="1040" loading="lazy" alt="The painting today, with the wheel, the crown, the halo and the palm."><span class="caption">After: Saint Catherine.</span></div>
+          </figure>
+        </div>
+        <aside class="aside">
+          <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-wheel.jpg" width="480" height="480" loading="lazy" alt="Close-up of a hand resting on the rim of a broken wooden wheel with a curved iron spike, the yellow shawl beyond.">
+                  <figcaption>The wheel, painted over the covered book.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-crown.jpg" width="480" height="480" loading="lazy" alt="Close-up of a cream turban with gold crown points tipped with pearls behind it and the arc of a thin halo.">
+                  <figcaption>Crown and halo, added late. One point and the halo&#x27;s top were completed in 2018.</figcaption>
+                </figure>
+          </div>
+          <figure class="source">
+            <img src="img/src-stockholm.jpg" width="480" height="577" loading="lazy" alt="A young woman in a purple dress with her hand on a large book, a palm at her feet, a landscape behind.">
+            <figcaption>
+              <span class="source-title">A female martyr, probably Saint Catherine</span>
+              <span class="source-meta">Oil on canvas · Nationalmuseum, Stockholm</span>
+              <span class="source-note">Another of your female saints with a book, read as a sign of Catherine&#x27;s learning.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_-_A_Female_Saint_and_Martyr_%28St._Catherine_of_Alexandria%5E%29_-_NM_7538_-_Nationalmuseum.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="twin" aria-labelledby="h-twin">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-twin">A twin in the Uffizi</h2>
+        <p class="evidence"><b>Evidence</b>The Opificio delle Pietre Dure&#x27;s examination of the Uffizi painting (Frosinini and Reginella, 2019), as reported in the National Gallery&#x27;s catalogue entry and the press; that study was not read for this guide.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The Uffizi has another of your Saint Catherines: the same pose, the left arm out on a wheel and the right hand holding a palm to the breast, a red dress and a yellow shawl; but a different woman's face, raised to heaven, under a jewelled crown. Some think she is Caterina de' Medici, the Grand Duke's sister.</p>
+          <p>When the Opificio delle Pietre Dure in Florence X-rayed it in 2019, a figure appeared underneath: a woman in a turban, looking out, almost identical to this one. Traced from the X-ray and laid over the London picture, its head and turban match almost exactly, and so do the arms and drapery once the tracing is moved a few centimetres. A third, smaller woman's head is in the X-ray as well.</p>
+          <p>So you traced this figure, or its design, onto a second canvas and painted it well on before turning it into a different saint with a different face. The Hartford, London and Uffizi pictures were made close together, perhaps on your easels at the same time. Your lute player hides a secret too: an X-ray shows a woman's head upside down beneath it, from an earlier picture you turned round and painted over.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-uffizi.jpg" width="600" height="774" loading="lazy" alt="A young woman in a red dress and a jewelled crown, holding a palm, looks up to the right; her left hand rests on a wheel.">
+            <figcaption>
+              <span class="source-title">Saint Catherine of Alexandria</span>
+              <span class="source-meta">About 1615–17 · Oil on canvas, 77.5 × 61.6 cm · Gallerie degli Uffizi, Florence</span>
+              <span class="source-note">Underneath it, the X-ray shows a turbaned figure almost identical to this painting&#x27;s.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Gentileschi_-_Die_heilige_Katharina_-_1615.jpeg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="after" aria-labelledby="h-after">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IX</p>
+        <h2 id="h-after">After you: an auction and a treatment</h2>
+        <p class="evidence"><b>Evidence</b>The National Gallery&#x27;s catalogue entry (provenance, condition and the 2018 treatment); Lynne Harrison in Conserving Canvas (Getty, 2023); the prices are from press reports.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Nothing is known of the painting from your studio until the twentieth century, when a French family, the Boudevilles, owned it. It had been lined onto a new canvas, probably in the nineteenth or early twentieth century; its folded right edge had been opened out and its top edge trimmed, cutting the tip of the palm and one point of the crown.</p>
+          <p>When the National Gallery bought it there was a tear about 4 centimetres long at lower left, a bulge above the crown, losses along the top and the seam, yellowed varnish and old retouching. In 2018 the conservators took off the varnish and the retouching, repaired the tear, relined the canvas and retouched the losses. They added a thin strip of new canvas along the top, just enough to complete the palm and the pearls of the crown; the halo is still cut. Under the old varnish the colours were livelier, but the top red glazes and the yellow lake had faded long before.</p>
+          <figure class="compare">
+            <div><img src="img/treatment-before.jpg" width="600" height="624" loading="lazy" alt="The painting darker and yellower, with dull colours and a few losses at lower left."><span class="caption">As bought, 2018: the photograph published at the purchase.</span></div>
+            <div><img src="img/treatment-after.jpg" width="600" height="624" loading="lazy" alt="The painting after treatment, clearer, with deeper reds and a darker background."><span class="caption">After the 2018 treatment. Some of the difference is the photography.</span></div>
+          </figure>
+        </div>
+        <aside class="aside">
+          <ol class="timeline" aria-label="Timeline">
+            <li><span class="t-year">1620</span><span>You leave Florence for Rome; later Venice, Naples and London.</span></li>
+            <li><span class="t-year">19th–20th c.</span><span>Paste-lined onto a new canvas; “715” is written on its back.</span></li>
+            <li><span class="t-year">By 1940s</span><span>With the Boudeville family in the Vosges, who believe it has been theirs for generations.</span></li>
+            <li class="is-key"><span class="t-year">19 Dec. 2017</span><span>Sold at the Hôtel Drouot, Paris, for about €2.4 million, many times its estimate.</span></li>
+            <li class="is-key"><span class="t-year">July 2018</span><span>Bought by the National Gallery, its first painting by you; about £3.6 million, the press reports.</span></li>
+            <li><span class="t-year">2018</span><span>Five months of treatment, filmed in fourteen short episodes; on show from December.</span></li>
+            <li><span class="t-year">2019</span><span>“Artemisia Visits”: a library, a GP surgery, a school, a women's prison and another library.</span></li>
+            <li><span class="t-year">2020–21</span><span>The National Gallery's <i>Artemisia</i> exhibition, closed early by lockdown.</span></li>
+          </ol>
+          <figure class="quote">
+            <p>“il ritratto dell'artimisia di sua mano che suona il liuto”</p>
+            <cite>Medici inventory of the villa at Artimino, 1638: “the portrait of Artemisia by her own hand playing the lute”</cite>
+          </figure>
+        </aside>
+      </div>
+      <div class="chapter-body">
+        <div class="prose">
+          <div class="note">
+            <h3 class="note-title">What is still not known</h3>
+            <p>Who the painting was for, and whether you or a client decided to make it a Saint Catherine. Whether the shape under the wheel was a book, a tablet or something else, and how far you painted it. How the design reached the canvas: no transfer lines have been found. The order of the changes: the cloth on the chest, the sleeve, the book, the wheel, the crown, the halo and the palm. Which of the London and Uffizi figures came first, or whether both came from one cartoon. Where the painting was for some three centuries, including 1933–45. The two studies at the heart of this guide, the National Gallery's Technical Bulletin article and the Opificio's report, were known here only through the Gallery's 2024 catalogue entry and the press.</p>
+          </div>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-vouet.jpg" width="480" height="613" loading="lazy" alt="A half-length portrait of a woman in a golden dress holding a brush and palette, with a medallion on a chain.">
+            <figcaption>
+              <span class="source-title">Simon Vouet, Portrait of Artemisia Gentileschi</span>
+              <span class="source-meta">About 1623–26 · Oil on canvas · Fondazione Pisa, Palazzo Blu</span>
+              <span class="source-note">You in Rome a few years later, painted by a friend. Your medallion is inscribed MAUSOLEION, after the tomb of King Mausolus, husband of an ancient Queen Artemisia.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Artemisia_Lomi_Gentileschi_by_Simon_Vouet_ca._1623-1626.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Artemisia thought</h2>
+      <ul class="principles">
+        <li><em>Be your own model.</em> A mirror, your own face, and a part to play: musician, martyr, saint.</li>
+        <li><em>Reuse what works.</em> Trace a head or a pose from one canvas onto the next, in parts, and change it as you go.</li>
+        <li><em>Decide on the canvas.</em> A book becomes a wheel, a cloth moves, a sleeve turns up: the design is settled in paint.</li>
+        <li><em>Build colour in layers.</em> Purple under crimson, glass in the glazes, a rare yellow for the lights.</li>
+        <li><em>Let the ground warm it.</em> A yellow-brown ground, never left bare, that deepens every shadow.</li>
+        <li><em>Make the meaning last.</em> Crown, halo and palm, added at the end, turn a portrait into a saint.</li>
+      </ul>
+    </section>
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://data.ng.ac.uk/0ECQ-000B-0000-0000" target="_blank" rel="noopener">L. Treves, L. Keith and M. Melchiorre, “NG6671, Self Portrait as Saint Catherine of Alexandria”, National Gallery Online Entries for Individual Paintings (2024; version 5, 2025)</a></li>
+        <li><a href="https://www.nationalgallery.org.uk/paintings/artemisia-gentileschi-self-portrait-as-saint-catherine-of-alexandria" target="_blank" rel="noopener">National Gallery, London: the painting (NG6671)</a></li>
+        <li><a href="https://www.nationalgallery.org.uk/behind-the-scenes/restoring-artemisia" target="_blank" rel="noopener">National Gallery: “Restoring Artemisia”, with the fourteen films of the 2018 treatment</a></li>
+        <li><a href="https://shop.nationalgallery.org.uk/national-gallery-technical-bulletin-volume-40-1048657.html" target="_blank" rel="noopener">L. Keith, L. Treves, M. Melchiorre Di Crescenzo and J. Russell, “Artemisia Gentileschi&#x27;s Self Portrait as Saint Catherine of Alexandria”, National Gallery Technical Bulletin 40 (2019), 4–17 (not read for this guide)</a></li>
+        <li><a href="https://www.getty.edu/publications/conserving-canvas/iv-case-studies/22/" target="_blank" rel="noopener">L. Harrison, “Self-Portrait as Saint Catherine of Alexandria by Artemisia Gentileschi”, in Conserving Canvas (Getty Conservation Institute, 2023)</a></li>
+        <li><a href="https://www.theartnewspaper.com/2019/04/11/x-ray-of-uffizis-artemisia-gentileschi-reveals-a-tantalising-underpainting" target="_blank" rel="noopener">The Art Newspaper: “X-ray of Uffizi&#x27;s Artemisia Gentileschi reveals a tantalising underpainting” (11 April 2019), on C. Frosinini and M. L. Reginella, OPD Restauro 31 (2019)</a></li>
+        <li><a href="https://www.theartnewspaper.com/2017/12/19/newly-discovered-artemisia-gentileschi-painting-sells-for-euro24m-at-auction-in-paris" target="_blank" rel="noopener">The Art Newspaper: the Drouot sale (19 December 2017)</a></li>
+        <li><a href="https://theartnewspaper.com/2018/07/06/londons-national-gallery-acquires-painting-by-artemisia-gentileschi-for-pound36m" target="_blank" rel="noopener">The Art Newspaper: the National Gallery&#x27;s purchase (6 July 2018)</a></li>
+        <li><a href="https://news.artnet.com/art-world/national-gallery-artemisia-gentileschi-provenance-1417675" target="_blank" rel="noopener">artnet News: questions about the painting&#x27;s provenance (December 2018)</a></li>
+        <li><a href="https://artsandculture.google.com/asset/wd/SQE-sCV4lsKC7g" target="_blank" rel="noopener">Wadsworth Atheneum Museum of Art: Self Portrait as a Lute Player, on Google Arts &amp; Culture</a></li>
+        <li><a href="https://www.rijksmuseum.nl/en/collection/RP-P-OB-63.787" target="_blank" rel="noopener">Rijksmuseum: Jérôme David, Portrait of Artemisia Gentileschi (RP-P-OB-63.787)</a></li>
+        <li><a href="https://www.rct.uk/collection/405551" target="_blank" rel="noopener">Royal Collection Trust: Self-Portrait as the Allegory of Painting (RCIN 405551)</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="colophon">
+    <p>Images: the paintings by Artemisia Gentileschi are in the public domain, from Wikimedia Commons, which hosts the National Gallery's photographs of this painting before and after its 2018 treatment; Jérôme David's engraving is the Rijksmuseum's impression (CC0). The selector's portrait of the artist is a detail of the Royal Collection's <i>Self-Portrait as the Allegory of Painting (La Pittura)</i>, about 1638–39 (public domain), which some scholars doubt is a self-portrait. The close-ups, the card and the thumbnail are cut from the National Gallery's photograph. The National Gallery's infrared images, X-radiograph, XRF maps and tracing overlays, and the Uffizi's X-radiograph, are under copyright and are described, not shown. Stages 1, 2, 4 and 5 and the three scenes were generated with Prodia (Gemini 3 Pro Image, with SAM 3 to separate the figure); stage 5 replaces only the crown, halo and palm, and stage 4 only the wheel and the chest, with generated paint. Stage 3 is stage 4 filtered and recoloured. The reconstructions show plausible appearances, not documented ones; the book and the cloth are documented in outline only. Pigment colours are approximate. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>

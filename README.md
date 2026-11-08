@@ -1,6 +1,6 @@
 # Imagining Artist Methods
 
-Sixteen step-by-step reconstructions of how famous paintings were made: what each artist's process would have been, from training and first decisions to the last stroke, using technical studies, documents and the intermediate works that survive.
+Eighteen step-by-step reconstructions of how famous paintings were made: what each artist's process would have been, from training and first decisions to the last stroke, using technical studies, documents, and the intermediate works that survive.
 
 **Live site:** https://cat1060.github.io/imagining-artist-methods/
 
@@ -11,6 +11,7 @@ Sixteen step-by-step reconstructions of how famous paintings were made: what eac
 | [Self Portrait as Saint Catherine, a face from the mirror](https://cat1060.github.io/imagining-artist-methods/gentileschi/) | Artemisia Gentileschi, about 1615–17, National Gallery, London |
 | [Self-Portrait, caught mid-stroke](https://cat1060.github.io/imagining-artist-methods/leyster/) | Judith Leyster, about 1630, National Gallery of Art, Washington |
 | [The Night Watch, back to front](https://cat1060.github.io/imagining-artist-methods/rembrandt/) | Rembrandt van Rijn, 1642, Rijksmuseum, Amsterdam |
+| [Las Meninas, with the painter in the picture](https://cat1060.github.io/imagining-artist-methods/velazquez/) | Diego Velázquez, 1656, Museo del Prado, Madrid |
 | [Girl with a Pearl Earring, layer by layer](https://cat1060.github.io/imagining-artist-methods/vermeer/) | Johannes Vermeer, about 1665, Mauritshuis |
 | [Bouquet of Flowers, pressed and painted](https://cat1060.github.io/imagining-artist-methods/ruysch/) | Rachel Ruysch, 1708, Bayerische Staatsgemäldesammlungen, Munich |
 | [Self Portrait in a Straw Hat, painted twice](https://cat1060.github.io/imagining-artist-methods/vigee-le-brun/) | Élisabeth Vigée Le Brun, about 1782, National Gallery, London |
@@ -19,6 +20,7 @@ Sixteen step-by-step reconstructions of how famous paintings were made: what eac
 | [Paris Street; Rainy Day, pinned and ruled](https://cat1060.github.io/imagining-artist-methods/caillebotte/) | Gustave Caillebotte, 1877, Art Institute of Chicago |
 | [Little Girl in a Blue Armchair, with a corner by Degas](https://cat1060.github.io/imagining-artist-methods/cassatt/) | Mary Cassatt, 1878, National Gallery of Art |
 | [A Bar at the Folies-Bergère, rethought](https://cat1060.github.io/imagining-artist-methods/manet/) | Édouard Manet, 1882, The Courtauld, London |
+| [A Sunday on La Grande Jatte, stroke by stroke and dot by dot](https://cat1060.github.io/imagining-artist-methods/seurat/) | Georges Seurat, 1884–86, Art Institute of Chicago |
 | [The Starry Night, stroke by stroke](https://cat1060.github.io/imagining-artist-methods/van-gogh/) | Vincent van Gogh, 1889, Museum of Modern Art |
 | [At the Moulin Rouge, cut and rejoined](https://cat1060.github.io/imagining-artist-methods/toulouse-lautrec/) | Henri de Toulouse-Lautrec, 1892–95, Art Institute of Chicago |
 | [The Ten Largest, on the floor](https://cat1060.github.io/imagining-artist-methods/af-klint/) | Hilma af Klint, No. 7, Adulthood, 1907, Hilma af Klint Foundation, Stockholm |
@@ -33,7 +35,7 @@ Sixteen step-by-step reconstructions of how famous paintings were made: what eac
 ## About the images
 
 - The paintings, drawings, cartoon and other intermediate sources are public-domain images, mostly from Wikimedia Commons and museum open-access collections. A few scientific images, such as the Rijksmuseum's calcium map of The Night Watch (CC BY 4.0), are shown under Creative Commons licences. Each image is credited where it appears. The small artist portraits in the works dropdown are public-domain images from Wikimedia Commons; Vermeer's is the young man in his Procuress, possibly a self-portrait, since no certain portrait of him exists.
-- The size-comparison objects are drawn for the site, except the elephant, the king penguin and the retriever, which are silhouettes from [PhyloPic](https://www.phylopic.org): the elephant and the penguin by Steven Traver (CC0), the retriever in the public domain.
+- The size-comparison objects are drawn for the site, except the elephant, the king penguin, the retriever, and the ostrich, which are silhouettes from [PhyloPic](https://www.phylopic.org): the elephant and the penguin by Steven Traver (CC0), the retriever in the public domain, and the ostrich by Marie Attard (public domain).
 - The stage reconstructions and chapter scenes are AI-generated with [Prodia](https://prodia.com) (Gemini 3 Pro Image, FLUX Fill and SAM 3 segmentation), using the real painting as a reference so the composition stays in register. They are labelled on the pages and show plausible appearances, not documented ones.
 
 Each chapter opens with a note on its evidence, and every guide ends with its sources. The Vermeer guide was first published on its own at [cat1060/vermeer-layer-by-layer](https://github.com/cat1060/vermeer-layer-by-layer).

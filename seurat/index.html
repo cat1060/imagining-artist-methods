@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Sunday on La Grande Jatte, Stroke by Stroke and Dot by Dot</title>
+<meta name="description" content="A step-by-step reconstruction of how Georges Seurat painted A Sunday on La Grande Jatte — 1884, from the studies and the first campaign of small strokes to the dots of 1885–86 and the painted border of 1888–89, with AI-generated reconstructions of each stage.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="A Sunday on La Grande Jatte, Stroke by Stroke and Dot by Dot">
+<meta property="og:description" content="A step-by-step reconstruction of how Georges Seurat painted A Sunday on La Grande Jatte — 1884, from the studies and the first campaign of small strokes to the dots of 1885–86 and the painted border of 1888–89, with AI-generated reconstructions of each stage.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/seurat/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/seurat/img/stages/05-final.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+:root {
+  --bg: #ECEDE5; --surface: #F6F6F0; --ink: #1C2019; --muted: #535A4C; --rule: #D0D3C4; --rule-strong: #979C88;
+  --accent: #2C5D8A; --accent-2: #A8481F; --frame: #1B1D19; --frame-edge: #3A3E34;
+  --pg-canvas: #CFC3AA; --pg-canvas-dark: #AE9F82; --pg-ground: #EEEAE0; --pg-paint: #8DA23C; --pg-unknown: #BCC1B4;
+  --pg-dots: #D9B13A;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12140F; --surface: #191C15; --ink: #E7EBE0; --muted: #A9B19E; --rule: #2A2F25; --rule-strong: #464D3E;
+    --accent: #7FB1E0; --accent-2: #E79A70; --frame: #0B0C09; --frame-edge: #3A3E34; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12140F; --surface: #191C15; --ink: #E7EBE0; --muted: #A9B19E; --rule: #2A2F25; --rule-strong: #464D3E;
+  --accent: #7FB1E0; --accent-2: #E79A70; --frame: #0B0C09; --frame-edge: #3A3E34; color-scheme: dark;
+}
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <details class="series-pick">
+      <summary aria-label="Seurat, A Sunday on La Grande Jatte — 1884. Choose another of the 18 works"><span class="sw-faces"><img class="sw-artist" src="../seurat/img/artist.jpg" width="96" height="96" alt=""><img src="../seurat/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Seurat</span><span class="sn-title">A Sunday on La Grande Jatte — 1884 · 1884–86</span></span><span class="sp-count">All 18</span><svg class="sp-chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></summary>
+      <nav class="series-menu" aria-label="Works in the series">
+        <ol style="--rows: 9">
+        <li><a href="../raphael/"><span class="sw-faces"><img class="sw-artist" src="../raphael/img/artist.jpg" width="96" height="96" alt=""><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens <span class="sn-date">· 1509–11</span></span></span></a></li>
+        <li><a href="../el-greco/"><span class="sw-faces"><img class="sw-artist" src="../el-greco/img/artist.jpg" width="96" height="96" alt=""><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross <span class="sn-date">· c. 1580</span></span></span></a></li>
+        <li><a href="../gentileschi/"><span class="sw-faces"><img class="sw-artist" src="../gentileschi/img/artist.jpg" width="96" height="96" alt=""><img src="../gentileschi/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Artemisia Gentileschi</span><span class="sn-title">Self Portrait as Saint Catherine of Alexandria <span class="sn-date">· c. 1615–17</span></span></span></a></li>
+        <li><a href="../leyster/"><span class="sw-faces"><img class="sw-artist" src="../leyster/img/artist.jpg" width="96" height="96" alt=""><img src="../leyster/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Leyster</span><span class="sn-title">Self-Portrait <span class="sn-date">· c. 1630</span></span></span></a></li>
+        <li><a href="../rembrandt/"><span class="sw-faces"><img class="sw-artist" src="../rembrandt/img/artist.jpg" width="96" height="96" alt=""><img src="../rembrandt/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Rembrandt</span><span class="sn-title">The Night Watch <span class="sn-date">· 1642</span></span></span></a></li>
+        <li><a href="../velazquez/"><span class="sw-faces"><img class="sw-artist" src="../velazquez/img/artist.jpg" width="96" height="96" alt=""><img src="../velazquez/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Velázquez</span><span class="sn-title">Las Meninas <span class="sn-date">· 1656</span></span></span></a></li>
+        <li><a href="../vermeer/"><span class="sw-faces"><img class="sw-artist" src="../vermeer/img/artist.jpg" width="96" height="96" alt=""><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring <span class="sn-date">· c. 1665</span></span></span></a></li>
+        <li><a href="../ruysch/"><span class="sw-faces"><img class="sw-artist" src="../ruysch/img/artist.jpg" width="96" height="96" alt=""><img src="../ruysch/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Ruysch</span><span class="sn-title">Bouquet of Flowers <span class="sn-date">· 1708</span></span></span></a></li>
+        <li><a href="../vigee-le-brun/"><span class="sw-faces"><img class="sw-artist" src="../vigee-le-brun/img/artist.jpg" width="96" height="96" alt=""><img src="../vigee-le-brun/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vigée Le Brun</span><span class="sn-title">Self Portrait in a Straw Hat <span class="sn-date">· c. 1782</span></span></span></a></li>
+        <li><a href="../bonheur/"><span class="sw-faces"><img class="sw-artist" src="../bonheur/img/artist.jpg" width="96" height="96" alt=""><img src="../bonheur/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Bonheur</span><span class="sn-title">The Horse Fair <span class="sn-date">· 1852–55</span></span></span></a></li>
+        <li><a href="../monet/"><span class="sw-faces"><img class="sw-artist" src="../monet/img/artist.jpg" width="96" height="96" alt=""><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise <span class="sn-date">· 1872</span></span></span></a></li>
+        <li><a href="../caillebotte/"><span class="sw-faces"><img class="sw-artist" src="../caillebotte/img/artist.jpg" width="96" height="96" alt=""><img src="../caillebotte/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Caillebotte</span><span class="sn-title">Paris Street; Rainy Day <span class="sn-date">· 1877</span></span></span></a></li>
+        <li><a href="../cassatt/"><span class="sw-faces"><img class="sw-artist" src="../cassatt/img/artist.jpg" width="96" height="96" alt=""><img src="../cassatt/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Cassatt</span><span class="sn-title">Little Girl in a Blue Armchair <span class="sn-date">· 1878</span></span></span></a></li>
+        <li><a href="../manet/"><span class="sw-faces"><img class="sw-artist" src="../manet/img/artist.jpg" width="96" height="96" alt=""><img src="../manet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Manet</span><span class="sn-title">A Bar at the Folies-Bergère <span class="sn-date">· 1882</span></span></span></a></li>
+        <li><a href="../seurat/" aria-current="page"><span class="sw-faces"><img class="sw-artist" src="../seurat/img/artist.jpg" width="96" height="96" alt=""><img src="../seurat/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Seurat</span><span class="sn-title">A Sunday on La Grande Jatte — 1884 <span class="sn-date">· 1884–86</span></span></span></a></li>
+        <li><a href="../van-gogh/"><span class="sw-faces"><img class="sw-artist" src="../van-gogh/img/artist.jpg" width="96" height="96" alt=""><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night <span class="sn-date">· 1889</span></span></span></a></li>
+        <li><a href="../toulouse-lautrec/"><span class="sw-faces"><img class="sw-artist" src="../toulouse-lautrec/img/artist.jpg" width="96" height="96" alt=""><img src="../toulouse-lautrec/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Toulouse-Lautrec</span><span class="sn-title">At the Moulin Rouge <span class="sn-date">· 1892–95</span></span></span></a></li>
+        <li><a href="../af-klint/"><span class="sw-faces"><img class="sw-artist" src="../af-klint/img/artist.jpg" width="96" height="96" alt=""><img src="../af-klint/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">af Klint</span><span class="sn-title">The Ten Largest, No. 7 <span class="sn-date">· 1907</span></span></span></a></li>
+        </ol>
+      </nav>
+    </details>
+  </div>
+</header>
+<div class="page">
+  <header class="hero is-landscape">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Paris, 1884–89</p>
+      <h1>A Sunday on La Grande Jatte, <em>stroke by stroke and dot by dot</em></h1>
+      <p class="lede">Imagine you are Georges Seurat, twenty-four, who left art school and has just finished his first huge canvas. This guide follows how the picture was probably made: months of drawings and small panels, a vast canvas painted in two campaigns a year apart, the dots added in the second, and a painted border three years later.</p>
+      <p class="basis">The Art Institute of Chicago&#x27;s records, its 2004 exhibition Seurat and the Making of La Grande Jatte, and its 2022 study of the frame give the dates and the order of work. The technical studies by Inge Fiedler and Roy Berns could not be read for this guide and are known here only through summaries. Each chapter opens with a note on what its evidence is. The slider steps through five stages; stages 1, 2, and 3 are AI reconstructions.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="The border, 1888–89. A sunny riverside park seen from the shade: dozens of people in 1880s dress stand, sit, and lie on a sloping lawn among trees, a couple in black at the right with a parasol and a monkey on a leash, boats on the river at the left, the whole picture made of small dots and framed by a narrow border of coloured dots.">
+            <img src="img/stages/01-canvas.jpg" width="1000" height="666" alt="" data-name="Primed canvas" data-note="A canvas about two by three metres with a pale priming. Lead white has been found under the paint where it was sampled; the rest of the canvas and ground have not been described in sources read for this guide.">
+            <img src="img/stages/02-park.jpg" width="1000" height="666" alt="" data-name="The empty park" data-note="The lawn, the trees, the shadows and the river, with no one in them yet. Some of your studies are of the park alone, such as drawings of its tree trunks, but whether you began the big canvas this way is not recorded: this stage is inferred.">
+            <img src="img/stages/03-first.jpg" width="1000" height="666" alt="" data-name="First campaign, 1884–85" data-note="The whole cast in place, painted in small horizontal and criss-cross strokes of pure colour, with no dots. This is the picture you meant to show in March 1885. The look is invented from the Met&#x27;s final study; the figure shapes here are today&#x27;s, not the plainer ones you first painted.">
+            <img src="img/stages/04-1886.jpg" width="1000" height="666" alt="" data-name="Shown in May 1886" data-note="Reworked from October 1885 with small dots, dabs and dashes and new curved outlines, and shown at the eighth Impressionist exhibition. The white band stands for your white frame, whose exact form is unknown. The colours are today&#x27;s: some have darkened since.">
+            <img src="img/stages/05-final.jpg" width="1000" height="666" class="is-on" fetchpriority="high" alt="" data-name="The border, 1888–89" data-note="You take the canvas off its stretcher, fold out the tacking margins, prime them with lead white, and paint a border of red, orange, and blue dots around the scene. This is the painting today.">
+          <div class="scale-layer" aria-hidden="true"><svg viewBox="0 0 308.1 207.5" preserveAspectRatio="none"><g class="scale-use" transform="translate(17.05 12.25)"><g id="scale-art"><rect class="sc-o" x="0" y="15.25" width="274" height="152.5"/><rect class="sc-d" x="2" y="17.25" width="270" height="148.5"/><line class="sc-k" x1="2" y1="91.5" x2="272" y2="91.5"/><rect class="sc-o" x="136.0" y="0" width="2" height="183"/></g></g></svg><p class="scale-note">A ping-pong table seen from above, 274 × 152.5 cm (9 × 5 ft), with its net</p></div></div>
+        </div>
+        <span class="dim dim-h" aria-hidden="true"><span>207.5 cm</span></span>
+        <span class="dim dim-w" aria-hidden="true"><span>308.1 cm</span></span>
+      <button type="button" class="scale-btn" aria-pressed="false" aria-label="Compare its size: show a ping-pong table seen from above, 274 × 152.5 cm (9 × 5 ft), with its net, drawn to scale over the painting" title="Compare its size: a ping-pong table seen from above, 274 × 152.5 cm (9 × 5 ft), with its net"><svg class="scale-icon" viewBox="-2 -2 31 31" aria-hidden="true"><circle class="sc-o" cx="11" cy="11" r="9"/><path class="sc-o" d="M15.5 18.5L18.5 15.5L24 21L21 24Z"/><circle class="sc-o" cx="24" cy="5" r="2.5"/></svg></button></div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name">The border, 1888–89</p>
+          <span class="scrub-count">Stage 5 of 5</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" min="0" max="4" step="1" value="4" aria-label="Stage of the work" aria-valuetext="Stage 5, The border, 1888–89">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note">You take the canvas off its stretcher, fold out the tacking margins, prime them with lead white, and paint a border of red, orange, and blue dots around the scene. This is the painting today.</p>
+      </div>
+      <figcaption>Georges Seurat, <i>A Sunday on La Grande Jatte — 1884</i>, 1884–86, border added 1888–89. Oil on canvas, 207.5 × 308.1 cm. Art Institute of Chicago, Helen Birch Bartlett Memorial Collection, 1926.224. Public domain (Google Art Project photograph). <span class="tag">AI-generated</span> Stages 1, 2, and 3 are reconstructions made with Prodia from this painting; stage 4 is the painting without its border, in a plain white band.</figcaption>
+    </figure>
+  </header>
+  <nav class="toc" aria-label="Chapters" style="--toc-n: 8">
+    <ol>
+      <li><a href="#training"><span class="toc-num">I</span><span class="toc-name">Training</span></a></li>
+      <li><a href="#island"><span class="toc-num">II</span><span class="toc-name">The island</span></a></li>
+      <li><a href="#studies"><span class="toc-num">III</span><span class="toc-name">Studies</span></a></li>
+      <li><a href="#materials"><span class="toc-num">IV</span><span class="toc-name">Materials</span></a></li>
+      <li><a href="#layin"><span class="toc-num">V</span><span class="toc-name">Lay-in</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VI</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#show"><span class="toc-num">VII</span><span class="toc-name">May 1886</span></a></li>
+      <li><a href="#time"><span class="toc-num">VIII</span><span class="toc-name">Time</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="chapter" id="training" aria-labelledby="h-training">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-training">Your training</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute of Chicago&#x27;s 2004 exhibition texts and its 2022 article on the frame. Your reading of Chevreul and your visit to the 1879 exhibition are as the Art Institute reports them.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are Georges Seurat, born in Paris in December 1859 into a middle-class family with enough income to support you for life. You trained at the École des Beaux-Arts under Henri Lehmann, a follower of Ingres, and left after a year and a half. After a year of military service you worked alone, mostly in black and white: conté crayon drawings of soft darks and lights.</p>
+          <p>At sixteen you read the colour theorist Michel-Eugène Chevreul: a colour looks stronger beside its complement, and colours set side by side mix in the eye differently from colours mixed on the palette. At twenty you saw the Impressionists' fourth exhibition, and their white frames left an “unexpectedly deep impression”.</p>
+          <p>Your first huge canvas, <i>Bathing Place, Asnières</i>, took thirteen studies. In it, men and boys look across the Seine to an island, a clump of green on the far bank: La Grande Jatte.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source is-wide">
+            <img src="img/src-bathers.jpg" width="800" height="531" loading="lazy" alt="Young men and boys resting on a grassy riverbank and bathing in the river, a bridge and factory chimneys beyond.">
+            <figcaption>
+              <span class="source-title">Bathing Place, Asnières</span>
+              <span class="source-meta">1884 · Oil on canvas · National Gallery, London</span>
+              <span class="source-note">Your first big picture. The island of La Grande Jatte is the green bank at the upper right.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Baigneurs_a_Asnieres.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="island" aria-labelledby="h-island">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-island">Choose a stage</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute of Chicago&#x27;s 2004 exhibition texts for the setting, the cast, and the start date; your words to Gustave Kahn as the Art Institute quotes them in English.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/island.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a shady riverside lawn under tall trees on a sunny afternoon, boats on the river, and houses and a factory chimney on the far bank.">
+        <figcaption><span class="tag">AI-generated</span>The tip of the island facing Courbevoie, imagined for 1884.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>From 22 May 1884 the island is your subject. Monet painted there in 1878; you choose the green park at its north-western tip, looking across the Seine to Courbevoie. The island's restaurants, dance halls, wine shops, and boatyards, and the factories across the river, stay out of the picture.</p>
+          <p>On it you will set a cast of modern Parisians on a Sunday: soldiers, boaters, the fashionable and the casually dressed, old and young, families, couples, and people alone. The Art Institute counts forty-eight people, three dogs, and eight boats. They will hardly look at one another.</p>
+          <figure class="quote">
+            <p>“I want to make modern people, in their essential traits, move about as they do on those friezes”</p>
+            <cite>Seurat to Gustave Kahn, on the frieze of Phidias, in English translation</cite>
+          </figure>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-nga-study.jpg" width="800" height="500" loading="lazy" alt="A small oil sketch of a sunny lawn by a river with trees and a sailing boat, painted in quick strokes of green, yellow, and blue, a figure seated on the grass.">
+            <figcaption>
+              <span class="source-title">Study for La Grande Jatte</span>
+              <span class="source-meta">1884–85 · Oil on wood, 15.9 × 25 cm · National Gallery of Art, Washington</span>
+              <span class="source-note">One of your small panels of the island.</span>
+              <span class="source-credit">Open access (CC0), National Gallery of Art · <a href="https://commons.wikimedia.org/wiki/File:Study_for_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="studies" aria-labelledby="h-studies">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-studies">Audition the cast</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute of Chicago&#x27;s 2004 exhibition counts the studies, and a 2004 press review of it describes the changes to the woman in the pink skirt; the studies are in Chicago, New York, Washington, and elsewhere. Where each panel was painted is not recorded.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/panel.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a painter seen from behind, sitting on a folding stool by a river with an open paint box on his knees, a small wooden panel in its lid.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: a small panel painted in the open. That you painted the panels on the island is likely, not recorded.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Before the big canvas, you make about twenty-eight drawings, twenty-eight small oil sketches on wood panels, and three larger canvases. The panels are about 16 by 25 centimetres; the drawings are in conté crayon on textured white paper.</p>
+          <p>They are auditions. You try out figures, move them, change them, and drop some. In one study a man approaches the woman in the pink skirt, and in the painting she leads a little girl instead. Others you keep from early on, like the woman walking a monkey, who already appears in a panel and in your final study.</p>
+          <p>The last of the canvases, now in New York, has almost the whole design, in small criss-cross strokes that one scholar compared to chopped straw. It is the best guide to how the big picture looked before the dots.</p>
+          <dl class="decisions">
+            <div class="decision"><dt>Profiles and fronts</dt><dd>Figures turned sideways or straight on, like an Egyptian or Greek frieze.</dd></div>
+            <div class="decision"><dt>Light against shade</dt><dd>A sunlit lawn behind a band of shadow in the foreground.</dd></div>
+            <div class="decision"><dt>Tried, then cast</dt><dd>Each figure worked out in drawings and panels before it reaches the canvas.</dd></div>
+          </dl>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-aic-sketch.jpg" width="800" height="497" loading="lazy" alt="A small oil sketch of people sitting and standing on a riverbank lawn under trees, painted in loose strokes.">
+            <figcaption>
+              <span class="source-title">Oil Sketch for La Grande Jatte</span>
+              <span class="source-meta">1884 · Oil on panel, 15.5 × 24.3 cm · Art Institute of Chicago</span>
+              <span class="source-note">A panel with many figures, one of your auditions.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_Oil_Sketch_for_%22La_Grande_Jatte%22_-_1981.15_-_Art_Institute_of_Chicago.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source">
+            <img src="img/src-parasol.jpg" width="600" height="919" loading="lazy" alt="A conté crayon drawing of a seated woman in profile, a dark soft silhouette against a pale ground, holding a parasol.">
+            <figcaption>
+              <span class="source-title">Seated Woman with a Parasol</span>
+              <span class="source-meta">1884–85 · Conté crayon on paper · Art Institute of Chicago</span>
+              <span class="source-note">A seated woman with a parasol, one of the figures you tried out, in black and white.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_Seated_Woman_with_a_Parasol_%28study_for_La_Grande_Jatte%29_-_Google_Art_Project.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+      <div class="chapter-body">
+        <div class="prose">
+          <figure class="source is-wide">
+            <img src="img/src-met-study.jpg" width="1000" height="680" loading="lazy" alt="An oil study of the whole composition: the park, the river, and most of the figures, painted in small criss-cross strokes, with a dotted border.">
+            <figcaption>
+              <span class="source-title">Study for A Sunday on La Grande Jatte</span>
+              <span class="source-meta">1884 · Oil on canvas, 70.5 × 104.1 cm · Metropolitan Museum of Art, New York</span>
+              <span class="source-note">Your final study, with the couple, the monkey, and the dogs in place. Its dotted border, like the big canvas&#x27;s, is later.</span>
+              <span class="source-credit">CC0, The Metropolitan Museum of Art · <a href="https://commons.wikimedia.org/wiki/File:Study_for_%22A_Sunday_on_La_Grande_Jatte%22_MET_DP259921.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-materials">Gather your materials</h2>
+        <p class="evidence"><b>Evidence</b>Inge Fiedler&#x27;s analyses of 1989 and 2004 for the Art Institute of Chicago, known here only through a summary by ColourLex; the size and medium are from the Art Institute&#x27;s record.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/palette.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a wooden palette with dabs of bright oil colours in a row, from white and yellows through orange, reds, and violets to blues and greens, with brushes and a rag.">
+        <figcaption><span class="tag">AI-generated</span>A palette of bright colours, as for your second campaign. The colours follow the pigments reported, not a surviving palette.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <div class="chapter-body">
+          <div class="prose">
+            <p>Oil on a linen canvas 207.5 by 308.1 centimetres, now slightly out of square. The pigments found, as summarised from the Art Institute's analyses, are lead white, zinc yellow, chrome yellow, cadmium yellow, yellow ochre and iron oxide yellow, burnt sienna, vermilion, red lake, emerald green, viridian, cobalt blue, and artificial ultramarine, with black used rarely.</p>
+            <p>The palette changes between the two campaigns. In 1884–85 you still use earth colours and a little black. From October 1885 you drop them and keep to bright, spectral colours, adding zinc yellow and more chrome yellow, vermilion, and red lake.</p>
+            <p>Samples show lead white priming under parts of the paint, and in the sunlit grass, dots laid over a lower layer of chrome yellow, emerald green, and white that still shows through between them.</p>
+            <div class="doc">
+              <p class="doc-title">Not read for this guide</p>
+              <ul>
+                <li>Inge Fiedler's own reports, 1989 and 2004: the canvas, the ground, and the layers in full</li>
+                <li>Whether you drew or squared the design on the canvas, and how you transferred it</li>
+                <li>What X-rays show of the first campaign</li>
+                <li>Roy Berns's simulation of the colours before they darkened</li>
+              </ul>
+              <p class="doc-note">The Art Institute's website and publications site refused every request made for this guide; the 1989 and 2004 texts are in print.</p>
+            </div>
+          </div>
+          <aside class="aside">
+            <figure class="xsec">
+              <figcaption class="xsec-cap">The layers, schematic · surface at top · simplified from reported samples</figcaption>
+              <div class="xsec-rows">
+                <div class="layer"><span class="band" style="--c: var(--pg-dots); --h: 18px"></span><span class="layer-label"><b>Dots, dabs, and dashes</b><span>second campaign, 1885–86; bright pigments only</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-paint); --h: 30px"></span><span class="layer-label"><b>Small strokes</b><span>first campaign, 1884–85; earth colours too</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 18px"></span><span class="layer-label"><b>Priming</b><span>lead white where sampled</span></span></div>
+                <div class="layer"><span class="band is-canvas" style="--h: 34px"></span><span class="layer-label"><b>Canvas</b><span>linen; weave and maker not read</span></span></div>
+              </div>
+            </figure>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="layin" aria-labelledby="h-layin">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-layin">Begin the big canvas</h2>
+        <p class="evidence"><b>Evidence</b>Nothing documented about how the big canvas was begun. The Met&#x27;s final study and the Art Institute&#x27;s label describe the first campaign&#x27;s brushwork; stages 1 to 3 are plausible, not recorded.</p>
+      </header>
+      <div class="chapter-stack">
+        <figure class="stages" style="--stage-n: 3">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/01-canvas.jpg" width="1000" height="666" loading="lazy" alt="AI reconstruction: A bare pale canvas.">
+              <figcaption><b>Canvas</b>Primed, pale. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/02-park.jpg" width="1000" height="666" loading="lazy" alt="AI reconstruction: The lawn, trees, shadows, and river, with no people.">
+              <figcaption><b>The park</b>No one in it yet. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-first.jpg" width="1000" height="666" loading="lazy" alt="AI reconstruction: The whole scene with all its figures, in small loose strokes of colour without dots.">
+              <figcaption><b>First campaign</b>Small strokes, no dots. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Generated with Prodia from the painting today, so the composition stays in register. In stage 3 the figures keep their final shapes; the plainer first versions are not reconstructed.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li><h3>Prepare the canvas</h3><p>A canvas over two metres high and three wide, with a pale priming. Its edges are tacked round the stretcher; four years later you will fold them out again.</p></li>
+          <li><h3>Set the stage</h3><p>The lawn sloping down to the river, the trees, and the long shadow across the foreground, from your studies of the park.</p></li>
+          <li><h3>Paint the cast</h3><p>The figures in small horizontal and criss-cross strokes of complementary colours, as in your final study. By March 1885 the picture is ready to show.</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-painting">Paint it twice</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute of Chicago&#x27;s record and 2004 exhibition texts for the two campaigns and the changes to the figures; its 2022 article on the frame for the border. Which figures changed, and how much, is not set out in any source read.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/studio.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a bare studio with a huge canvas leaning against the wall, seen from the side, a stepladder, a table with paints, and drawings pinned up.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: the canvas in the studio. Where you worked on it is not recorded in sources read.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <p class="prose-intro">The two campaigns are documented: May 1884 to March 1885, and October 1885 to spring 1886. The border followed in 1888–89. Steps 1 and 2 are pictured by AI; steps 3 and 4 are the painting.</p>
+        <div class="paint-grid is-landscape">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with four numbered markers showing the order of work.">
+                <img src="img/stages/02-park.jpg" width="1000" height="666" loading="lazy" alt="" data-caption="After step 1: lay in the park">
+                <img src="img/stages/03-first.jpg" width="1000" height="666" loading="lazy" alt="" data-caption="After step 2: place the cast">
+                <img src="img/stages/04-1886.jpg" width="1000" height="666" loading="lazy" alt="" data-caption="After step 3: dots, dabs, and outlines, the painting itself, not AI">
+                <img src="img/stages/05-final.jpg" width="1000" height="666" loading="lazy" alt="" class="is-on" data-caption="After step 4: paint a border, the painting itself, not AI">
+              </div>
+              <a class="marker" href="#landscape" data-target="landscape" style="--x: 12%; --y: 19%" aria-label="Step 1, Lay in the park">1</a>
+              <a class="marker" href="#figures" data-target="figures" style="--x: 49%; --y: 36%" aria-label="Step 2, Place the cast">2</a>
+              <a class="marker" href="#dots" data-target="dots" style="--x: 71%; --y: 53%" aria-label="Step 3, Dots, dabs, and outlines">3</a>
+              <a class="marker" href="#border" data-target="border" style="--x: 96%; --y: 88%" aria-label="Step 4, Paint a border">4</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span aria-live="polite">After step 4: paint a border, the painting itself, not AI</span></p>
+            <ol class="map-legend">
+              <li><a href="#landscape"><span class="dot">1</span>Lay in the park</a></li>
+              <li><a href="#figures"><span class="dot">2</span>Place the cast</a></li>
+              <li><a href="#dots"><span class="dot">3</span>Dots, dabs, and outlines</a></li>
+              <li><a href="#border"><span class="dot">4</span>Paint a border</a></li>
+            </ol>
+          </div>
+          <div class="steps">
+            <article class="step" id="landscape" aria-labelledby="h-landscape">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-landscape">Lay in the park</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/02-park.jpg" width="1000" height="666" loading="lazy" alt="AI reconstruction after step 1: The lawn, the trees, the shadows and the river, with no one in them yet. Some of your studies are of the park alone, such as drawings of its tree trunks, but whether you began the big canvas this way is not recorded: this stage is inferred.">
+                <figcaption>After step 1 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-sail.jpg" width="480" height="480" loading="lazy" alt="Close-up of a white sail on blue water, with a pale stone embankment and trees on the far bank, all in small strokes and dots.">
+                  <figcaption>The far bank and a sail.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Begin with the setting you have studied for months: the slope of the lawn, the river on the left, the trunks on the right, and the long shadows that cut across the foreground. Whether you painted the park first and the people after is not recorded.</p>
+                  <p>Leave out what you saw and did not want: the cafés, dance halls, boatyards, and factories on and around the island.</p>
+                </div>
+              </div>
+            </article>
+            <article class="step" id="figures" aria-labelledby="h-figures">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-figures">Place the cast</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/03-first.jpg" width="1000" height="666" loading="lazy" alt="AI reconstruction after step 2: The whole cast in place, painted in small horizontal and criss-cross strokes of pure colour, with no dots. This is the picture you meant to show in March 1885. The look is invented from the Met&#x27;s final study; the figure shapes here are today&#x27;s, not the plainer ones you first painted.">
+                <figcaption>After step 2 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-fisher.jpg" width="480" height="480" loading="lazy" alt="Close-up of a woman in a long orange-brown dress holding a fishing rod over the river, a seated woman in red beside her.">
+                  <figcaption>A woman fishing, at the water&#x27;s edge.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Bring in the people you have tried out in your drawings and panels: forty-eight of them, with three dogs and eight boats. Stand them in profile or full face, stiff and still, like figures in a frieze.</p>
+                  <p>Paint them, as the rest, in small strokes of pure colour laid side by side, mostly horizontal or criss-crossed, the manner of your final study. You plan to show the picture in March 1885; the exhibition is cancelled, and you put the canvas aside.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-girl.jpg" width="480" height="480" loading="lazy" alt="Close-up of a small girl in a white dress and a wide hat, walking beside the pink skirt of a standing woman.">
+                  <figcaption>The girl in white, at the centre.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="dots" aria-labelledby="h-dots">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-dots">Dots, dabs, and outlines</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/04-1886.jpg" width="1000" height="666" loading="lazy" alt="The painting after step 3: Reworked from October 1885 with small dots, dabs and dashes and new curved outlines, and shown at the eighth Impressionist exhibition. The white band stands for your white frame, whose exact form is unknown. The colours are today&#x27;s: some have darkened since.">
+                <figcaption>After step 3 · the painting</figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-dots.jpg" width="480" height="480" loading="lazy" alt="Close-up of sunlit grass: a yellow-green ground covered in small dots of yellow, orange, blue, and dark olive.">
+                  <figcaption>Sunlit grass, in dots.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>In October 1885 you come back to the canvas with a new method. Over the first strokes you lay small dabs, dashes, and dots of colour, each next to its complement, to mix in the eye rather than on the palette.</p>
+                  <p>You change the figures too. Starker, more columnar shapes get scalloped and curved outlines; some silhouettes grow, such as the bustle of the woman with the parasol at the right, and a few figures are added. The Art Institute names the monkey on its leash and a man with a rolled newspaper far in the distance, though a monkey is already in your studies of 1884.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 2">
+                <figure class="plate">
+                  <img src="img/detail-bustle.jpg" width="480" height="480" loading="lazy" alt="Close-up of the standing woman&#x27;s blue-violet dress with its large bustle, in dots.">
+                  <figcaption>The bustle.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-monkey.jpg" width="480" height="480" loading="lazy" alt="Close-up of a small brown monkey on a leash, walking across dark grass.">
+                  <figcaption>The monkey.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="border" aria-labelledby="h-border">
+              <header class="step-head"><span class="step-num" aria-hidden="true">4</span><h3 id="h-border">Paint a border</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/05-final.jpg" width="1000" height="666" loading="lazy" alt="The painting after step 4: You take the canvas off its stretcher, fold out the tacking margins, prime them with lead white, and paint a border of red, orange, and blue dots around the scene. This is the painting today.">
+                <figcaption>After step 4 · the painting</figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-border.jpg" width="480" height="480" loading="lazy" alt="Close-up of the painting&#x27;s bottom right corner: dark green grass ending at a narrow border of red, blue, and orange dots.">
+                  <figcaption>The border, bottom right.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>In 1888–89, after your picture Models, you start to rework the edges of your finished canvases. You take this one off its stretcher, fold out the tacking margins, prime them with lead white, and restretch it larger.</p>
+                  <p>On the new strip, about three centimetres wide, paint a border of red, orange, and blue dots, a bridge between the scene and your white frame. The width is measured on a photograph.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-body">
+        <div class="prose">
+          <h3 class="note-title">Why dots</h3>
+          <p>Colours mixed on the palette grow duller; colours laid side by side in small touches are mixed by the eye and keep their brightness, you believe, and each colour is heightened by its complement beside it. Seen from a distance, the dots fuse into solid, glowing forms; seen close, the figures dissolve. Critics called the method pointillism. You preferred other names: divisionism, or chromo-luminarism.</p>
+          <p>The dots also took time. The picture you had finished by March 1885 took another winter to repaint.</p>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="show" aria-labelledby="h-show">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-show">Show it, May 1886</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute of Chicago&#x27;s exhibition history and 2004 texts; its 2022 article on the frame, which says no photographs of these exhibitions have been found.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/show.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a modest exhibition room with plain walls and paintings in white frames, a man and a woman in 1880s dress, seen from behind, looking at a large painting in a wide white frame.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: the eighth Impressionist exhibition, rue Laffitte, May 1886.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The eighth and last Impressionist exhibition opens on 15 May 1886 at 1 rue Laffitte. Camille Pissarro has invited you; with his son Lucien and your friend Paul Signac you are hung in a room of your own, apart from Degas, Gauguin, and the rest.</p>
+          <p>You are twenty-six. Your picture is number 175 in the catalogue, and the most notorious single canvas in the show. Most critics ignore or mock it; a few young writers in literary journals champion it, and the new direction is soon baptized Neo-Impressionism. In August it goes on to the Indépendants, and in February 1887 to Les XX in Brussels.</p>
+          <p>It hangs in a white frame. No one photographed it, but visitors mention white frames, and you painted the picture, borderless and in a broad white frame, on the wall behind your <i>Models</i>.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-models.jpg" width="800" height="644" loading="lazy" alt="Three nude models in a studio, one seen from behind, one standing, one seated pulling on a stocking; on the wall at left, part of La Grande Jatte in a white frame.">
+            <figcaption>
+              <span class="source-title">Models (Poseuses)</span>
+              <span class="source-meta">1886–88 · Oil on canvas · Barnes Foundation, Philadelphia</span>
+              <span class="source-note">La Grande Jatte on your studio wall, before its border, in a wide white frame.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_Models_%28Poseuses%29_-_BF811_-_Barnes_Foundation.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="time" aria-labelledby="h-time">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-time">What happened next</h2>
+        <p class="evidence"><b>Evidence</b>The Art Institute of Chicago&#x27;s record (provenance and exhibitions), its 2022 article on the frame, and Roy Berns&#x27;s popular account of the darkening (2007). The comparison of the grass is a rough recolouring made for this guide, not Berns&#x27;s simulation.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Two years after the show you paint <i>Models</i> and begin to rework the edges of your finished canvases. This one comes off its stretcher; its tacking margins are folded out and primed with lead white, and on them you paint the border. The picture grows by a few centimetres on every side, and its old white frame, too small now, is probably lost.</p>
+          <figure class="compare">
+            <div><img src="img/edge-1886.jpg" width="800" height="587" loading="lazy" alt="The bottom right corner of the painting, dark green grass, ending at a plain white band."><span class="caption">1886: the painted scene ends at the white frame. The band is schematic.</span></div>
+            <div><img src="img/edge-today.jpg" width="800" height="587" loading="lazy" alt="The same corner today, with a narrow border of red, blue, and orange dots between the grass and the edge."><span class="caption">1889: the border on the folded-out margin, the painting today.</span></div>
+          </figure>
+          <p>Some of your bright colours did not last. The zinc yellow of the second campaign was unstable: within a few years, it turned from lemon yellow to ochre and brown. Félix Fénéon noticed in 1892. Dots that were meant as points of light became dark holes, and the sunlit yellow-greens went olive. In 2006 the colour scientist Roy Berns, with the Art Institute's scientists, published a digital simulation of the colours before the change.</p>
+          <figure class="compare">
+            <div><img src="img/grass-today.jpg" width="480" height="480" loading="lazy" alt="A patch of sunlit grass in the painting today: yellow-green, scattered with dark brown and olive dots."><span class="caption">Sunlit grass today.</span></div>
+            <div><img src="img/grass-rough.jpg" width="480" height="480" loading="lazy" alt="The same patch with the dark brown and olive dots lifted to yellow, so that the lawn looks smoother and lighter."><span class="caption">A rough idea only: the brown and olive dots lifted towards yellow by a simple script, not Berns's simulation.</span></div>
+          </figure>
+          <div class="note">
+            <h3 class="note-title">What is still not known, here</h3>
+            <p>How you began the big canvas, and whether you drew or squared the design on it. How the figures looked at the end of the first campaign. Which figures you added in 1885–86, beyond the monkey and the distant man the Art Institute names. What the canvas and ground are, in full. What the picture looked like before the yellows darkened, beyond Berns's simulation, which this guide could not read. Where you painted it.</p>
+          </div>
+        </div>
+        <aside class="aside" aria-label="Timeline">
+          <ol class="timeline" aria-label="Timeline">
+            <li class="is-key"><span class="t-year">May 1884</span><span>Studies on the island begin.</span></li>
+            <li><span class="t-year">March 1885</span><span>First campaign done; the Indépendants exhibition cancelled.</span></li>
+            <li class="is-key"><span class="t-year">Oct. 1885</span><span>Second campaign: dots, dabs, dashes, and new outlines.</span></li>
+            <li class="is-key"><span class="t-year">May 1886</span><span>Shown at the eighth Impressionist exhibition, no. 175.</span></li>
+            <li class="is-key"><span class="t-year">1888–89</span><span>Restretched, enlarged at the edges, and the border painted.</span></li>
+            <li><span class="t-year">1891</span><span>You die at thirty-one; the picture passes to your mother, then your brother.</span></li>
+            <li><span class="t-year">1892</span><span>Félix Fénéon notes that colours have darkened.</span></li>
+            <li><span class="t-year">1900</span><span>Sold for 800 francs to Casimir Brû, who gives it to his daughter Lucie.</span></li>
+            <li><span class="t-year">1924</span><span>Bought for $20,000 by Frederic Clay and Helen Birch Bartlett.</span></li>
+            <li><span class="t-year">1926</span><span>Given to the Art Institute of Chicago.</span></li>
+            <li><span class="t-year">2022</span><span>A new white frame, modelled on yours.</span></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Seurat thought</h2>
+      <ul class="principles">
+        <li><em>Plan it like a play.</em> A stage, a cast, and auditions in drawings and panels before the big canvas.</li>
+        <li><em>Let the eye do the mixing.</em> Pure colours side by side, each beside its complement.</li>
+        <li><em>Make the moment permanent.</em> Modern people standing still, like a frieze.</li>
+        <li><em>Go back and rework.</em> A second campaign a year on, and a border three years later.</li>
+        <li><em>Design the edge too.</em> A painted border, then a white frame, as part of the picture.</li>
+      </ul>
+    </section>
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884" target="_blank" rel="noopener">Art Institute of Chicago: A Sunday on La Grande Jatte — 1884, collection record (dates, inscription, provenance, exhibitions)</a></li>
+        <li><a href="https://web.archive.org/web/2004/http://www.artic.edu/aic/exhibitions/seurat/seurat_themes.html" target="_blank" rel="noopener">Art Institute of Chicago, Seurat and the Making of “La Grande Jatte” (2004), exhibition texts, archived</a></li>
+        <li><a href="https://www.artic.edu/articles/969/la-grande-jatte-frame-by-frame" target="_blank" rel="noopener">Christopher Brooks and Kirk Vuillemot, “La Grande Jatte, Frame by Frame”, Art Institute of Chicago (2022)</a></li>
+        <li><a href="https://www.artic.edu/print-publications/63/seurat-and-the-making-of-la-grande-jatte" target="_blank" rel="noopener">Robert L. Herbert and others, Seurat and the Making of “La Grande Jatte” (Art Institute of Chicago, 2004), with Inge Fiedler&#x27;s study of the materials (not read for this guide)</a></li>
+        <li><a href="https://www.artic.edu/print-publications/129/the-art-institute-of-chicago-museum-studies-14-no-2-the-grande-jatte-at-100" target="_blank" rel="noopener">Art Institute of Chicago Museum Studies 14, no. 2 (1989), “The Grande Jatte at 100”, with Inge Fiedler, “A Technical Evaluation of the Grande Jatte” (not read for this guide)</a></li>
+        <li><a href="https://doi.org/10.1002/col.20223" target="_blank" rel="noopener">Roy S. Berns and others, “Rejuvenating the color palette of Georges Seurat&#x27;s A Sunday on La Grande Jatte—1884: A simulation”, Color Research &amp; Application 31 (2006) (not read for this guide)</a></li>
+        <li><a href="https://law-journals-books.vlex.com/vid/how-science-can-save-art-56869652" target="_blank" rel="noopener">Roy S. Berns, “How Science Can Save Art”, USA Today Magazine (September 2007)</a></li>
+        <li><a href="https://colourlex.com/project/seurat-la-grande-jatte/" target="_blank" rel="noopener">ColourLex: Georges Seurat, A Sunday on La Grande Jatte (pigments and layers, after Fiedler)</a></li>
+        <li><a href="https://www.metmuseum.org/art/collection/search/437658" target="_blank" rel="noopener">Metropolitan Museum of Art: Study for “A Sunday on La Grande Jatte”, 1884</a></li>
+        <li><a href="https://www.csmonitor.com/2004/0709/p13s02-alar.html" target="_blank" rel="noopener">“What Seurat left out of ‘La Grande Jatte’”, Christian Science Monitor (2004)</a></li>
+        <li><a href="https://artsandculture.google.com/asset/wd/twGyqq52R-lYpA" target="_blank" rel="noopener">Google Arts &amp; Culture: A Sunday on La Grande Jatte, with the Art Institute&#x27;s label text</a></li>
+        <li><a href="https://www.wikidata.org/wiki/Q1044742" target="_blank" rel="noopener">Wikidata: A Sunday Afternoon on the Island of La Grande Jatte (Q1044742)</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="colophon">
+    <p>Images: the painting is the Google Art Project's photograph of the Art Institute of Chicago's canvas, in the public domain. The Met's study is CC0 from the Metropolitan Museum of Art, and the panel in Washington is open access from the National Gallery of Art; the other studies and paintings are in the public domain; all from Wikimedia Commons. The close-ups are cut from the photograph of the painting. The stage reconstructions and chapter scenes were generated with Prodia (Gemini 3 Pro Image), using the painting as reference; stages 1 to 3 are generated in full. Stage 4 is the painting without its border, set in a plain white band; stage 5 is the painting itself. The comparison of the grass is a simple recolouring made for this guide. The reconstructions show plausible appearances, not documented ones. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>

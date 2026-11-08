@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Las Meninas, with the Painter in the Picture</title>
+<meta name="description" content="A step-by-step reconstruction of how Diego Velázquez painted Las Meninas in 1656, from the bare ground and the lay-in without drawing to the changes the X-ray shows and the cross of Santiago added after 1659, with AI-generated reconstructions of the stages.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Imagining Artist Methods">
+<meta property="og:title" content="Las Meninas, with the Painter in the Picture">
+<meta property="og:description" content="A step-by-step reconstruction of how Diego Velázquez painted Las Meninas in 1656, from the bare ground and the lay-in without drawing to the changes the X-ray shows and the cross of Santiago added after 1659, with AI-generated reconstructions of the stages.">
+<meta property="og:url" content="https://cat1060.github.io/imagining-artist-methods/velazquez/">
+<meta property="og:image" content="https://cat1060.github.io/imagining-artist-methods/velazquez/img/stages/06-today.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="../assets/series.css">
+<style>
+:root {
+  --bg: #ECE7DF; --surface: #F6F2EC; --ink: #1C1814; --muted: #5A5249; --rule: #D6CEC2; --rule-strong: #A0958A;
+  --accent: #8C2B22; --accent-2: #3F5566; --frame: #15120F; --frame-edge: #3A322B;
+  --pg-canvas: #C9BC9F; --pg-canvas-dark: #A99B7E; --pg-ground: #C8B99D; --pg-ground-low: #8E8371; --pg-paint: #3A2E27;
+  --pg-unknown: #BDB6AC;
+  --pg-leadwhite: #EFEBE2; --pg-azurite: #3E6E8E; --pg-vermilion: #D2402B; --pg-lake: #8E1E35; --pg-ochre: #B98A3E;
+  --pg-black: #24201D;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14110F; --surface: #1C1815; --ink: #ECE6DE; --muted: #ADA398; --rule: #2E2823; --rule-strong: #4C443C;
+    --accent: #E08A7C; --accent-2: #9DB5C7; --frame: #0B0908; --frame-edge: #3A322B; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14110F; --surface: #1C1815; --ink: #ECE6DE; --muted: #ADA398; --rule: #2E2823; --rule-strong: #4C443C;
+  --accent: #E08A7C; --accent-2: #9DB5C7; --frame: #0B0908; --frame-edge: #3A322B; color-scheme: dark;
+}
+.key-zones { margin: 0; display: grid; gap: 8px; }
+.key-zones img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); background: var(--frame); }
+.key-zones ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.key-zones li::before { content: ""; display: inline-block; width: 26px; margin-right: 8px; vertical-align: middle; border-top: 3px dashed #F0C45C; }
+.key-zones li.is-hand::before { border-top-color: #ECECE2; }
+.key-zones li.is-cross::before { border-top-color: #DC463C; }
+</style>
+</head>
+<body>
+<header class="series-bar">
+  <div class="series-inner">
+    <a class="series-name" href="../">Imagining Artist Methods</a>
+    <details class="series-pick">
+      <summary aria-label="Velázquez, Las Meninas. Choose another of the 18 works"><span class="sw-faces"><img class="sw-artist" src="../velazquez/img/artist.jpg" width="96" height="96" alt=""><img src="../velazquez/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Velázquez</span><span class="sn-title">Las Meninas · 1656</span></span><span class="sp-count">All 18</span><svg class="sp-chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></summary>
+      <nav class="series-menu" aria-label="Works in the series">
+        <ol style="--rows: 9">
+        <li><a href="../raphael/"><span class="sw-faces"><img class="sw-artist" src="../raphael/img/artist.jpg" width="96" height="96" alt=""><img src="../raphael/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Raphael</span><span class="sn-title">The School of Athens <span class="sn-date">· 1509–11</span></span></span></a></li>
+        <li><a href="../el-greco/"><span class="sw-faces"><img class="sw-artist" src="../el-greco/img/artist.jpg" width="96" height="96" alt=""><img src="../el-greco/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">El Greco</span><span class="sn-title">Christ Carrying the Cross <span class="sn-date">· c. 1580</span></span></span></a></li>
+        <li><a href="../gentileschi/"><span class="sw-faces"><img class="sw-artist" src="../gentileschi/img/artist.jpg" width="96" height="96" alt=""><img src="../gentileschi/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Artemisia Gentileschi</span><span class="sn-title">Self Portrait as Saint Catherine of Alexandria <span class="sn-date">· c. 1615–17</span></span></span></a></li>
+        <li><a href="../leyster/"><span class="sw-faces"><img class="sw-artist" src="../leyster/img/artist.jpg" width="96" height="96" alt=""><img src="../leyster/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Leyster</span><span class="sn-title">Self-Portrait <span class="sn-date">· c. 1630</span></span></span></a></li>
+        <li><a href="../rembrandt/"><span class="sw-faces"><img class="sw-artist" src="../rembrandt/img/artist.jpg" width="96" height="96" alt=""><img src="../rembrandt/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Rembrandt</span><span class="sn-title">The Night Watch <span class="sn-date">· 1642</span></span></span></a></li>
+        <li><a href="../velazquez/" aria-current="page"><span class="sw-faces"><img class="sw-artist" src="../velazquez/img/artist.jpg" width="96" height="96" alt=""><img src="../velazquez/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Velázquez</span><span class="sn-title">Las Meninas <span class="sn-date">· 1656</span></span></span></a></li>
+        <li><a href="../vermeer/"><span class="sw-faces"><img class="sw-artist" src="../vermeer/img/artist.jpg" width="96" height="96" alt=""><img src="../vermeer/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vermeer</span><span class="sn-title">Girl with a Pearl Earring <span class="sn-date">· c. 1665</span></span></span></a></li>
+        <li><a href="../ruysch/"><span class="sw-faces"><img class="sw-artist" src="../ruysch/img/artist.jpg" width="96" height="96" alt=""><img src="../ruysch/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Ruysch</span><span class="sn-title">Bouquet of Flowers <span class="sn-date">· 1708</span></span></span></a></li>
+        <li><a href="../vigee-le-brun/"><span class="sw-faces"><img class="sw-artist" src="../vigee-le-brun/img/artist.jpg" width="96" height="96" alt=""><img src="../vigee-le-brun/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Vigée Le Brun</span><span class="sn-title">Self Portrait in a Straw Hat <span class="sn-date">· c. 1782</span></span></span></a></li>
+        <li><a href="../bonheur/"><span class="sw-faces"><img class="sw-artist" src="../bonheur/img/artist.jpg" width="96" height="96" alt=""><img src="../bonheur/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Bonheur</span><span class="sn-title">The Horse Fair <span class="sn-date">· 1852–55</span></span></span></a></li>
+        <li><a href="../monet/"><span class="sw-faces"><img class="sw-artist" src="../monet/img/artist.jpg" width="96" height="96" alt=""><img src="../monet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Monet</span><span class="sn-title">Impression, Sunrise <span class="sn-date">· 1872</span></span></span></a></li>
+        <li><a href="../caillebotte/"><span class="sw-faces"><img class="sw-artist" src="../caillebotte/img/artist.jpg" width="96" height="96" alt=""><img src="../caillebotte/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Caillebotte</span><span class="sn-title">Paris Street; Rainy Day <span class="sn-date">· 1877</span></span></span></a></li>
+        <li><a href="../cassatt/"><span class="sw-faces"><img class="sw-artist" src="../cassatt/img/artist.jpg" width="96" height="96" alt=""><img src="../cassatt/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Cassatt</span><span class="sn-title">Little Girl in a Blue Armchair <span class="sn-date">· 1878</span></span></span></a></li>
+        <li><a href="../manet/"><span class="sw-faces"><img class="sw-artist" src="../manet/img/artist.jpg" width="96" height="96" alt=""><img src="../manet/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Manet</span><span class="sn-title">A Bar at the Folies-Bergère <span class="sn-date">· 1882</span></span></span></a></li>
+        <li><a href="../seurat/"><span class="sw-faces"><img class="sw-artist" src="../seurat/img/artist.jpg" width="96" height="96" alt=""><img src="../seurat/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Seurat</span><span class="sn-title">A Sunday on La Grande Jatte — 1884 <span class="sn-date">· 1884–86</span></span></span></a></li>
+        <li><a href="../van-gogh/"><span class="sw-faces"><img class="sw-artist" src="../van-gogh/img/artist.jpg" width="96" height="96" alt=""><img src="../van-gogh/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Van Gogh</span><span class="sn-title">The Starry Night <span class="sn-date">· 1889</span></span></span></a></li>
+        <li><a href="../toulouse-lautrec/"><span class="sw-faces"><img class="sw-artist" src="../toulouse-lautrec/img/artist.jpg" width="96" height="96" alt=""><img src="../toulouse-lautrec/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">Toulouse-Lautrec</span><span class="sn-title">At the Moulin Rouge <span class="sn-date">· 1892–95</span></span></span></a></li>
+        <li><a href="../af-klint/"><span class="sw-faces"><img class="sw-artist" src="../af-klint/img/artist.jpg" width="96" height="96" alt=""><img src="../af-klint/img/thumb.jpg" width="96" height="96" alt=""></span><span class="sw-text"><span class="sn-artist">af Klint</span><span class="sn-title">The Ten Largest, No. 7 <span class="sn-date">· 1907</span></span></span></a></li>
+        </ol>
+      </nav>
+    </details>
+  </div>
+</header>
+<div class="page">
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">A studio guide · Madrid, 1656</p>
+      <h1>Las Meninas, <em>with the painter in the picture</em></h1>
+      <p class="lede">Imagine you are Diego Velázquez, fifty-seven, painter to King Philip IV of Spain for more than thirty years, and his palace chamberlain. In a long room of the royal palace you paint the five-year-old infanta Margarita and her household, the king and queen in a mirror, and yourself at the easel. This guide follows how the picture was probably made.</p>
+      <p class="basis">The Prado&#x27;s 1982 technical study and 1984 restoration, as the museum summarises them, give the ground, the absence of drawing and the changes in the X-ray; Antonio Palomino&#x27;s account of 1724 gives the room, the people and the story of the cross. The X-ray images themselves are not published openly. Each chapter opens with a note on what its evidence is. The slider steps through six stages; stages 2 and 3 are AI reconstructions, and stages 1, 4 and 5 are drawn or edited without AI.</p>
+    </div>
+    <figure class="hero-plate" data-stages>
+      <div class="dims">
+        <div class="frame">
+          <div class="viewer" role="img" aria-label="The painting today. In a tall, dark room hung with paintings, a small fair-haired girl in a wide white dress stands in the light, attended by two girls, one kneeling to offer her a red cup; at the left a painter in black stands at a huge canvas seen from behind; at the right a woman of short stature, a boy with his foot on a large dog, and two figures in shadow; at the back a mirror shows a man and a woman, and a man stands in a lit doorway.">
+            <img src="img/stages/01-canvas.jpg" width="1000" height="1151" alt="" data-name="Primed canvas" data-note="A canvas more than three metres tall, primed with lead white mixed with ochres, calcite and organic black. The ground is the Prado&#x27;s analysis; the colour is approximate, and the canvas&#x27;s seams are not shown.">
+            <img src="img/stages/02-layin.jpg" width="1000" height="1151" alt="" data-name="Lay-in, no drawing" data-note="The room and the figures blocked in with thin, broad paint straight onto the ground: infrared found no drawing underneath. How the first session looked is invented.">
+            <img src="img/stages/03-first.jpg" width="1000" height="1151" alt="" data-name="A first idea" data-note="One reading of the X-ray: where the painter now stands, a young man in a flat collar turns towards the infanta, and her right hand is raised where the red cup now covers it. Other specialists disagree about the young man.">
+            <img src="img/stages/04-painter.jpg" width="1000" height="1151" alt="" data-name="The painter in the picture, 1656" data-note="Velázquez paints himself at the easel, with palette and brush, in black, with no cross on his chest. This stage is the painting with the cross removed.">
+            <img src="img/stages/05-varnish.jpg" width="1000" height="1151" alt="" data-name="Under old varnish" data-note="The red cross of Santiago has been added, some time after November 1659. Over the centuries the varnish yellows and darkens. Simulated; not a record of how it looked.">
+            <img src="img/stages/06-today.jpg" width="1000" height="1151" class="is-on" fetchpriority="high" alt="" data-name="The painting today" data-note="After the Prado&#x27;s 1984 restoration, which took off the old varnish. This is the painting as it hangs in the Prado.">
+          <div class="scale-layer" aria-hidden="true"><svg viewBox="0 0 279.1 320.3" preserveAspectRatio="none"><g class="scale-use" transform="translate(35.25 80.3)"><g id="scale-art"><path class="sc-o" d="M188.1 1.1C186.6 1.7 184.5 4.3 184.5 5.5C184.5 5.9 183.6 8.6 182.5 11.4C179.2 19.6 178.1 29.6 179.4 39.8C179.8 42.1 180.4 47.4 180.8 51.6C181.3 55.7 182 60.6 182.3 62.4C182.6 64.1 182.9 68.1 182.7 71.3C182.5 76.8 182.4 77.3 180.3 81.3C178.4 84.8 177.8 85.6 175.6 86.5C174.1 87.1 171.8 87.7 170.2 87.8C168.7 87.8 165.9 88.1 164 88.3L160.5 88.7L159.6 86.8C159.1 85.7 158.3 84.5 157.9 84.1C157.3 83.7 155.9 81.6 154.7 79.6C152.1 75 149.3 72.6 143.6 69.6C134.9 65.1 133.5 64.9 118.6 65.2C111.4 65.3 103.2 65.2 100.5 65C96.7 64.6 93.8 64.8 87.3 65.7C82.6 66.3 78.7 66.9 78.6 67C78.3 67.1 75.8 67.6 72.9 68.1C70 68.6 65.6 69.5 63.1 70C56.6 71.6 49.4 72.4 42.3 72.3C35.7 72.2 36.5 72 26.9 76.8C20.2 80.1 16.1 82.7 13.1 85.4C9.7 88.5 8.4 90.6 8.4 92.9C8.4 93.8 6.9 97.5 5 101.2C2.6 106 1.7 108.6 1.7 110.2C1.7 111.4 1.5 113.9 1.1 115.7C0.4 119.9 1.2 122.3 4.8 126.4C8.3 130.6 10.4 131.8 14 131.8L16.8 131.8L16.8 129.9C16.8 128.8 17.1 127.7 17.4 127.6C17.7 127.4 17.9 126 17.9 124.5C17.9 123.1 18.2 121.6 18.6 121.2C19.5 120.4 22.8 120.3 23.3 121.1C24.1 122.5 24.4 121.5 24.2 118.4C24 115.3 24.1 115 25.4 113.8C26.7 112.7 26.8 112.3 26.5 109.9C26.2 107.7 26.4 106.9 27.2 106C29 104 32 104.9 32 107.4C32 108.2 32.6 109.2 33.6 109.9C35 110.9 35.3 111.5 35.3 113.5C35.3 114.8 35 116.1 34.7 116.5C33.3 117.9 38.2 122 42.2 122.6C43.5 122.8 45 123.4 45.6 124C46.1 124.5 47.6 125.3 49 125.6C51.7 126.2 57.5 129.1 60.8 131.4C62.5 132.6 64.6 133.2 68.7 133.9C76.3 135.3 76.4 135.7 72.1 142.3C70.3 145 66.9 149.1 64.5 151.4C58.7 157.2 57.6 159.4 57.4 167.2C57.2 175.3 54.9 187.2 51.8 196.7C50.4 200.9 49.1 205.6 48.8 207.2C48.6 208.7 47.8 211.3 47.2 212.9C46.6 214.5 45.9 217.4 45.8 219.5C45.4 223 45.4 223.2 47.3 226.4C48.4 228.2 49.3 230.4 49.3 231.2C49.3 233.4 50.7 236.4 52.3 237.4C53.3 238 55.7 238.2 62.8 238.3C73.1 238.4 77.4 238.2 77.4 237.7C77.4 237.2 74.4 234.6 73.1 233.9C72.4 233.6 69.6 233.3 66.9 233.3C62.1 233.3 61.9 233.2 59.7 231.4L57.5 229.5L57.5 220.8C57.5 211.9 57.5 211.9 61.4 195.4C62.1 192.3 63.1 187 63.6 183.6C64.7 176.6 66.7 171 69.6 166.5C70.7 164.9 73.3 160.4 75.4 156.8C79.6 149.4 85.2 141.8 87.3 140.4C88.3 139.7 89.3 139.6 91.8 140C93.6 140.2 96.8 140.4 99 140.4L102.9 140.5L103.6 142.7C104.7 145.9 104.9 162.1 103.8 165.3C103.1 167.3 103.1 167.9 103.9 170.1C104.8 172.8 105.3 173.5 110.2 179.6C114.3 184.7 118.1 190.7 121.9 197.9C128.5 210.8 132 217.3 133.5 219.5C134.3 220.8 136 223.7 137.3 226.1C139.2 229.6 140.1 230.6 141.6 231.3C143.1 231.9 143.9 232.8 144.7 234.6C146.4 238.3 145.4 238.1 158.5 238.4C166.1 238.5 167.2 238.4 168.2 237.5C169.1 236.7 169.9 236.6 171.9 236.7C174.7 237.1 175 236.8 173.2 235.1C171.3 233.5 170.2 233.2 163.6 232.7C158.1 232.3 157.3 232 153.5 229.9C148.7 227.3 148.4 227 147.5 224.2C147.1 223.1 145.2 219.8 143.1 216.9C137.6 209.2 135.3 205.7 132.2 199.7C130.7 196.7 128.7 193.3 127.9 192.1C122.6 184.1 119.4 176.9 119.5 173C119.6 171.1 119.2 169.2 118.4 167.5C116.7 163.9 116.1 160.3 115.7 151.6L115.3 144.2L116.8 143.8C117.8 143.6 119.2 143.8 120.6 144.3C122.5 145.1 123.3 145.1 125 144.6C127.3 143.9 131.2 144.2 135.1 145.2C138.5 146.1 145 145.7 147.5 144.4C150.8 142.7 156.7 136.5 158.1 133.3C158.8 131.7 159.7 129.6 160.1 128.7C160.5 127.7 161 125.8 161.2 124.3C161.3 122.7 161.9 121 162.5 120.4C163 119.8 165.8 118.2 168.5 116.9C184.7 109.3 191.2 100.8 193.1 84.8C194 76.6 192.6 63.5 190.3 58.9L188.7 55.9L188.7 43.5C188.7 33.8 188.9 29.9 189.7 25.8C191.2 18.2 191.3 17.7 192.9 17.3C195.1 16.7 200.2 15.6 203.3 15.2L206.1 14.8L202.8 13.3C200.4 12.2 199.6 11.6 199.7 10.8C200 9.7 201.4 9.6 205.1 10.5C208.2 11.3 207.7 10.6 203.4 8.1C201.5 7.1 198.9 5.2 197.7 3.9C194.8 1 191.1 -0.1 188.1 1.1Z"/></g></g></svg><p class="scale-note">An ostrich, about 2.4 m (8 ft) tall</p></div></div>
+        </div>
+        <span class="dim dim-h" aria-hidden="true"><span>320.3 cm</span></span>
+        <span class="dim dim-w" aria-hidden="true"><span>279.1 cm</span></span>
+      <button type="button" class="scale-btn" aria-pressed="false" aria-label="Compare its size: show an ostrich, about 2.4 m (8 ft) tall, drawn to scale over the painting" title="Compare its size: an ostrich, about 2.4 m (8 ft) tall"><svg class="scale-icon" viewBox="0 0 208.6 240" aria-hidden="true"><use href="#scale-art"/></svg></button></div>
+      <div class="scrub">
+        <div class="scrub-head">
+          <p class="scrub-name">The painting today</p>
+          <span class="scrub-count">Stage 6 of 6</span>
+        </div>
+        <div class="scrub-row">
+          <button type="button" class="scrub-btn" data-dir="-1" aria-label="Previous stage">‹</button>
+          <input type="range" min="0" max="5" step="1" value="5" aria-label="Stage of the work" aria-valuetext="Stage 6, The painting today">
+          <button type="button" class="scrub-btn" data-dir="1" aria-label="Next stage">›</button>
+        </div>
+        <p class="scrub-note">After the Prado&#x27;s 1984 restoration, which took off the old varnish. This is the painting as it hangs in the Prado.</p>
+      </div>
+      <figcaption>Diego Velázquez, <i>Las Meninas</i>, 1656. Oil on canvas, 320.3 × 279.1 cm. Museo Nacional del Prado, Madrid, P001174. The Prado's photograph, public domain, from Museo del Prado · <a href="https://commons.wikimedia.org/wiki/File:Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>. <span class="tag">AI-generated</span> Stage 2 is a reconstruction made with Prodia from the painting; in stage 3 only the infanta's hand and the figure where the painter stands are changed. Stage 1 is a flat colour, stage 4 has the cross removed by hand, and stage 5 is a colour simulation.</figcaption>
+    </figure>
+  </header>
+  <nav class="toc" aria-label="Chapters" style="--toc-n: 8">
+    <ol>
+      <li><a href="#court"><span class="toc-num">I</span><span class="toc-name">Court</span></a></li>
+      <li><a href="#room"><span class="toc-num">II</span><span class="toc-name">The room</span></a></li>
+      <li><a href="#household"><span class="toc-num">III</span><span class="toc-name">Household</span></a></li>
+      <li><a href="#materials"><span class="toc-num">IV</span><span class="toc-name">Materials</span></a></li>
+      <li><a href="#layin"><span class="toc-num">V</span><span class="toc-name">Lay-in</span></a></li>
+      <li><a href="#painting"><span class="toc-num">VI</span><span class="toc-name">Painting</span></a></li>
+      <li><a href="#cross"><span class="toc-num">VII</span><span class="toc-name">The cross</span></a></li>
+      <li><a href="#time"><span class="toc-num">VIII</span><span class="toc-name">Time</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="chapter" id="court" aria-labelledby="h-court">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">I</p>
+        <h2 id="h-court">Thirty-three years at court</h2>
+        <p class="evidence"><b>Evidence</b>The Prado&#x27;s notes on the artist and its encyclopedia entry on the painting. The dates of your Italian journeys and of your appointment as chamberlain are standard biography and have not been checked against the archives.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>You are Diego Velázquez, born in Seville in 1599. You trained and worked there until you were twenty-four; in 1623 you moved to Madrid with your family and entered the service of Philip IV, and you have served him ever since. You sign yourself Diego Velázquez, or Diego de Silva Velázquez, taking your mother's surname as Andalusians often do.</p>
+          <p>You have been to Italy twice, and came back from the second journey in 1651. Since 1652 you have also been his aposentador mayor, the palace official who arranges the royal lodgings: the keys of that office hang at your belt in the picture.</p>
+          <p>It is 1656. The king, who has known you for over thirty years, will press for you to be made a knight. You have four years to live.</p>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-philip.jpg" width="600" height="722" loading="lazy" alt="A portrait of a pale middle-aged man with long hair and a curled moustache, in black with a white collar, against a dark background.">
+            <figcaption>
+              <span class="source-title">Philip IV of Spain</span>
+              <span class="source-meta">About 1656 · Oil on canvas · National Gallery, London</span>
+              <span class="source-note">Your king, painted by you at about the time of Las Meninas. He appears in the picture only in the mirror.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Philip_IV_of_Spain.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="room" aria-labelledby="h-room">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">II</p>
+        <h2 id="h-room">The Prince&#x27;s room in the Alcázar</h2>
+        <p class="evidence"><b>Evidence</b>Palomino (1724), as quoted by the Prado and by Juan María Cruz Yábar (2018), who reconstructs the room from the palace&#x27;s plans and inventories. The scene below is imagined.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/room.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a long, high palace room with tall shuttered windows down the right-hand wall, dark paintings hung high, a lit doorway with steps at the far end, and a huge canvas on an easel seen from behind.">
+        <figcaption><span class="tag">AI-generated</span>A room like the Cuarto del Príncipe, empty. The real room was dimmer, and its ceiling bare.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>Palomino, who had it from your pupil Juan de Alfaro, says you painted the picture in 1656 in the Cuarto del Príncipe, the rooms of the late Prince Baltasar Carlos in the Alcázar, the old royal palace of Madrid, and that this is the room in the picture.</p>
+          <p>It was a long room on the ground floor, almost 70 by 20 feet, about 19.6 by 5.6 metres. Its right-hand wall, the palace's main façade, had seven windows; you painted five of them, with the shutters open only at the first and the last. At the far end a door opened onto the stairs to the floor above, where José Nieto stands.</p>
+          <p>The two big pictures on the back wall are copies by your son-in-law, Juan Bautista Martínez del Mazo, of Rubens's Pallas and Arachne and Jordaens's Apollo Victorious over Pan: two contests of skill, both won by a god. The historian Julián Gállego read them as the triumph of art over craft.</p>
+          <dl class="decisions">
+            <div class="decision"><dt>A real room</dt><dd>Not an invented setting: a room in the palace, with its windows, its pictures and its door.</dd></div>
+            <div class="decision"><dt>Half empty</dt><dd>The figures fill only the lower half; the upper half is dark wall and bare ceiling.</dd></div>
+            <div class="decision"><dt>Light from the side</dt><dd>Daylight falls from the nearest window onto the infanta; a second light comes from the door at the back.</dd></div>
+          </dl>
+        </div>
+        <aside class="aside">
+          <figure class="source is-wide">
+            <img src="img/src-alcazar.jpg" width="1000" height="450" loading="lazy" alt="A painted view of a long palace with towers above a slope with trees and a road.">
+            <figcaption>
+              <span class="source-title">Félix Castello, View of the Alcázar of Madrid</span>
+              <span class="source-meta">About 1630–40 · Oil on canvas · Museo de Historia de Madrid</span>
+              <span class="source-note">The old royal palace, where you lived and worked. It burned in 1734.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Vista_del_Alc%C3%A1zar_de_Madrid_%28circa_1640%29_de_F%C3%A9lix_Castello.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+          <figure class="source is-wide">
+            <img src="img/src-jordaens.jpg" width="1000" height="676" loading="lazy" alt="A painting of the god Apollo crowned with laurel beside the satyr Pan and two older men.">
+            <figcaption>
+              <span class="source-title">Jacob Jordaens, Apollo Victorious over Pan</span>
+              <span class="source-meta">1637 · Oil on canvas · Museo del Prado</span>
+              <span class="source-note">Mazo&#x27;s copy of this picture hangs on the back wall.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Apollo_as_Victor_over_Pan%2C_1637.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="household" aria-labelledby="h-household">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">III</p>
+        <h2 id="h-household">The infanta and her household</h2>
+        <p class="evidence"><b>Evidence</b>Palomino&#x27;s identifications, as given by the Prado. One courtier is not named in any source.</p>
+      </header>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>At the centre is the infanta Margarita, born in 1651, the daughter of Philip IV and his second wife, Mariana of Austria. When you paint her she is the king and queen's only surviving child; a brother, Felipe Próspero, will be born the next year.</p>
+          <p>Around her are two of the queen's meninas, the young maids of honour who give the picture its later name: María Agustina Sarmiento, kneeling to offer water in a red clay cup, and Isabel de Velasco. To the right are Mari Bárbola and Nicolasito Pertusato, two members of the court of short stature; his foot is on the sleepy mastiff. Behind them, in half-light, stand Marcela de Ulloa, a lady of honour, and a guard whose name is lost.</p>
+          <p>At the back, José Nieto, the queen's chamberlain, pauses on the stairs. In the mirror are the king and queen, as if standing where we stand. Palomino says the king came often to watch you paint it, and the queen came down many times, with the infantas and ladies.</p>
+          <figure class="quote">
+            <p>“while it was being made, he came frequently to watch it being painted”</p>
+            <cite>Antonio Palomino, 1724, on Philip IV and Las Meninas, in translation</cite>
+          </figure>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-infanta.jpg" width="600" height="719" loading="lazy" alt="A portrait of a small girl with fair hair in a wide white and silver dress with pink bows.">
+            <figcaption>
+              <span class="source-title">Infanta Margarita Teresa in a White Dress</span>
+              <span class="source-meta">1656 · Oil on canvas · Kunsthistorisches Museum, Vienna</span>
+              <span class="source-note">Another portrait of her from the same year, now in Vienna.</span>
+              <span class="source-credit">Public domain · <a href="https://commons.wikimedia.org/wiki/File:Diego_Rodr%C3%ADguez_de_Silva_y_Vel%C3%A1zquez%2C_Kunsthistorisches_Museum_Wien%2C_Gem%C3%A4ldegalerie_-_Infantin_Margarita_Teresa_%281651-1673%29_in_wei%C3%9Fem_Kleid_-_GG_3691_-_Kunsthistorisches_Museum.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+      <div class="chapter-stack">
+        <div class="plates" style="--n: 4">
+                <figure class="plate">
+                  <img src="img/detail-mirror.jpg" width="480" height="480" loading="lazy" alt="Close-up of a mirror in a black frame showing a man and a woman, half-length, under a red curtain.">
+                  <figcaption>The king and queen, in the mirror.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-nieto.jpg" width="480" height="480" loading="lazy" alt="Close-up of a man in black standing on lit steps in a doorway, holding back a curtain.">
+                  <figcaption>José Nieto on the stairs.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-maribarbola.jpg" width="480" height="480" loading="lazy" alt="Close-up of a woman&#x27;s broad face with long brown hair, looking straight out.">
+                  <figcaption>Mari Bárbola.</figcaption>
+                </figure>
+                <figure class="plate">
+                  <img src="img/detail-nicolasito.jpg" width="480" height="480" loading="lazy" alt="Close-up of a boy with long brown hair looking down.">
+                  <figcaption>Nicolasito Pertusato.</figcaption>
+                </figure>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="materials" aria-labelledby="h-materials">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">IV</p>
+        <h2 id="h-materials">Gather your materials</h2>
+        <p class="evidence"><b>Evidence</b>The Prado&#x27;s summary of its 1982 study with Harvard gives the ground and the canvas&#x27;s seams. The pigment list comes from summaries of McKim-Smith, Andersen-Bergdoll and Newman, Examining Velázquez (1988), which was not read for this guide.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/palette.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a wooden palette with dabs of white, blue, red, deep red, ochre and black oil paint, long brushes, a maulstick and a palette knife on a dark table.">
+        <figcaption><span class="tag">AI-generated</span>A palette with the pigments reported in the painting. The scene is imagined.</figcaption>
+      </figure>
+      <div class="chapter-stack">
+        <div class="chapter-body">
+          <div class="prose">
+            <p>Your canvas is one of the biggest you ever paint: 320.3 centimetres high and 279.1 wide, in the Prado's measurement. No loom wove cloth that wide, so it is made of pieces sewn together; the 1984 restoration filled the seams. How many pieces, and which way they run, is not in any source this guide could read.</p>
+            <p>The ground, the Prado's analysis found, is lead white mixed with ochres, calcite and an organic black: a light, warm grey. On it you paint with pigments ground coarsely, so that the grains are large and uneven, in very diluted paint, thin and fast.</p>
+            <div class="doc">
+              <p class="doc-title">Not published, or not read</p>
+              <ul>
+                <li>The canvas's weave, its pieces and its seams</li>
+                <li>The full report of the 1982 study</li>
+                <li>Carmen Garrido's technical chapter on the painting (1992)</li>
+                <li>Whether the painting has been cut down at the sides</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="aside">
+            <figure class="xsec">
+              <figcaption class="xsec-cap">The layers, schematic · surface at top</figcaption>
+              <div class="xsec-rows">
+                <div class="layer"><span class="band" style="--c: var(--pg-paint); --h: 30px"></span><span class="layer-label"><b>Paint</b><span>oil, thin, coarsely ground pigments</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-ground); --h: 24px"></span><span class="layer-label"><b>Ground</b><span>lead white, ochres, calcite, organic black</span></span></div>
+                <div class="layer"><span class="band" style="--c: var(--pg-ground-low); --h: 12px"></span><span class="layer-label"><b>Lower layer?</b><span>calcite and bone black in one sample (secondary)</span></span></div>
+                <div class="layer"><span class="band is-canvas" style="--h: 34px"></span><span class="layer-label"><b>Canvas</b><span>several pieces, seamed; weave not published</span></span></div>
+              </div>
+            </figure>
+          </aside>
+        </div>
+        <div class="pigments">
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-leadwhite)"></div>
+            <div class="pig-body">
+              <h4>Lead white</h4>
+              <p>The base of the ground and of every light.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The ground; the infanta&#x27;s dress; the collars</dd></div>
+                <div><dt>Source</dt><dd>Prado (ground); summaries of McKim-Smith et al.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-azurite)"></div>
+            <div class="pig-body">
+              <h4>Azurite</h4>
+              <p>A copper blue, now darker and greener than it was.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The kneeling menina&#x27;s skirt; Mari Bárbola&#x27;s dress</dd></div>
+                <div><dt>Source</dt><dd>Summaries of McKim-Smith et al.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-vermilion)"></div>
+            <div class="pig-body">
+              <h4>Vermilion</h4>
+              <p>A bright mercury red.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The red cup; the bows; the stockings; the cross</dd></div>
+                <div><dt>Source</dt><dd>Summaries of McKim-Smith et al.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-lake)"></div>
+            <div class="pig-body">
+              <h4>Red lake</h4>
+              <p>A translucent red dye on a white base, for glazes.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>With vermilion in the reds</dd></div>
+                <div><dt>Source</dt><dd>Summaries of McKim-Smith et al.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-ochre)"></div>
+            <div class="pig-body">
+              <h4>Ochres</h4>
+              <p>Yellow and red earths, in the ground and the floor.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The ground; the floor; the flesh</dd></div>
+                <div><dt>Source</dt><dd>Prado (ground); summaries of McKim-Smith et al.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="pig">
+            <div class="pig-swatch" style="--c: var(--pg-black)"></div>
+            <div class="pig-body">
+              <h4>Carbon and bone blacks</h4>
+              <p>For the dark room and the black clothes.</p>
+              <dl class="pig-meta">
+                <div><dt>Where</dt><dd>The ground; the ceiling; your doublet</dd></div>
+                <div><dt>Source</dt><dd>Prado (ground); summaries of McKim-Smith et al.</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="chapter" id="layin" aria-labelledby="h-layin">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">V</p>
+        <h2 id="h-layin">Lay it in, without drawing</h2>
+        <p class="evidence"><b>Evidence</b>Infrared reflectography in 1982 showed no underdrawing (the Prado). How you began is otherwise not documented; stage 2 is plausible, not recorded.</p>
+      </header>
+      <div class="chapter-stack">
+        <figure class="stages" style="--stage-n: 3">
+          <div class="stage-row">
+            <figure class="stage">
+              <img src="img/stages/01-canvas.jpg" width="1000" height="1151" loading="lazy" alt="AI reconstruction: A bare canvas, an even light grey-beige.">
+              <figcaption><b>Canvas</b>Primed, light grey-beige. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/02-layin.jpg" width="1000" height="1151" loading="lazy" alt="AI reconstruction: The room and the figures blocked in with thin, pale and brown washes, faces blank.">
+              <figcaption><b>Lay-in</b>Thin paint, no lines. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+            <figure class="stage">
+              <img src="img/stages/03-first.jpg" width="1000" height="1151" loading="lazy" alt="AI reconstruction: The painting with a young man in a white collar where the painter stands, and the infanta&#x27;s hand raised.">
+              <figcaption><b>First idea</b>One reading of the X-ray. <span class="tag">AI-generated</span></figcaption>
+            </figure>
+          </div>
+          <figcaption class="caption">Stage 1 is drawn, not generated. Stage 2 was generated with Prodia from the finished painting, so the composition stays in register; Gemini kept putting the painter back, so the figure in his place was repainted by script from stage 3. In stage 3 only the hand and the figure are changed.</figcaption>
+        </figure>
+        <ol class="lay-steps">
+          <li><h3>No drawing</h3><p>Infrared shows nothing drawn under the paint. You place the figures with the brush.</p></li>
+          <li><h3>Broad and thin</h3><p>Very diluted paint, in loose strokes the Prado calls borrones, blots, in the tradition of Titian.</p></li>
+          <li><h3>Change as you go</h3><p>The X-ray records second thoughts made during the work, as well as later repaints by restorers.</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="chapter" id="painting" aria-labelledby="h-painting">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VI</p>
+        <h2 id="h-painting">Paint it, and change it</h2>
+        <p class="evidence"><b>Evidence</b>The Prado&#x27;s 2004 catalogue for the infanta&#x27;s hand and the figure under the painter; Altmann (2013), only in summary, for the dispute; infrared, as reported secondhand, for your head. The X-ray images are not reproduced here.</p>
+      </header>
+      <div class="chapter-stack">
+        <p class="prose-intro">The order of the steps is inferred. The X-ray shows that the infanta's hand and the place where you stand were changed, but not when.</p>
+        <div class="paint-grid">
+          <div class="map-wrap">
+            <div class="map">
+              <div class="map-stack" role="img" aria-label="The painting stage by stage, with four numbered markers showing the order of work.">
+                <img src="img/stages/02-layin.jpg" width="1000" height="1151" loading="lazy" alt="" data-caption="After step 1: the lay-in">
+                <img src="img/stages/03-first.jpg" width="1000" height="1151" loading="lazy" alt="" data-caption="After step 2: a first idea">
+                <img src="img/stages/04-painter.jpg" width="1000" height="1151" loading="lazy" alt="" data-caption="After step 3: the painter in the picture">
+                <img src="img/stages/06-today.jpg" width="1000" height="1151" loading="lazy" alt="" class="is-on" data-caption="After step 4: the cross, and the painting today">
+              </div>
+              <a class="marker" href="#room-layin" data-target="room-layin" style="--x: 45%; --y: 22%" aria-label="Step 1, Lay in the room">1</a>
+              <a class="marker" href="#first-idea" data-target="first-idea" style="--x: 40%; --y: 75%" aria-label="Step 2, A first idea">2</a>
+              <a class="marker" href="#painter" data-target="painter" style="--x: 28%; --y: 66%" aria-label="Step 3, Put yourself in">3</a>
+              <a class="marker" href="#santiago" data-target="santiago" style="--x: 24%; --y: 58%" aria-label="Step 4, The cross, later">4</a>
+            </div>
+            <p class="map-caption"><span class="tag">AI-generated</span><span aria-live="polite">After step 4: the cross, and the painting today</span></p>
+            <ol class="map-legend">
+              <li><a href="#room-layin"><span class="dot">1</span>Lay in the room</a></li>
+              <li><a href="#first-idea"><span class="dot">2</span>A first idea</a></li>
+              <li><a href="#painter"><span class="dot">3</span>Put yourself in</a></li>
+              <li><a href="#santiago"><span class="dot">4</span>The cross, later</a></li>
+            </ol>
+          </div>
+          <div class="steps">
+            <article class="step" id="room-layin" aria-labelledby="h-room-layin">
+              <header class="step-head"><span class="step-num" aria-hidden="true">1</span><h3 id="h-room-layin">Lay in the room</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/02-layin.jpg" width="1000" height="1151" loading="lazy" alt="AI reconstruction after step 1: The room and the figures blocked in with thin, broad paint straight onto the ground: infrared found no drawing underneath. How the first session looked is invented.">
+                <figcaption>After step 1 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-ceiling.jpg" width="480" height="480" loading="lazy" alt="Close-up of a dark, bare ceiling with the black shape of an empty light fitting hanging from it.">
+                  <figcaption>The ceiling: dark, bare, and the upper half of the picture.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Start with the space. More than half the canvas is the room above the figures: a dark ceiling with two empty light fittings, the back wall with its pictures, the lit door, and the windows down the right-hand side, all but two of their shutters closed.</p>
+                  <p>Put the paint straight onto the ground, thin and broad. Infrared reflectography in 1982 found no drawing under the paint.</p>
+                </div>
+              </div>
+            </article>
+            <article class="step" id="first-idea" aria-labelledby="h-first-idea">
+              <header class="step-head"><span class="step-num" aria-hidden="true">2</span><h3 id="h-first-idea">A first idea</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/03-first.jpg" width="1000" height="1151" loading="lazy" alt="AI reconstruction after step 2: One reading of the X-ray: where the painter now stands, a young man in a flat collar turns towards the infanta, and her right hand is raised where the red cup now covers it. Other specialists disagree about the young man.">
+                <figcaption>After step 2 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-bucaro.jpg" width="480" height="480" loading="lazy" alt="Close-up of a kneeling girl&#x27;s hand offering a small red clay cup on a silver tray to a girl in a white dress.">
+                  <figcaption>The red cup, painted over the infanta&#x27;s raised hand.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Paint the infanta at the centre, in the light from the window, with her meninas on either side. At first her right hand is raised; later you paint the red clay cup, the búcaro, over it. The Prado&#x27;s 2004 catalogue says the first hand can be seen on the surface.</p>
+                  <p>Where you now stand, the X-ray shows something else. The same catalogue reads it as a young gentleman in a flat collar, not you, turned towards the infanta: a first idea in which the painter was not in the picture. Jonathan Brown and Carmen Garrido read the X-ray differently, and the question is open. The reconstruction shows the catalogue&#x27;s reading.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-infanta.jpg" width="480" height="480" loading="lazy" alt="Close-up of a small girl&#x27;s face with long fair hair and a red flower in it.">
+                  <figcaption>The infanta Margarita, five years old.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="painter" aria-labelledby="h-painter">
+              <header class="step-head"><span class="step-num" aria-hidden="true">3</span><h3 id="h-painter">Put yourself in</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/04-painter.jpg" width="1000" height="1151" loading="lazy" alt="AI reconstruction after step 3: Velázquez paints himself at the easel, with palette and brush, in black, with no cross on his chest. This stage is the painting with the cross removed.">
+                <figcaption>After step 3 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-palette.jpg" width="480" height="480" loading="lazy" alt="Close-up of a painter&#x27;s palette with dabs of white, red and ochre paint, held with a bundle of brushes.">
+                  <figcaption>Your palette, with the brushes and maulstick in the same hand.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>Paint yourself standing at a huge canvas whose back is turned to us, palette and brushes in your left hand, a brush in your right, looking out at the people you are painting.</p>
+                  <p>The keys of your court offices hang at your belt. Your head, infrared suggests, first leaned the other way.</p>
+                </div>
+              </div>
+              <div class="plates" style="--n: 1">
+                <figure class="plate">
+                  <img src="img/detail-painter.jpg" width="480" height="480" loading="lazy" alt="Close-up of Velázquez&#x27;s face, with long dark hair and a moustache, above a black doublet with a red cross.">
+                  <figcaption>You, at fifty-seven.</figcaption>
+                </figure>
+              </div>
+            </article>
+            <article class="step" id="santiago" aria-labelledby="h-santiago">
+              <header class="step-head"><span class="step-num" aria-hidden="true">4</span><h3 id="h-santiago">The cross, later</h3></header>
+              <figure class="after-step">
+                <img src="img/stages/06-today.jpg" width="1000" height="1151" loading="lazy" alt="AI reconstruction after step 4: After the Prado&#x27;s 1984 restoration, which took off the old varnish. This is the painting as it hangs in the Prado.">
+                <figcaption>After step 4 <span class="tag">AI-generated</span></figcaption>
+              </figure>
+              <div class="step-body has-side">
+                <figure class="plate">
+                  <img src="img/detail-cross.jpg" width="480" height="480" loading="lazy" alt="Close-up of a red cross with sword-like lower arm painted on a black doublet.">
+                  <figcaption>The red cross of the Order of Santiago.</figcaption>
+                </figure>
+                <div class="step-text">
+                  <p>The red cross on your chest is the badge of the Order of Santiago. You are not a knight when you paint the picture: the habit is granted in November 1659, so the cross must be added after that, and perhaps after your death in 1660 (chapter VII).</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-body">
+        <div class="prose">
+          <h3 class="note-title">What the X-ray shows</h3>
+          <p>The Prado X-rayed the painting for its 1982 study, and the museum says the images record changes made during the work and old repaints by restorers. They are not published under an open licence, so they are described here, not shown. The Prado has a film about them, and the restoration report is Manuela Mena's article of 1984; neither could be seen for this guide.</p>
+          <figure class="key-zones">
+            <img src="img/where.jpg" width="1000" height="1151" loading="lazy" alt="The painting with three dashed boxes: a large one round the painter at the left, a small one round the infanta's right hand and the red cup, and a small red one on the painter's chest.">
+            <ul><li>A different figure here, in one reading</li><li class="is-hand">The infanta's hand, first raised</li><li class="is-cross">The cross, added after 1659</li></ul>
+          </figure>
+          <p>The boxes mark where the changes are described, not traced from the X-ray. Under your figure, the Prado's 2004 catalogue sees another: a young gentleman, not you, with a flat collar instead of the Spanish ruff, turned towards the infanta. If so, the first idea was a portrait of the infanta without the painter in it. Others read the same image differently: in a summary of the debate, Jonathan Brown and Carmen Garrido, the Prado's head of technical studies, are said to have held in 1998 that the change does not affect your figure.</p>
+          <figure class="compare">
+            <div><img src="img/first-before.jpg" width="640" height="800" loading="lazy" alt="The left of the painting with a young man in a white falling collar in place of the painter, beside the kneeling girl."><span class="caption"><span class="tag">AI-generated</span>One reading: the young man, reconstructed with Prodia.</span></div>
+            <div><img src="img/first-after.jpg" width="640" height="800" loading="lazy" alt="The same part of the painting today: Velázquez with palette and brush, a red cross on his chest."><span class="caption">The painting today.</span></div>
+          </figure>
+        </div>
+        <aside class="aside">
+          <div class="note">
+            <h3 class="note-title">Not shown here, and why</h3>
+            <p>Secondhand accounts of the X-ray also mention a woman first placed behind you, and a mirror without the king and queen. Neither could be checked against the Prado's own texts, so the reconstruction leaves them out.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="cross" aria-labelledby="h-cross">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VII</p>
+        <h2 id="h-cross">The cross of Santiago</h2>
+        <p class="evidence"><b>Evidence</b>Palomino&#x27;s two versions of the story, as quoted by Cruz Yábar (2018); the date of the knighthood from the same article and the Prado. Who painted the cross is not recorded.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/cross.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a hand in a black velvet sleeve holding a fine brush with red paint to the chest of the painted painter on a huge canvas.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: the red cross being added to the painter&#x27;s chest. Who did it is unknown.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>When you paint the picture you are not a knight. The king's intervention, the Prado says, is decisive in getting you into the Order of Santiago, an order of knighthood for nobles. The habit is granted in November 1659. You die in 1660, soon after returning from the French border, where the infanta María Teresa was handed over to marry Louis XIV.</p>
+          <p>So the red cross on your chest was painted at least three years after the rest. Palomino first wrote that after your death the king ordered it painted; then he added that "some say" the king painted it himself. No one recorded who did. A modern guess is your son-in-law Mazo, on the king's orders.</p>
+          <figure class="quote">
+            <p>“and some say that His Majesty himself painted it”</p>
+            <cite>Antonio Palomino, 1724, in translation</cite>
+          </figure>
+        </div>
+        <aside class="aside">
+          <figure class="plate">
+            <img src="img/detail-cross.jpg" width="480" height="480" loading="lazy" alt="Close-up of a red cross with sword-like lower arm painted on a black doublet.">
+            <figcaption>The cross: the last thing added to the picture.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="chapter" id="time" aria-labelledby="h-time">
+      <header class="chapter-head">
+        <p class="chapter-num" aria-hidden="true">VIII</p>
+        <h2 id="h-time">What happened next</h2>
+        <p class="evidence"><b>Evidence</b>The Prado&#x27;s provenance record and encyclopedia entry; Palomino for Luca Giordano&#x27;s words. Accounts of the 1734 fire disagree.</p>
+      </header>
+      <figure class="scene">
+        <img src="img/scenes/fire.jpg" width="1280" height="714" loading="lazy" alt="AI-generated reconstruction: a stone palace burning at night, flames at the upper windows, as men with torches carry large paintings across the courtyard.">
+        <figcaption><span class="tag">AI-generated</span>Imagined: the Alcázar burns, Christmas Eve 1734, and the pictures are carried out.</figcaption>
+      </figure>
+      <div class="chapter-body">
+        <div class="prose">
+          <p>The picture stays in the king's private rooms, where few could see it. The inventory of 1666 calls it a portrait of the infanta, by then empress, with her ladies and a dwarf. When the painter Luca Giordano, newly arrived from Naples, saw it in the 1690s, he called it the theology of painting: as theology is the highest of the sciences, Palomino explains, this was the highest of painting.</p>
+          <p>On Christmas Eve 1734 the Alcázar burned down. The Prado says the fire did not seem to harm the painting, which had only slight tears and scratches by 1984; other accounts say the infanta's cheek was repainted afterwards. It hung in the new Royal Palace, and from 1819 in the Prado, where in 1843 it was first called <i>Las meninas</i>.</p>
+          <p>In 1984 the restorer John Brealey, of the Metropolitan Museum in New York, led the Prado's team. He took off the old resin varnish; the team filled the losses and the seams and retouched worn areas; he varnished it again with natural dammar resin, sprayed for an even surface. The choice of a restorer from abroad drew protests in the Spanish press. An exhibition showed what the cleaning had done.</p>
+          <div class="note">
+            <h3 class="note-title">What is still not known</h3>
+            <p>Whether the young man under the painter was there, and who he was; whether you always meant to be in the picture. Whether the king and queen in the mirror were painted late. How the canvas is pieced, and whether it was cut down. What the fire of 1734 did. Who painted the cross, and when.</p>
+          </div>
+        </div>
+        <aside class="aside" aria-label="Timeline">
+          <ol class="timeline" aria-label="Timeline">
+            <li class="is-key"><span class="t-year">1656</span><span>Painted in the Cuarto del Príncipe of the Alcázar.</span></li>
+            <li><span class="t-year">after Nov. 1659</span><span>The cross of Santiago added.</span></li>
+            <li><span class="t-year">1666</span><span>Inventoried as a portrait of “the empress with her ladies and a dwarf”.</span></li>
+            <li><span class="t-year">1690s</span><span>Luca Giordano calls it the “theology of painting”.</span></li>
+            <li><span class="t-year">1700</span><span>In the king's summer office on the lower floor.</span></li>
+            <li class="is-key"><span class="t-year">1734</span><span>The Alcázar burns on Christmas Eve; the picture is saved.</span></li>
+            <li><span class="t-year">about 1778–85</span><span>Goya makes a print after it.</span></li>
+            <li class="is-key"><span class="t-year">1819</span><span>In the new Prado museum; the public can see it.</span></li>
+            <li><span class="t-year">1843</span><span>First catalogued as <i>Las meninas</i>.</span></li>
+            <li><span class="t-year">1982</span><span>Technical study by the Prado with Harvard.</span></li>
+            <li class="is-key"><span class="t-year">1984</span><span>Restored by the Prado's team under John Brealey.</span></li>
+          </ol>
+        </aside>
+      </div>
+      <div class="chapter-body">
+        <div class="prose">
+          <figure class="source">
+            <img src="img/src-laurent.jpg" width="600" height="714" loading="lazy" alt="An old sepia photograph of Las Meninas, the colours lost and the figures pale against a dark room.">
+            <figcaption>
+              <span class="source-title">J. Laurent, photograph of Las Meninas in the Prado</span>
+              <span class="source-meta">About 1875 · Albumen print · Philadelphia Museum of Art</span>
+              <span class="source-note">The picture under its old varnish, a century before the cleaning. The Getty holds another print, dated 1875.</span>
+              <span class="source-credit">Public domain, Philadelphia Museum of Art · <a href="https://commons.wikimedia.org/wiki/File:Photographic_print_of_Las_Meninas_by_Velazquez_-_DPLA_-_d4b31da593960905476f2114185952a3.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </div>
+        <aside class="aside">
+          <figure class="source">
+            <img src="img/src-goya.jpg" width="600" height="723" loading="lazy" alt="An etching after Las Meninas, in black line and tone, with the figures and room as in the painting.">
+            <figcaption>
+              <span class="source-title">Francisco de Goya, Las Meninas, after Velázquez</span>
+              <span class="source-meta">About 1778–85 · Etching · Biblioteca Nacional de España</span>
+              <span class="source-note">The Prado notes that Goya copied the painting in a print.</span>
+              <span class="source-credit">Public domain, Biblioteca Nacional de España · <a href="https://commons.wikimedia.org/wiki/File:Goya_-_Las_Meninas%2C_bdh0000025641%2C_entre_1780_y_1785.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+    <section class="coda" id="thinking" aria-labelledby="h-thinking">
+      <h2 id="h-thinking">How Velázquez thought</h2>
+      <ul class="principles">
+        <li><em>Paint a real room.</em> The Cuarto del Príncipe, its windows, its pictures and its door, not an invented setting.</li>
+        <li><em>Leave space.</em> Half the canvas is dark wall and bare ceiling above the figures.</li>
+        <li><em>Place things with the brush.</em> No drawing under the paint; thin, broad paint, fast.</li>
+        <li><em>Change the story as you go.</em> A raised hand painted over, and perhaps a different figure where you now stand.</li>
+        <li><em>Put the painter in the king&#x27;s picture.</em> You at the easel, beside the infanta, with the king and queen only in a mirror.</li>
+      </ul>
+    </section>
+    <section class="sources" id="sources" aria-labelledby="h-sources">
+      <h2 id="h-sources">Sources</h2>
+      <ul>
+        <li><a href="https://www.museodelprado.es/en/the-collection/art-work/las-meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f" target="_blank" rel="noopener">Museo Nacional del Prado: Las meninas, P001174, collection record (read in a Wayback Machine copy of 29 September 2026)</a></li>
+        <li><a href="https://www.museodelprado.es/aprende/enciclopedia/voz/meninas-las-velazquez/296ac38f-8bf6-439d-b13c-ed22de8c39de" target="_blank" rel="noopener">Francisco Calvo Serraller, “Meninas, Las [Velázquez]”, Enciclopedia del Museo del Prado, on the 1982 study and the 1984 restoration (read in a Wayback Machine copy)</a></li>
+        <li><a href="https://www.museodelprado.es/aprende/boletin/la-restauracion-de-las-meninas-de-velazquez/b8d58e7b-b75e-4200-8962-d416e4328fce" target="_blank" rel="noopener">Manuela Mena Marqués, “La restauración de Las Meninas de Velázquez”, Boletín del Museo del Prado 5, no. 14 (1984), pp. 87–107 (not read)</a></li>
+        <li><a href="https://www.museodelprado.es/video/el-prado-radiografia-las-meninas-para-estudiar-el/7373dee2-d7cd-4468-ac04-be4c3e8f72ed" target="_blank" rel="noopener">Museo del Prado, “El Prado radiografía Las meninas para estudiar el cuadro”, video (not viewed)</a></li>
+        <li><a href="https://doi.org/10.15366/anuario2017-2018.29-30.07" target="_blank" rel="noopener">Juan María Cruz Yábar, “El octavo espejo: las Meninas en el despacho de verano del Alcázar de Madrid”, Anuario del Departamento de Historia y Teoría del Arte 29–30 (2017–18), pp. 169–190, quoting Palomino</a></li>
+        <li><a href="https://www.almendron.com/blog/diego-velazquez-las-meninas/" target="_blank" rel="noopener">Catalogue entry from El retrato español. Del Greco a Picasso (Museo del Prado, 2004), as reproduced on the blog Bitácora Almendrón, on the X-ray and the infanta&#x27;s hand</a></li>
+        <li><a href="https://www.cambridge.org/core/journals/european-review/article/illusion-of-mirrors-velazquezs-las-meninas/18402E54F7EC3A65ECE70216A0E85304" target="_blank" rel="noopener">Simon Altmann, “The Illusion of Mirrors: Velázquez&#x27; Las Meninas”, European Review 21 (2013), on the dispute over the X-ray (read only in summary)</a></li>
+        <li><a href="https://colourlex.com/project/velazquez-las-meninas" target="_blank" rel="noopener">ColourLex, “Diego Velázquez, Las Meninas”, summarising the pigment analysis in McKim-Smith, Andersen-Bergdoll and Newman, Examining Velázquez (1988)</a></li>
+        <li><a href="https://artsandculture.google.com/asset/velazquez-las-meninas-au-musee-du-prado-juan-laurent/KQGpY6nyH5C1Uw" target="_blank" rel="noopener">Google Arts &amp; Culture: J. Laurent&#x27;s photograph of Las Meninas, 1875, J. Paul Getty Museum (the Prado&#x27;s own record is not on Arts &amp; Culture)</a></li>
+        <li><a href="https://www.wikidata.org/wiki/Q208758" target="_blank" rel="noopener">Wikidata: Las Meninas (Q208758)</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="colophon">
+    <p>Images: the painting is the Museo del Prado's photograph, public domain, from Wikimedia Commons, and the close-ups are cut from it. The other paintings, Laurent's photograph and Goya's print are in the public domain, from Wikimedia Commons. The dashed boxes mark where published texts place the changes; they are not traced from the X-ray, which is not reproduced. Stage 2, stage 3's figure and hand, and the chapter scenes were generated with Prodia (Gemini 3 Pro Image), using the painting as reference; Gemini would not leave the painter out, so the young man in stage 3 is a composite, and the figure in his place in stage 2 was repainted by script. Stage 1 is a flat colour, stage 4 is the painting with the cross removed by inpainting, and stage 5 is the painting with a colour change; none of these three uses AI. The reconstructions show plausible appearances, not documented ones. Part of <a href="../">Imagining Artist Methods</a>; source on <a href="https://github.com/cat1060/imagining-artist-methods" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="../assets/series.js" defer></script>
+</body>
+</html>
